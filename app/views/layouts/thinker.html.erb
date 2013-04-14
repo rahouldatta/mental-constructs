@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MentalConstructs</title>
+  <%= stylesheet_link_tag    params[:controller], :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/partials/navigation' %>
+
+<%#= render 'layouts/partials/flash_messages' %>
+
+<%= yield %>
+
+<hr>
+<%= render 'layouts/partials/footer' %>
+
+</body>
+</html>

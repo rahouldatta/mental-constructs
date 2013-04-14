@@ -1,3 +1,73 @@
 // Place all the styles related to the thinker controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "bootstrap-responsive";
+@import "bootstrap";
+
+p { color:  white; }
+
+body {
+  margin: 0px;
+  padding-top: 33px;
+  //background: #19233E url(images/img01.gif) no-repeat left top;
+  background: #19233E;
+  //url(images/Dark_forest.jpg) no-repeat left top;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #72809F;
+}
+
+/* Footer */
+
+#footer {
+  margin: 0 auto;
+  padding: 50px 0px 50px 0px;
+}
+
+#footer p {
+  text-align: center;
+  font-size: 12px;
+  color: #757575;
+}
+
+#footer a {
+  color: #757575;
+}
+
+/* Three Column Footer Content */
+
+
+#footer-bg {
+  overflow: hidden;
+  padding: 40px 0px;
+  background:#E5E0DD url(images/main-bsg.png) repeat;
+}
+
+#footer-content {
+  color: #67C8E3;
+}
+
+#footer-content h2 {
+  margin: 0px;
+  padding: 0px 0px 30px 0px;
+  letter-spacing: -1px;
+  text-shadow: 1px 1px 0px #FFFFFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 200;
+  color: #93776E;
+}
+
+#footer-content a {
+}
+
+#footer-content a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}

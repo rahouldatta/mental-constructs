@@ -1,8 +1,6 @@
 MentalConstructs::Application.routes.draw do
 
 
-  #get "thinker/show"
-
   resources :thinker
 
   get "home/index"

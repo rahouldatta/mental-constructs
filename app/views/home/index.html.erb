@@ -1,2 +1,153 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!--<div id="header-wrapper">-->
+<!--<div id="header">-->
+<!--<div id="logo">-->
+<!--<h1><a href="#">Mental Constructs</a></h1>-->
+<!--</div>-->
+<!--<div id="menu">-->
+<!--<ul>-->
+<!--<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>-->
+<!--<li><a href="#" accesskey="2" title="">Our Clients</a></li>-->
+<!--<li><a href="#" accesskey="3" title="">About Us</a></li>-->
+<!--<li><a href="#" accesskey="4" title="">Careers</a></li>-->
+<!--<li><a href="#" accesskey="5" title="">Contact Us</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--====================================== image and signup form ====================================-->
+<div id="banner">
+  <div id="flash"><%= render 'layouts/partials/flash_messages', :object => flash%></div>
+  <!--<div class="img-border" style="background-image: url(<%#= asset_path 'nature-bg-img.jpg' %>) ; background-repeat: no-repeat; background-position: center center ; background-size: cover;  background-break: each-box;">-->
+  <div class="img-border" style="background-image: url(<%= asset_path 'header-img.jpg' %>) ; background-repeat: no-repeat; background-position: center center ; background-size: cover;  background-break: each-box;">
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <br>
+          </div>
+          <div class="row-fluid">
+            <div class="span9">
+              <p class="text-danger">Mental acuity is a resource you must hone and cultivate to the maximum!!!</p>
+              <p class="text-danger">Here is a tool which allows you to do so.</p>
+            </div>
+            <div class="span3 offset7">
+              <div class="front-signup">
+                <p></p>
+                <center><%= f.email_field :email, :placeholder => "Email ID", :class => "span11", :required => true%>
+                  <%= f.text_field :alias, :placeholder => "Your alias or pen-name...", :required => true, :class => "span11" %>
+                  <br><br>
+                  <%= f.password_field :password, :placeholder => "Password", :required => "true", :autocomplete => "off" , :class => "span11" %>
+                  <%= f.password_field :password_confirmation, :placeholder => "Confirm Password", :required => "true" , :class => "span11"%></center>
+                <div style="padding-left: 10px; padding-bottom: 10px;"><%= f.submit 'Sign UP for FREE ', :class => 'btn btn-large btn-primary' %></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <% end %>
+  </div>
+  <div class="muted"><small>By Signing Up you agree to our <a data-target="#terms_and_conditions" data-toggle="modal" class="btn btn-link btn-mini">Terms and Conditions</a></small></div>
+</div>
+<marquee onmouseover="stop()" onmouseout="start()" class="muted"><em>
+  <%= @food_for_thought.food_for_thought rescue 'A Rich man and a Poor man, both will die someday. But a knowledgable man can live on for ever.' %>
+</em></marquee>
+<!--<div class="img-border"> <a href="#"><img src="assets/header-img.jpg" width="1120" height="500" alt="" /></a> </div>-->
+
+
+<!--=============================================== main description body ===============================================-->
+<div id="wrapper">
+  <div id="page-wrapper">
+    <div id="page">
+      <div id="wide-content">
+        <div>              <img alt="TheThinker" height="83" width="63" src="/assets/TheThinker.jpg" title="Anyone and Everyone will always respect a Thinker.    Photo: The Thinker by Auguste Rodin" class="pull-right thumbnail"/>
+          <h2>Welcome to Mental Constructs </h2>
+          <p>Man has the ability to think. That is why you are not a monkey. You can think.</p>
+          <p>Most of the times your mental-construct is lost. Here you can record them and organize them. Exhibit your Mental Constructs to others for judgements, ideas and of course, for General Consent (Don't worry, we all do it).</p>
+
+          <p>We are all God's disciples, we exist so that our soul can attain enlightenment through experience. Experience builds thinking capacity, which a man can use to understand about life, the universe and everything (42, right?). There is so much in this world you do not know and there is so much in this world you cannot understand (women!!!).
+            Reading makes a ready man, Writing a perfect man! Just reading is not sufficient (though very important). Writing makes a perfect man because you think again on what you have read and what you have thought. Thinking opens up new vistas which you never before could have imagined.
+            The more you can think the closer you are to enlightenment and God.</p>
+
+          <p>So, THINK!!!</p>
+          <p><a href="#" class="button-style">More Details</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page" class="container">
+    <div id="content">
+      <div>
+        <ul class="style1">
+          <li class="first">
+            <h3>Create and Organize Your Creative Constructs</h3>
+            <p>This is not a Diary! Ideas and thoughts materialize but are never recorded by us. Here you can write entire constructs in a powerful editor and store them. Any Creative Constructs or thoughts can be stored indefinitely. Never lose your thoughts again. When thoughts become too many, you can organize them proficiently. Categorize your thoughts according to your preferences, view them at will and upgrade.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+          </li>
+          <li>
+            <h3>Exhibit Your Constructs</h3>
+            <p>Sometimes you may feel the need to have other people judge your thoughts, comment on them and condone them. We allow you to that. Simply exhibit your thoughts to the world and the masses will be able to judge them. You can read other's thoughts and pick their brain or simply vote on them. Bookmark constructs of other Authors for future consideration.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+          </li>
+          <li>
+            <h3>Record Your Epiphanies, Brainwaves and Factoids</h3>
+            <p>Who has time? We know that you do not. But then don't let that fleeting idea get away. Record an Epiphany or Brainwave and work upon it later.
+              Some facts your brain is to occupied to store but you would like to record them. Create a Factoid and brush up upon them at will.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+          </li>
+          <li>
+            <h3>Research Options for Quick Searching</h3>
+            <p>Who has time? We know that you do not. But then don't be in doubt. Clarify them. Search the Web immediately for answers through tools provided.
+              Validate facts and delve deeper into your epiphanies and brainwaves using quick search options.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+          </li>
+          <li>
+            <h3>HOWL, HOWL, HOWL</h3>
+            <p>Howl, Howl, Howl, for life is unfair. Feeling frustrated or Depressed? Vent out your frustration on a live public chat where you are anonymous. Pour your heart out without any guilt or fear of anyone backtracing out your vomit to you. Yell and spit out your frustration on the world instead of your family or loved ones.</p>
+            <p><a href="#" class="button-style">Read More</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="sidebar">
+      <h2>Latest Updates</h2>
+      <ul class="style3">
+        <li class="first">
+          <p class="date"><%= Time.now.utc %></p>
+          <p>Home Index page has been Updated</p>
+        </li>
+        <li>
+          <p class="date">01-13-2013</p>
+          <p>Thinker page has been almost completed on Backend</p>
+        </li>
+        <li>
+          <p class="date">01-07-2013</p>
+          <p>Constructs, Factoids and Epiphanies functionalities have been created and implemented</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!--====================================== Terms and Conditions MODAL ========================================    -->
+
+<div id="terms_and_conditions" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <%= link_to "x", root_path, :class=>"close" %>
+    <h3 id="myModalLabel">Terms and Conditions</h3>
+  </div>
+  <div class="modal-body">
+    <p>Our terms and conditions are a must read…</p>
+  </div>
+  <div class="modal-footer">
+    <!--<button class="btn btn-success">I Accept</button>-->
+    <%= link_to "Close", root_path, :class=>"btn btn-danger" %>
+  </div>
+</div>
+
+
+<script>
+    $('#terms_and_conditions').on('hide', function (e) {
+        if (!data) return e.preventDefault() // stops modal from being shown
+    })
+</script>

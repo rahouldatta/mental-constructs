@@ -13,4 +13,10 @@ class Thinker < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :alias, :first_name, :last_name, :age, :gender
   # attr_accessible :title, :body
+
+  before_create :parameterize_alias
+
+  def parameterize_alias
+    self.alias = self.alias.parameterize
+  end
 end

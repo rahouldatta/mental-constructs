@@ -1,8 +1,15 @@
 class ThinkerController < ApplicationController
   before_filter :authenticate_thinker!
+  before_filter :load
+
+  layout 'thinker'
+
+  def load
+
+  end
 
   def show
-    @thinker=Thinker.find_by_alias(params[:id])
+    @thinker = current_thinker
   end
 
 end
