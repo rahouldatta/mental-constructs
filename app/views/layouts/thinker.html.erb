@@ -10,12 +10,54 @@
 
 <%= render 'layouts/partials/navigation' %>
 
-<%#= render 'layouts/partials/flash_messages' %>
 
-<%= yield %>
+
+<div class="container-fluid">
+
+  <%#= render 'layouts/partials/flash_messages' %>
+
+  <div class="row-fluid">
+
+
+    <!--======================================= Main area =======================================-->
+    <div class="span9">
+
+      <%= yield %>
+
+    </div>
+
+
+    <!--======================================= Right Widgets =======================================-->
+    <aside class="span3">
+      <div id="widget-bar" data-spy="affix">
+
+        <div  class="blank-box">
+            <%= render 'thinker/partials/research_forms' %>
+        </div>
+
+    </div>
+  </aside>
+
+</div>
+</div>
+
 
 <hr>
 <%= render 'layouts/partials/footer' %>
 
 </body>
 </html>
+<script>
+    function affixWidth() {
+        // ensure the affix element maintains it width
+        var affix = $('#widget-bar');
+        var width = affix.width();
+        affix.width(width);
+    }
+
+    $(document).ready(function () {
+
+        affixWidth();
+
+    });
+</script>

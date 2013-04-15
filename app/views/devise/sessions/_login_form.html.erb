@@ -1,5 +1,10 @@
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "form-inline", :style => "margin: 0px;"}) do |f| %>
     <%= f.email_field :email, :autofocus => false , :placeholder => "Email ID", :class=> "span3", :required => true%>
     <%= f.password_field :password, :placeholder => "Password", :class=> "span3", :required => true %>
-    <%= f.submit "Login", :class => "btn btn-primary"%>
+    <%= f.submit "Login", :class => "btn btn-primary"%>&nbsp;&nbsp;
+    <span id="tooltip-show"><%= f.check_box :remember_me, :title => "Remember Me" %></span>&nbsp;
+    <span id="tooltip-show"><%= link_to new_password_path(resource_name) , :title => "Forgot Your Password?" do %><i class="icon-question-sign icon-white"></i><% end %></span>
 <% end %>
+<script>
+    $('#tooltip-show').tooltip(options)
+</script>

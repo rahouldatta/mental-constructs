@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  thinker_id: 1
+  type: 
+  cognition: MyText
+
+two:
+  thinker_id: 1
+  type: 
+  cognition: MyText

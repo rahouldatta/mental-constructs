@@ -1,0 +1,8 @@
+<div class="form-inline">
+<%= form_tag({:controller => "thinker",:action => "google_search"}, :target => "_blank") do %>
+    <%= text_field(nil,:google_search_parameter, :class=> "span8", :placeholder => "Search Google ... ", :required => true ) %>
+    <%= submit_tag "Google", class: "span3 btn btn-success"%>
+<% end %>
+</div>
+
+

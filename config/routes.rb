@@ -1,7 +1,17 @@
 MentalConstructs::Application.routes.draw do
 
 
-  resources :thinker
+  resources :thinker do
+    member do
+
+    end
+    collection do
+      post 'google_search'
+      post 'wikipedia_search'
+      post 'bing_search'
+      post 'yahoo_search'
+    end
+  end
 
   get "home/index"
 

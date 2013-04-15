@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130414200047) do
+ActiveRecord::Schema.define(:version => 20130415150249) do
+
+  create_table "cognitions", :force => true do |t|
+    t.integer  "thinker_id"
+    t.string   "type"
+    t.text     "cognition"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "thinkers", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
