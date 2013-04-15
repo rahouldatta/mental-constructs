@@ -2,4 +2,4 @@
 $(":input:not(input[type=submit])").val("");
 
 /*Replace the html of the div post_lists with the updated new one*/
-//$("#factoids").html("<%#= escape_javascript( render(:partial => "thinker/partials/factoid_display") ) %>");
+$("#main-epiphanies").html("<%= escape_javascript( render(:partial => "thinker/partials/epiphany_display") ) %>");

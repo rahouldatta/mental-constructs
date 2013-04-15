@@ -22,21 +22,21 @@
     <!--======================================= Main area =======================================-->
     <div class="span9">
       <div class="row-fluid">
+        <div class="span8">
+
+        </div>
         <div class="span4">
           <div class="blank-box">
             <%= render 'thinker/partials/remembrall_form' %>
           </div>
         </div>
-        <div class="span4">
-
-        </div>
-        <div class="span4">
-
-        </div>
       </div>
+      <br>
       <hr>
+      <br>
+      <div class="blanker-box" style="padding: 7px">
       <%= yield %>
-
+      </div>
     </div>
 
 
@@ -47,6 +47,7 @@
         <div  class="blank-box">
             <%= render 'thinker/partials/research_forms' %>
         </div>
+        <br>
         <hr>
             <div class="opaqify-container">
               <%= render 'thinker/partials/epiphany_form' %>
@@ -67,8 +68,8 @@
 </div>
 
 
-<hr>
-<%= render 'layouts/partials/footer' %>
+<!--<hr>-->
+<%#= render 'layouts/partials/footer' %>
 
 </body>
 </html>

@@ -1,0 +1,37 @@
+<% if @epiphanies.blank? %>
+    No registered Epiphanies yet. Seems like something is a little rusty...  <i class="icon-pencil icon-white"></i>
+<% else %>
+    <br>
+    <% @epiphanies.each do |epiphany| %>
+        <div class="row-fluid">
+
+          <div class="span8">
+            <div class="">
+              <p class=""><%= epiphany.cognition.capitalize%></p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="">
+              <div id="tooltip_show">
+                <div class="muted" title=""><small><%= epiphany.created_at.utc.localtime.to_s(:short)%></small>&nbsp;|
+                  <%= link_to delete_epiphany_thinker_path(epiphany), class: "btn btn-small btn-danger", confirm: "Are you sure this is a Worthless Epiphany?",:title => "Delete This Epiphany", :remote => true do %>
+                      <i class="icon-trash icon-white"></i>
+                  <% end %>&nbsp;|
+                  <%#= link_to convert_epiphany_to_construct_thinker_path(epiphany), class: "btn btn-small btn-success", :title => "Convert this Epiphany into A CONSTRUCT" do %>
+                  <%= link_to "#", class: "btn btn-small btn-success", :title => "Convert this Epiphany into a Concept" do %>
+                      <i class="icon-edit icon-white"></i>
+                  <% end %>
+                  <div id="openResearchTabs" class="pull-right">
+                    <a href="http://www.google.com/search?q=<%= epiphany.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <% end %>
+    <%#= will_paginate @constructs,:container => false, :renderer => BootstrapPagination::Rails %>
+<% end %>
+<script>
+    $('#tooltip_show').tooltip('show')
+</script>

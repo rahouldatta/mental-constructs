@@ -5,11 +5,26 @@ class ThinkerController < ApplicationController
   layout 'thinker'
 
   def load
-
+    @epiphanies = current_thinker.epiphanies
+    @brainwaves = current_thinker.brain_wave.order("affinity_level DESC")
+    @factoids = current_thinker.factoids
   end
 
   def show
     @thinker = current_thinker
+  end
+
+  # =================== Cognition Methods =========================
+  def delete_epiphany
+    Epiphany.find(params[:id]).destroy unless params[:id].nil?
+  end
+
+  def delete_brainwave
+    BrainWave.find(params[:id]).destroy unless params[:id].nil?
+  end
+
+  def delete_factoid
+    Factoids.find(params[:id]).destroy unless params[:id].nil?
   end
 
   # =================== Cognition Record Methods =========================
@@ -23,7 +38,7 @@ class ThinkerController < ApplicationController
   end
 
   def record_brainwaves
-    current_thinker.brain_wave.create(:cognition => params[:cognition])
+    current_thinker.brain_wave.create(:cognition => params[:cognition],:affinity_level => params[:affinity_level])
   end
 
   def record_remembrall

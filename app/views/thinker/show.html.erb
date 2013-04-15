@@ -1,19 +1,107 @@
-<h1>Thinker#show</h1>
-<p><%= @thinker.inspect %></p>
-<p><%= @thinker.factoids.inspect %></p>
-<p><%= @thinker.brain_wave.inspect %></p>
-<p><%= @thinker.epiphanies.inspect %></p>
-<p><%= @thinker.inspect %></p>
-<p><%= @thinker.inspect %></p>
-<p><%= @thinker.inspect %></p>
-<p><%= @thinker.inspect %></p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p><%= @thinker.inspect %>
-<%= @thinker.inspect %>
-<%= @thinker.inspect %></p>
-<%= link_to destroy_thinker_session_path, :method=>'delete' do %><i class="icon-warning-sign"></i> Logout<% end %>
+<ul class="nav nav-pills" id="mainTabs" >
+  <li class="active"><a href="#constructs"><i class="icon-book icon-white"></i> Constructs</a></li>
+  <li><a href="#cognitions" data-toggle="tab"><i class="icon-cog icon-white"></i> Cognitions</a></li>
+
+  <div class="pull-right nav nav-pills" id="mainTabs">
+    <li><a href="#link_cache" data-toggle="tab"><i class="icon-tags icon-white"></i> LinkCache</a></li>
+    <li><a href="#to_do_list" data-toggle="tab"><i class="icon-list icon-white"></i> Remembrall</a></li>
+    <li><a href="#bookmarks" data-toggle="tab"><i class="icon-bookmark icon-white"></i> BookMarks</a></li>
+  </div>
+
+</ul>
+<!--</div>-->
+<div class="opaqify-container">
+
+  <div class="tab-content">
+
+
+
+    <!--======================================= CONSTRUCTS =======================================-->
+    <div class="tab-pane fade in active" id="constructs">
+
+      <ul class="nav nav-pills" id="constructsTabs">
+        <li class="active"><a href="#constructs-median"><i class="icon-book icon-white"></i> MEDIAN</a></li>
+        <li><a href="#main-concepts"><i class="icon-th icon-white"></i> Concepts</a></li>
+        <li><a href="#main-brain_childs"><i class="icon-eye-open icon-white"></i> BrainChilds</a></li>
+        <li><a href="#main-discourses"><i class="icon-qrcode icon-white"></i> Discourses</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="constructs-median">
+          Median
+        </div>
+        <div class="tab-pane fade" id="main-concepts">
+          CONCEPTS
+        </div>
+        <div class="tab-pane fade" id="main-brain_childs">
+          BRAIN CHILDS
+        </div>
+        <div class="tab-pane fade" id="main-discourses">
+          DISCOURSES
+        </div>
+      </div>
+
+    </div>
+
+
+    <!--======================================= COGNITIONS =======================================-->
+    <div class="tab-pane fade" id="cognitions">
+
+      <ul class="nav nav-pills" id="cognitionsTabs">
+        <li class="active"><a href="#cognitions-median"><i class="icon-th-list icon-white"></i> MEDIAN</a></li>
+        <li><a href="#main-epiphanies"><i class="icon-th icon-white"></i> Epiphanies</a></li>
+        <li><a href="#main-brain_waves"><i class="icon-eye-open icon-white"></i> BrainWaves</a></li>
+        <li><a href="#main-factoids"><i class="icon-qrcode icon-white"></i> Factoids</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="cognitions-median">
+          Median
+        </div>
+        <div class="tab-pane fade" id="main-epiphanies">
+          <%= render 'thinker/partials/epiphany_display' %>
+        </div>
+        <div class="tab-pane fade" id="main-brain_waves">
+          <%= render 'thinker/partials/brain_wave_display' %>
+        </div>
+        <div class="tab-pane fade" id="main-factoids">
+          <%= render 'thinker/partials/factoid_display' %>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tab-pane fade" id="link_cache">
+      <%#= render 'thinker/partials/link_cache_form' %>
+      <div id="page"></div>
+      LINK CACHE
+      <div id="display_link_cache"><%#= render 'thinker/partials/link_cache_display' %></div>
+    </div>
+    <div class="tab-pane fade" id="bookmarks">
+      <%#= render 'thinker/partials/bookmark_display' %>
+      BOOKMARKS
+    </div>
+    <div class="tab-pane fade" id="to_do_list">
+      REMEMBRALL
+      <%#= render 'thinker/partials/to_do_display' %>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    $('#mainTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+<script>
+    $('#constructsTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+<script>
+    $('#cognitionsTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>

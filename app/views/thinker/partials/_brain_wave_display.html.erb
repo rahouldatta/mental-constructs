@@ -1,0 +1,38 @@
+<% if @brainwaves.blank? %>
+    No registered BrainWaves yet. Ideas are fleeting, RECORD THEM...  <i class="icon-pencil icon-white"></i>
+<% else %>
+
+    <br>
+    <% @brainwaves.each_with_index do |brainwave,i| %>
+        <div class="row-fluid">
+          <!--<hr>-->
+          <div class="span8">
+            <div class="">
+              <div class="muted">Brainwave Affinity Level - <%= brainwave.affinity_level %></div>
+              <p class=""><%= brainwave.cognition.capitalize%></p>
+            </div>
+          </div>
+
+          <div class="span4">
+            <div id="tooltip_show">
+              <div class="muted" title="Brain Functioned very well at"><small><%= brainwave.created_at.utc.localtime.to_s(:short)%></small>&nbsp;|
+                <%= link_to(delete_brainwave_thinker_path(brainwave), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Brainwave.", confirm: "Are you sure?", :remote => true) do %>
+                    <i class="icon-trash icon-white"></i>
+                <% end %>&nbsp;|&nbsp;
+                <%= link_to("#", class: "btn btn-mini btn-success", :title => "Enhance the BrainWave. Convert it into a BrainChild") do %>
+                    <i class="icon-eye-open icon-white"></i>
+                <% end %>&nbsp;|&nbsp;
+                <a href="http://www.google.com/search?q=<%= brainwave.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+
+    <% end %>
+    <%#= will_paginate @constructs,:container => false, :renderer => BootstrapPagination::Rails %>
+<% end %>
+<script>
+    $('#tooltip_show').tooltip('show')
+</script>

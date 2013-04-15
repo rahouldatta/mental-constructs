@@ -1,0 +1,37 @@
+<% if @factoids.blank? %>
+    No registered factoids yet. Record facts for future references...  <i class="icon-pencil icon-white"></i>
+<% else %>
+
+    <br>
+    <% @factoids.each do |factoid| %>
+        <div class="row-fluid">
+
+          <div class="span8">
+            <div class="">
+              <p class=""><%= factoid.cognition.titleize%></p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="">
+              <div id="tooltip_show">
+                <div class="muted" title="Factoid Created At"><small><%= factoid.created_at.utc.localtime.to_s(:short)%></small>&nbsp;|
+                  <%= link_to(delete_factoid_thinker_path(factoid), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Factoid.", confirm: "Are you sure?", :remote => true) do %>
+                      <i class="icon-trash icon-white"></i>
+                  <% end %>
+                  <div class="pull-right">
+                    <%#= link_to ("http://www.google.com/search?q=#{factoid.factoid.gsub(" ","+")}"), :target => "_blank", :class => "btn btn-small" do %>
+                    <!--<i class="icon-eye-open"></i> Google This<%#end %>&nbsp;|&nbsp;-->
+                    <a href="http://www.google.com/search?q=<%= factoid.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+                    &nbsp;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <% end %>
+    <%#= will_paginate @constructs,:container => false, :renderer => BootstrapPagination::Rails %>
+<% end %>
+<script>
+    $('#tooltip_show').tooltip('show')
+</script>

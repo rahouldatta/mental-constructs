@@ -3,7 +3,9 @@ MentalConstructs::Application.routes.draw do
 
   resources :thinker do
     member do
-
+      get 'delete_epiphany'
+      get 'delete_brainwave'
+      get 'delete_factoid'
     end
     collection do
       post 'google_search'
