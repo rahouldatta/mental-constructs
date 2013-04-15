@@ -14,10 +14,14 @@
           <div class="span4">
             <div class="">
               <div id="tooltip_show">
-                <div class="muted" title="Factoid Created At"><small><%= factoid.created_at.utc.localtime.to_s(:short)%></small>&nbsp;|
+                <div class="muted" title="Factoid Created At"><small><%= factoid.created_at.utc.localtime.to_s(:long)%></small>&nbsp;|
                   <%= link_to(delete_factoid_thinker_path(factoid), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Factoid.", confirm: "Are you sure?", :remote => true) do %>
                       <i class="icon-trash icon-white"></i>
+                  <% end %>&nbsp;|&nbsp;
+                  <%= link_to "#", class: "btn btn-mini btn-success", :title => "Convert this Factoid into a Discourse" do %>
+                      <i class="icon-qrcode icon-white"></i>
                   <% end %>
+
                   <div class="pull-right">
                     <%#= link_to ("http://www.google.com/search?q=#{factoid.factoid.gsub(" ","+")}"), :target => "_blank", :class => "btn btn-small" do %>
                     <!--<i class="icon-eye-open"></i> Google This<%#end %>&nbsp;|&nbsp;-->
@@ -29,6 +33,7 @@
             </div>
           </div>
         </div>
+        <hr>
     <% end %>
     <%#= will_paginate @constructs,:container => false, :renderer => BootstrapPagination::Rails %>
 <% end %>

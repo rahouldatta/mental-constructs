@@ -15,7 +15,7 @@
 
           <div class="span4">
             <div id="tooltip_show">
-              <div class="muted" title="Brain Functioned very well at"><small><%= brainwave.created_at.utc.localtime.to_s(:short)%></small>&nbsp;|
+              <div class="muted" title="Brain Functioned very well at"><small><%= brainwave.created_at.utc.localtime.to_s(:long)%></small>&nbsp;|
                 <%= link_to(delete_brainwave_thinker_path(brainwave), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Brainwave.", confirm: "Are you sure?", :remote => true) do %>
                     <i class="icon-trash icon-white"></i>
                 <% end %>&nbsp;|&nbsp;

@@ -5,9 +5,9 @@ class ThinkerController < ApplicationController
   layout 'thinker'
 
   def load
-    @epiphanies = current_thinker.epiphanies
+    @epiphanies = current_thinker.epiphanies.order("created_at DESC")
     @brainwaves = current_thinker.brain_wave.order("affinity_level DESC")
-    @factoids = current_thinker.factoids
+    @factoids = current_thinker.factoids.order("created_at DESC")
   end
 
   def show
