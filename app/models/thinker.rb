@@ -8,6 +8,7 @@ class Thinker < ActiveRecord::Base
   has_many :factoids
   has_many :brain_wave
   has_many :epiphanies
+  has_many :remembralls
 
 
   def to_param

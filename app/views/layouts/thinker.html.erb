@@ -21,7 +21,20 @@
 
     <!--======================================= Main area =======================================-->
     <div class="span9">
+      <div class="row-fluid">
+        <div class="span4">
+          <div class="blank-box">
+            <%= render 'thinker/partials/remembrall_form' %>
+          </div>
+        </div>
+        <div class="span4">
 
+        </div>
+        <div class="span4">
+
+        </div>
+      </div>
+      <hr>
       <%= yield %>
 
     </div>
@@ -29,13 +42,25 @@
 
     <!--======================================= Right Widgets =======================================-->
     <aside class="span3">
-      <div id="widget-bar" data-spy="affix">
+      <div id="widget-bar" data-spy="affix" style="padding-right: 11px;">
 
         <div  class="blank-box">
             <%= render 'thinker/partials/research_forms' %>
         </div>
+        <hr>
+            <div class="opaqify-container">
+              <%= render 'thinker/partials/epiphany_form' %>
+            </div>
+          <br>
+            <div class="opaqify-container">
+              <%= render 'thinker/partials/brain_wave_form' %>
+            </div>
+          <br>
+            <div class="boxed-template form-inline" >
+              <%= render 'thinker/partials/factoid_form' %>
+            </div>
 
-    </div>
+        </div>
   </aside>
 
 </div>
@@ -48,16 +73,20 @@
 </body>
 </html>
 <script>
-    function affixWidth() {
-        // ensure the affix element maintains it width
-        var affix = $('#widget-bar');
-        var width = affix.width();
-        affix.width(width);
-    }
-
-    $(document).ready(function () {
-
-        affixWidth();
-
+    $(function(){
+        var sideBarNavWidth=$('#leftcolumn').width() - parseInt($('#widget-bar').css('paddingLeft')) - parseInt($('#widget-bar').css('paddingRight'));
+        $('#sidebarnav').css('width', sideBarNavWidth);
     });
+//    function affixWidth() {
+//        // ensure the affix element maintains it width
+//        var affix = $('#widget-bar');
+//        var width = affix.width();
+//        affix.width(width);
+//    }
+//
+//    $(document).ready(function () {
+//
+//        affixWidth();
+//
+//    });
 </script>

@@ -1,0 +1,6 @@
+<div class="form-inline">
+  <%= form_tag({:controller => "thinker",:action => "record_remembrall"}, :remote => true, :style => "margin: 0px; padding :7px 3px 7px 5px;") do %>
+      <div id="tooltip-show"><%= text_area(nil,:task, :class=> "span9", :rows => "2", :placeholder => "Remembrall will store your task which you would like to remember.", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
+        <%= submit_tag "Do This", :title => "Reminder to yourself about something you want to do later.",class: "span3 btn btn-primary"%></div>
+  <% end %>
+</div>

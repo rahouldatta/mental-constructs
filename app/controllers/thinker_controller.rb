@@ -12,6 +12,24 @@ class ThinkerController < ApplicationController
     @thinker = current_thinker
   end
 
+  # =================== Cognition Record Methods =========================
+
+  def record_epiphanies
+    current_thinker.epiphanies.create(:cognition => params[:cognition])
+  end
+
+  def record_factoids
+    current_thinker.factoids.create(:cognition => params[:cognition])
+  end
+
+  def record_brainwaves
+    current_thinker.brain_wave.create(:cognition => params[:cognition])
+  end
+
+  def record_remembrall
+    current_thinker.remembralls.create(:task => params[:task])
+  end
+
   # =================== WWW Search Methods =========================
 
   def google_search

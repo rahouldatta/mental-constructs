@@ -12,7 +12,7 @@
     <div style="padding-left: 17px;">
       <ul class="nav">
         <% if thinker_signed_in? %>
-            <li class="active" style="font-family: Papyrus;"><%= (link_to "Mental Constructs", thinker_path(current_thinker), :class => "brand")%></li>
+            <li class="active" style="font-family: Papyrus;"><%= (link_to "#{current_thinker.alias.upcase}", thinker_path(current_thinker), :class => "brand")%></li>
         <% else %>
             <li class="active" style="font-family: Papyrus;"><%= (link_to "Mental Constructs", root_path, :class => "brand ")%></li>
         <% end %>

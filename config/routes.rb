@@ -10,6 +10,10 @@ MentalConstructs::Application.routes.draw do
       post 'wikipedia_search'
       post 'bing_search'
       post 'yahoo_search'
+      post 'record_factoids'
+      post 'record_epiphanies'
+      post 'record_brainwaves'
+      post 'record_remembrall'
     end
   end
 

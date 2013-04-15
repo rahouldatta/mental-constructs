@@ -35,7 +35,7 @@
               <div class="front-signup">
                 <p></p>
                 <center><%= f.email_field :email, :placeholder => "Email ID", :class => "span11", :required => true%>
-                  <%= f.text_field :alias, :placeholder => "Your alias or pen-name...", :required => true, :class => "span11" %>
+                  <%= f.text_field :alias, :placeholder => "Your alias or pen-name...", :required => true, :class => "span11",  :onkeyup => "CheckMaxlength(this);", :maxlength => 19%>
                   <br><br>
                   <%= f.password_field :password, :placeholder => "Password", :required => "true", :autocomplete => "off" , :class => "span11" %>
                   <%= f.password_field :password_confirmation, :placeholder => "Confirm Password", :required => "true" , :class => "span11"%></center>
