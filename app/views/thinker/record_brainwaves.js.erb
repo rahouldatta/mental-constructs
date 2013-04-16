@@ -3,3 +3,4 @@ $(":input:not(input[type=submit])").val("");
 
 /*Replace the html of the div post_lists with the updated new one*/
 $("#main-brain_waves").html("<%= escape_javascript( render(:partial => "thinker/partials/brain_wave_display") ) %>");
+$("#cognitions-median").html("<%= escape_javascript( render(:partial => "thinker/partials/cognition_sample_display") ) %>");

@@ -9,6 +9,7 @@ class ThinkerController < ApplicationController
     @brainwaves = current_thinker.brain_wave.order("affinity_level DESC")
     @factoids = current_thinker.factoids.order("created_at DESC")
     @remembralls = current_thinker.remembralls
+    @incomplete_tasks = @remembralls.where(:status => false)
   end
 
   def show
