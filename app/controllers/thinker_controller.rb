@@ -8,6 +8,7 @@ class ThinkerController < ApplicationController
     @epiphanies = current_thinker.epiphanies.order("created_at DESC")
     @brainwaves = current_thinker.brain_wave.order("affinity_level DESC")
     @factoids = current_thinker.factoids.order("created_at DESC")
+    @remembralls = current_thinker.remembralls
   end
 
   def show
@@ -27,6 +28,16 @@ class ThinkerController < ApplicationController
     Factoids.find(params[:id]).destroy unless params[:id].nil?
   end
 
+  def delete_remembrall
+    Remembrall.find(params[:id]).destroy unless params[:id].nil?
+  end
+
+  def mark_remembrall_as_complete
+    r = Remembrall.find(params[:id])
+    r.update_attributes(:status => true)
+  end
+
+
   # =================== Cognition Record Methods =========================
 
   def record_epiphanies
@@ -42,7 +53,7 @@ class ThinkerController < ApplicationController
   end
 
   def record_remembrall
-    current_thinker.remembralls.create(:task => params[:task])
+    current_thinker.remembralls.create(:task => params[:task], :status => false)
   end
 
   # =================== WWW Search Methods =========================
@@ -62,6 +73,8 @@ class ThinkerController < ApplicationController
   def yahoo_search
     redirect_to "http://search.yahoo.com/search?p=#{params[:yahoo_search_parameter].strip.gsub(/\s+/,"+")}"
   end
+
+   #====================== Miscelleneuos Methods ========================
 
 
 end

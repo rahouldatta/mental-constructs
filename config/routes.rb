@@ -6,6 +6,8 @@ MentalConstructs::Application.routes.draw do
       get 'delete_epiphany'
       get 'delete_brainwave'
       get 'delete_factoid'
+      get 'delete_remembrall'
+      get 'mark_remembrall_as_complete'
     end
     collection do
       post 'google_search'
