@@ -10,6 +10,7 @@ class ThinkerController < ApplicationController
     @factoids = current_thinker.factoids.order("created_at DESC")
     @remembralls = current_thinker.remembralls
     @incomplete_tasks = @remembralls.where(:status => false)
+    @link_hoards = current_thinker.link_hoards.group_by(&:category)
   end
 
   def show
@@ -77,5 +78,15 @@ class ThinkerController < ApplicationController
 
    #====================== Miscelleneuos Methods ========================
 
+  def record_link
+    params[:new_category].blank? ? current_thinker.link_hoards.create(:description => params[:description],:link => params[:link], :category => params[:category])
+      : current_thinker.link_hoards.create(:link => params[:link], :category => params[:new_category],:description => params[:description])
+    @link_hoards = current_thinker.link_hoards.group_by(&:category)
+  end
+
+  def delete_link
+    LinkHoard.find(params[:id]).destroy unless params[:id].nil?
+    @link_hoards = LinkHoard.where(:thinker_id => current_thinker.id).group_by(&:category)
+  end
 
 end

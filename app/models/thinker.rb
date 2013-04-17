@@ -9,7 +9,7 @@ class Thinker < ActiveRecord::Base
   has_many :brain_wave
   has_many :epiphanies
   has_many :remembralls
-
+  has_many :link_hoards
 
   def to_param
     "#{self.alias}"

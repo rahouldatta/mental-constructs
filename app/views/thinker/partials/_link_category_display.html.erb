@@ -1,0 +1,19 @@
+
+<ul class="nav nav-pills nav-stacked" id="linkHoardCategoryTabs">
+  <!--<li class="active"><a href="#"><i class="icon-book icon-white"></i> MEDIAN</a></li>-->
+  <% if @link_hoards.keys.blank? %>
+      <p>No link has been hoarded yet.</p>
+  <% else %>
+      <% @link_hoards.keys.each do |category| %>
+          <li><a href="#link-hoard-category-<%= category %>"><i class="icon-tag icon-white"></i> <%= category %></a></li>
+      <% end %>
+<% end %>
+</ul>
+
+<script>
+    $('#linkHoardCategoryTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+

@@ -1,0 +1,38 @@
+<div class="text-info"><h5>Hoard your links!</h5></div>
+<%= form_tag({:controller => "thinker",:action => "record_link"}, :remote => true) do %>
+    <div class="row-fluid">
+      <div class="span7">
+        <%= text_area(nil,:description, :class=> "span11", :rows => 2, :placeholder => "Description about the link ... ", :required => true ) %>
+      </div>
+      <div class="span5">
+        <div style="text-align: center"><a id="link-category-toggle" title="Click to either Add new Category or Select existing Categories" class="btn btn-small pull-right" >Category Options</a>
+        <br>
+        <br>
+        <div id="link-category-display">
+          <%= text_field(nil,:new_category, :id => "new_category_text_box" ,:class=> "span9 pull-right", :placeholder => "New Category ... ") %> <br>
+        </div>
+        <div id="link-category-select-display">
+          <%= select_tag :category, options_for_select(@link_hoards.keys), :class=>"span9 pull-right" unless @link_hoards.keys.blank? %>
+        </div>
+        </div>
+      </div>
+    </div>
+
+      <br>
+      <%= text_field(nil,:link, :class=> "span12", :rows => "1", :placeholder => "Your link, which you want to categorize and keep secure...", :required => true ) %>
+      <%= submit_tag "Hoard Link", class: "span3 btn btn-primary pull-right"%>
+    <br>
+    <br>
+<% end %>
+
+
+<script>
+    $(document).ready(function() {
+        $('#link-category-display').hide();
+        $('#link-category-toggle').click(function() {
+            document.getElementById("new_category_text_box").value=""
+            $('#link-category-display').toggle();//Form shows on button click
+            $('#link-category-select-display').toggle();
+        });
+    });
+</script>

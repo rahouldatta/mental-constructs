@@ -1,7 +1,7 @@
 <% if @remembralls.blank? %>
     No ToDo's Recorded yet. Record something so that you are reminded...
 <% else %>
-    <div id="tooltip-show"><a style="float: right;" id="marquee-toggle" title="Hide/Show Ticker"><i class="icon-bullhorn icon-white"></i></a></div>
+    <div id="tooltip-show"><a style="float: right;" id="marquee-toggle" title="Hide/Show Ticker" class="btn-mini btn-inverse "><i class="icon-bullhorn icon-white"></i></a></div>
     <% sample = @incomplete_tasks.sample %>
     &nbsp;
     <div class="blanker-box" id="marquee-display">

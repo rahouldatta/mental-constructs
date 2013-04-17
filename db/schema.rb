@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130416142830) do
+ActiveRecord::Schema.define(:version => 20130417144024) do
 
   create_table "cognitions", :force => true do |t|
     t.integer  "thinker_id"
@@ -26,8 +26,9 @@ ActiveRecord::Schema.define(:version => 20130416142830) do
     t.integer  "thinker_id"
     t.text     "link"
     t.string   "category"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.text     "description"
   end
 
   create_table "remembralls", :force => true do |t|

@@ -1,0 +1,7 @@
+/*Clear the entire form*/
+$(":input:not(input[type=submit])").val("");
+
+/*Replace the html of the div post_lists with the updated new one*/
+$("#link_hoard_data_display").html("<%= escape_javascript( render(:partial => "thinker/partials/link_data_display") ) %>");
+$("#link_hoard_category_display").html("<%= escape_javascript( render(:partial => "thinker/partials/link_category_display") ) %>");
+$("#link_hoard_form").html("<%= escape_javascript( render(:partial => "thinker/partials/link_hoard_form") ) %>");

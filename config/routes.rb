@@ -7,6 +7,7 @@ MentalConstructs::Application.routes.draw do
       get 'delete_brainwave'
       get 'delete_factoid'
       get 'delete_remembrall'
+      get 'delete_link'
       get 'mark_remembrall_as_complete'
     end
     collection do
@@ -18,6 +19,7 @@ MentalConstructs::Application.routes.draw do
       post 'record_epiphanies'
       post 'record_brainwaves'
       post 'record_remembrall'
+      post 'record_link'
     end
   end
 
