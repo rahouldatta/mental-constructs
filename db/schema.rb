@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130417144024) do
+ActiveRecord::Schema.define(:version => 20130417175948) do
 
   create_table "cognitions", :force => true do |t|
     t.integer  "thinker_id"
@@ -20,6 +20,18 @@ ActiveRecord::Schema.define(:version => 20130417144024) do
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.integer  "affinity_level"
+  end
+
+  create_table "concepts", :force => true do |t|
+    t.integer  "thinker_id"
+    t.integer  "dossier_id"
+    t.string   "title"
+    t.text     "concept"
+    t.integer  "affinity_level"
+    t.text     "foot_notes"
+    t.boolean  "share"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "link_hoards", :force => true do |t|

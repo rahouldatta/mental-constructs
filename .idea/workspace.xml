@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_link_category_display.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_link_hoard_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/delete_link.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/record_link.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_remembrall_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_remembrall_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/link_hoard.rb" afterPath="$PROJECT_DIR$/app/models/link_hoard.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/show.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
@@ -21,11 +18,11 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366201210933" ignored="false" />
     <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366203613278" ignored="false" />
-    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366214717864" ignored="false" />
-    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366212162251" ignored="false" />
+    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366229954814" ignored="false" />
+    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366229972915" ignored="false" />
     <file path="/content_helper.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365970405132" ignored="false" />
     <file path="/20130414195739_devise_create_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971089274" ignored="false" />
-    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366203571045" ignored="false" />
+    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366222303980" ignored="false" />
     <file path="/20130414200047_add_columns_to_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971385968" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/models/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973091351" ignored="false" />
     <file path="/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973084004" ignored="false" />
@@ -58,10 +55,13 @@
     <file path="/delete_remembrall.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366122860287" ignored="false" />
     <file path="/record_remembrall.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366122931858" ignored="false" />
     <file path="/_link_hoard_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366210447773" ignored="false" />
-    <file path="/_link_data_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366211052873" ignored="false" />
+    <file path="/_link_data_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366220360097" ignored="false" />
     <file path="/record_link.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366212183582" ignored="false" />
     <file path="/link_hoard.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366209807930" ignored="false" />
     <file path="/_link_category_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366210520552" ignored="false" />
+    <file path="/concepts_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366230026808" ignored="false" />
+    <file path="/_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366228981212" ignored="false" />
+    <file path="/concept.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366222296161" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +81,9 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="42" selection-start="4966" selection-end="4966" vertical-scroll-proportion="-20.24">
+            <state line="42" column="36" selection-start="2188" selection-end="2188" vertical-scroll-proportion="-4.16">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -91,40 +92,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="link_hoard.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/link_hoard.rb">
+      <file leaf-file-name="concepts_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/concepts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+            <state line="29" column="45" selection-start="600" selection-end="600" vertical-scroll-proportion="0.6356164">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_link_category_display.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_link_category_display.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/concepts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="-5.76">
+            <state line="59" column="9" selection-start="2515" selection-end="2515" vertical-scroll-proportion="-23.84">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_link_data_display.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="55" selection-start="592" selection-end="598" vertical-scroll-proportion="-9.6">
+            <state line="15" column="27" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_link_hoard_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_link_hoard_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="1323" selection-end="1323" vertical-scroll-proportion="-15.36">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -138,37 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thinker_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="thinker_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="19" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.79250723">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete_link.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_link.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="69" selection-start="69" selection-end="69" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record_link.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/record_link.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="53" selection-start="449" selection-end="449" vertical-scroll-proportion="-3.84">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thinker.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="23" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+            <state line="13" column="32" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,7 +140,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="210" selection-end="221" vertical-scroll-proportion="0.0">
+            <state line="13" column="11" selection-start="234" selection-end="245" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,22 +164,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_cognition_sample_display.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/record_epiphanies.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/record_factoids.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/record_brainwaves.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_display.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_remembrall_display.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/link_hoard.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_link_hoard_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_link_category_display.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/delete_link.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/record_link.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/models/concept.rb" />
+        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/concepts/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/concepts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/concepts_controller.rb" />
       </list>
     </option>
   </component>
@@ -588,6 +551,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concepts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -683,6 +668,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckeditor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1054,55 +1065,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_cognition_sample_display.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="3256" selection-end="3256" vertical-scroll-proportion="1.1958146">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_epiphany_display.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="1759" selection-end="1759" vertical-scroll-proportion="-20.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_factoid_display.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="67" selection-start="1724" selection-end="1724" vertical-scroll-proportion="-17.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="210" selection-end="221" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_remembrall_display.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3356" selection-end="3549" vertical-scroll-proportion="-20.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/record_brainwaves.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="26" selection-end="70" vertical-scroll-proportion="0.02427921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/record_remembrall.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="251" vertical-scroll-proportion="0.0">
@@ -1110,9 +1072,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/link_hoard.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_link.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+        <state line="1" column="68" selection-start="192" selection-end="192" vertical-scroll-proportion="0.02346041">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/record_link.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="53" selection-start="449" selection-end="449" vertical-scroll-proportion="0.14076246">
           <folding />
         </state>
       </provider>
@@ -1126,31 +1095,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_link_category_display.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="-5.76">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="592" selection-end="598" vertical-scroll-proportion="-9.6">
+        <state line="13" column="37" selection-start="483" selection-end="483" vertical-scroll-proportion="0.30057803">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/record_link.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_link_category_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="53" selection-start="449" selection-end="449" vertical-scroll-proportion="-3.84">
+        <state line="12" column="49" selection-start="464" selection-end="464" vertical-scroll-proportion="0.27234042">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="20" selection-start="473" selection-end="473" vertical-scroll-proportion="0.2630137">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/concept.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="156" selection-end="156" vertical-scroll-proportion="0.06575342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="92" selection-start="792" selection-end="792" vertical-scroll-proportion="0.26778242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/concepts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/link_hoard.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="231" selection-end="231" vertical-scroll-proportion="0.17534247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/concepts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="9" selection-start="2515" selection-end="2515" vertical-scroll-proportion="-23.84">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="42" selection-start="4966" selection-end="4966" vertical-scroll-proportion="-20.24">
+        <state line="42" column="36" selection-start="2188" selection-end="2188" vertical-scroll-proportion="-4.16">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1158,16 +1170,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_link.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="69" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+        <state line="13" column="32" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/concepts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="19" selection-start="2942" selection-end="2942" vertical-scroll-proportion="0.79250723">
+        <state line="29" column="45" selection-start="600" selection-end="600" vertical-scroll-proportion="0.6356164">
           <folding />
         </state>
       </provider>

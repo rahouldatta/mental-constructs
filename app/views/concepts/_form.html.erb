@@ -1,0 +1,60 @@
+<%= form_for(@concept) do |f| %>
+    <div class="row-fluid">
+      <!--<div class="content">-->
+      <div class="pull-left">
+        <%= f.label  :title, 'TITLE :', class: "muted"%>
+        <%= f.text_field :title, :placeholder => "Appropriate Title...", :required => true %>
+      </div>
+      <div class="pull-right">
+        <% if @concept_dossiers.nil? %>
+            <p>No Dossiers have been created yet.</p>
+        <% else %>
+            <div class="muted" id="tooltip_show">Select Dossier :
+            <% a=["Select Dossier"];@concept_dossiers.map {|d| a << "#{d.id}.#{d.dossier_name}"}%>
+            <%= f.select :dossier_id, options_for_select(a), :class => "span4", :title => "Select Dossier you would like to move this into. Leave blank to have this concept as StandAlone."  %></div>
+      <% end %>
+      </div>
+      <br><br><br><br>
+      <div class="field">
+        <%= f.label  :concept, 'Your Philosophical Concept :', class: "muted" %>
+        <%= f.text_area :concept, :class => "ckeditor" %>
+      </div>
+      <br>
+      <br>
+
+      <div class="row-fluid">
+        <div class="span4">
+          <div class="field">
+            <%= f.label :your_affinity_level_for_this_concept , 'Your Affinity Level for this Concept', :class => "muted"%>
+            <%= f.select(:affinity_level, ('1'..'10'),{},{class: "span2"}) %>
+            </div>
+          </div>
+            <div class="span4">
+              <br>
+              <% unless @concept.share? %>
+                  <label class="checkbox inline">
+                    <i class="icon-share icon-white"></i> Exhibit Your Concept?<%= f.check_box :share%>
+                  </label>
+              <%else%>
+                  <div class="muted">Already Exhibited</div>
+              <% end %>
+            </div>
+        <div class="span4">
+          <div class="">
+            <%= f.label :foot_notes, 'Foot Notes : ' , :class => "muted"%>
+            <%= f.text_area :foot_notes, :rows=>3, class: "span12", :placeholder => "FootNotes - (Generally some conclusion based on your Concept)" %>
+          </div>
+        </div>
+      </div>
+<br>
+      <div class="actions">
+        <%= f.submit "Create My Philosophical Concept",:class => "btn btn-large btn-success" %><br>
+      </div>
+      <% unless @concept.id.nil? %>
+          <%= link_to(@concept, class: "btn btn btn-danger pull-right", confirm: "Are you sure?", method: :delete) do %>
+              <i class="icon-trash icon-white"></i>
+          <% end %>
+      <% end %>
+
+    </div>
+<% end %>

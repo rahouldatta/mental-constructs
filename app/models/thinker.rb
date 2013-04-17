@@ -10,6 +10,7 @@ class Thinker < ActiveRecord::Base
   has_many :epiphanies
   has_many :remembralls
   has_many :link_hoards
+  has_many :concepts
 
   def to_param
     "#{self.alias}"

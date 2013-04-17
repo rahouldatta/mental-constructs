@@ -4,7 +4,7 @@
   <div class="pull-right nav nav-pills" id="mainTabs">
     <li><a href="#link_hoard" data-toggle="tab"><i class="icon-tags icon-white"></i> LinkCache</a></li>
     <li><a href="#remembrall" data-toggle="tab"><i class="icon-list icon-white"></i> Remembrall</a></li>
-    <li><a href="#bookmarks" data-toggle="tab"><i class="icon-bookmark icon-white"></i> BookMarks</a></li>
+    <li><a href="#bookmarks" data-toggle="tab"><i class="icon-bookmark icon-white"></i> Tagged Exhibits</a></li>
   </div>
 
 </ul>
@@ -19,7 +19,7 @@
     <div class="tab-pane fade in active" id="constructs">
 
       <ul class="nav nav-pills" id="constructsTabs">
-        <li class="active"><a href="#constructs-median"><i class="icon-book icon-white"></i> MEDIAN</a></li>
+        <li class="active"><a href="#constructs-median"><i class="icon-book icon-white"></i> Median - Constructs</a></li>
         <li><a href="#main-concepts"><i class="icon-th icon-white"></i> Concepts</a></li>
         <li><a href="#main-brain_childs"><i class="icon-eye-open icon-white"></i> BrainChilds</a></li>
         <li><a href="#main-discourses"><i class="icon-qrcode icon-white"></i> Discourses</a></li>
@@ -29,8 +29,29 @@
           Median
         </div>
         <div class="tab-pane fade" id="main-concepts">
-          CONCEPTS
-        </div>
+
+          <div class="blanker-box" style="padding: 13px">
+          <ul class="nav nav-pills" id="conceptsTabs">
+            <li class="active"><a href="#list-concepts"><i class="icon-th-list icon-white"></i> List Concepts</a></li>
+            <li><a href="#concepts-organizer"><i class="icon-briefcase icon-white"></i> Organizer</a></li>
+            <li><a href="#new-concept"><i class="icon-file icon-white"></i> New Concept</a></li>
+          </ul>
+
+          <div class="tab-content">
+
+            <div class="tab-pane fade in active" id="list-concepts">
+              <%= @concepts.inspect %>
+            </div>
+            <div class="tab-pane fade" id="concepts-organizer">
+              CONCEPTS ORGANIZER
+            </div>
+            <div class="tab-pane fade" id="new-concept">
+              <%= render 'concepts/form' %>
+            </div>
+            </div>
+            </div>
+
+          </div>
         <div class="tab-pane fade" id="main-brain_childs">
           BRAIN CHILDS
         </div>
@@ -102,7 +123,7 @@
 
     <div class="tab-pane fade" id="bookmarks">
       <%#= render 'thinker/partials/bookmark_display' %>
-      BOOKMARKS
+      TAGGED EXHIBITS
     </div>
     <div class="tab-pane fade" id="remembrall">
       <%= render 'thinker/partials/remembrall_display' %>
@@ -125,6 +146,12 @@
 </script>
 <script>
     $('#cognitionsTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+<script>
+    $('#conceptsTabs a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
     })

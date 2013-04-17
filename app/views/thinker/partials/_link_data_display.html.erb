@@ -16,9 +16,10 @@
              &nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp; <a href="<%= link_data.correct_link %>" target="_blank" class="btn-link"><%= link_data.correct_link %></a></p>
           </div>
           <div class="span2">
-            <%= link_to(delete_link_thinker_path(link_data), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Link Cache.", confirm: "Are you sure you want to delete this link?", :remote => true) do %>
+            <br>
+            <div id="tootltip_show"> <%= link_to(delete_link_thinker_path(link_data), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Link", confirm: "Are you sure you want to delete this link?", :remote => true) do %>
                 <i class="icon-trash icon-white"></i>
-            <% end %>
+            <% end %>                                </div>
           </div>
         </div>
 

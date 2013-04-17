@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Thinker:</b>
+  <%= @concept.thinker_id %>
+</p>
+
+<p>
+  <b>Dossier:</b>
+  <%= @concept.dossier_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @concept.title %>
+</p>
+
+<p>
+  <b>Concept:</b>
+  <%= @concept.concept %>
+</p>
+
+<p>
+  <b>Affinity level:</b>
+  <%= @concept.affinity_level %>
+</p>
+
+<p>
+  <b>Foot notes:</b>
+  <%= @concept.foot_notes %>
+</p>
+
+<p>
+  <b>Share:</b>
+  <%= @concept.share %>
+</p>
+
+
+<%= link_to 'Edit', edit_concept_path(@concept) %> |
+<%= link_to 'Back', concepts_path %>

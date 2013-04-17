@@ -1,6 +1,9 @@
 MentalConstructs::Application.routes.draw do
 
 
+  resources :concepts
+
+
   resources :thinker do
     member do
       get 'delete_epiphany'

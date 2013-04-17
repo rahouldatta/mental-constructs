@@ -11,10 +11,12 @@ class ThinkerController < ApplicationController
     @remembralls = current_thinker.remembralls
     @incomplete_tasks = @remembralls.where(:status => false)
     @link_hoards = current_thinker.link_hoards.group_by(&:category)
+    @concepts = current_thinker.concepts.order("affinity_level DESC")
   end
 
   def show
     @thinker = current_thinker
+    @concept = current_thinker.concepts.new
   end
 
   # =================== Cognition Methods =========================
