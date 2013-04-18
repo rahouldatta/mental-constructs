@@ -26,8 +26,6 @@ MentalConstructs::Application.routes.draw do
     end
   end
 
-  get "home/index"
-
   devise_for :thinkers, :controllers => { :registrations => :registrations }
 
   # The priority is based upon order of creation:
