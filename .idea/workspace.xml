@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/decide_concepts_display_order.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/delete_concept.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/concepts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/concepts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/concepts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/concepts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/concepts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/concepts/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mental-constructs.iml" afterPath="$PROJECT_DIR$/.idea/mental-constructs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/show.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thinker.rb" afterPath="$PROJECT_DIR$/app/models/thinker.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/concepts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/concepts/show.html.erb" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366309178529" ignored="false" />
     <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366311639005" ignored="false" />
     <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366315533394" ignored="false" />
-    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366312550432" ignored="false" />
+    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366318306424" ignored="false" />
     <file path="/content_helper.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365970405132" ignored="false" />
     <file path="/20130414195739_devise_create_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971089274" ignored="false" />
     <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366313045914" ignored="false" />
@@ -137,16 +124,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_list_concepts.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_list_concepts.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="54" selection-start="839" selection-end="839" vertical-scroll-proportion="0.3699422">
+            <state line="15" column="19" selection-start="824" selection-end="824" vertical-scroll-proportion="-9.6">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/concepts/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="19" selection-start="850" selection-end="850" vertical-scroll-proportion="0.3236994">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/concepts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" />
@@ -194,6 +189,7 @@
         <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/concepts/show.html.erb" />
       </list>
     </option>
   </component>
@@ -1080,13 +1076,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="46" selection-start="103" selection-end="103" vertical-scroll-proportion="0.04249668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="64" selection-start="345" selection-end="345" vertical-scroll-proportion="0.15135135">
@@ -1192,13 +1181,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="54" selection-start="839" selection-end="839" vertical-scroll-proportion="0.3699422">
+        <state line="15" column="19" selection-start="824" selection-end="824" vertical-scroll-proportion="-9.6">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/concepts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="850" selection-end="850" vertical-scroll-proportion="0.3236994">
+          <folding />
         </state>
       </provider>
     </entry>

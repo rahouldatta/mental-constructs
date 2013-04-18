@@ -1,40 +1,53 @@
-<p id="notice"><%= notice %></p>
+      <div class="opaqify-container">
+        <% thinker = @concept.thinker.alias  %>
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="lead text-info"><strong><%= @concept.title.capitalize %></strong>
+              <p class="muted">By :- <strong><%= thinker %></strong><br>
+                <small><strong><%= "#{thinker.capitalize}'s" %> Rating of this Construct : </strong><% @concept.affinity_level.times do%></small><i class="icon-star icon-white"></i><%end%><% (10-@concept.affinity_level).times do%><i class="icon-star-empty"></i><%end%><br>
+                  <small><strong><%= "Written on - #{@concept.created_at.to_s(:long)}" %></strong></small>
+                  </p>
+            </div>
 
-<p>
-  <b>Thinker:</b>
-  <%= @concept.thinker_id %>
-</p>
+          </div>
+          <div class="span4">
+            <div class="muted" id="share_update">
+              SHARE
+              <%#= render 'constructs/share_display', :construct => @construct %>
+            </div>
 
-<p>
-  <b>Dossier:</b>
-  <%= @concept.dossier_id %>
-</p>
+          </div>
+        </div>
 
-<p>
-  <b>Title:</b>
-  <%= @concept.title %>
-</p>
+      </div>
+      <br>
 
-<p>
-  <b>Concept:</b>
-  <%= @concept.concept %>
-</p>
+      <br>
 
-<p>
-  <b>Affinity level:</b>
-  <%= @concept.affinity_level %>
-</p>
+      <div class="opaqify-container">
+        <div class="lead text-info"><small><em><strong><%= @concept.title.capitalize %></strong></em></small></div>
+        <%= raw @concept.concept %>
+      </div>
+      <br>
+      <div class="opaqify-container">
+        <p><div class="muted"><strong>Foot Notes:</strong></div><%= @concept.foot_notes %></p>
+      </div>
+      <br>
+      <div class="opaqify-container">
+        <%= link_to thinker_path(current_thinker), class: "btn btn-small btn-inverse" do%><i class="icon-arrow-left icon-white"></i><% end %>
+        &nbsp;|&nbsp;
+        <%= link_to(edit_concept_path(@concept), class: "btn") do %>
+            <i class="icon-edit"></i>
+        <% end %>
+        &nbsp;|&nbsp;
+        <%= link_to(@concept, class: "btn btn btn-danger", confirm: "Are you sure?", method: :delete) do %>
+            <i class="icon-trash icon-white"></i>
+        <% end %>
+        <!--<div class="pull-right">-->
+          <%#= link_to(export_construct_as_pdf_construct_path(@construct), class: "btn btn-warning") do %>
+              <!--<i class="icon-download "></i> Export-->
+          <%# end %>
+        <!--</div>-->
 
-<p>
-  <b>Foot notes:</b>
-  <%= @concept.foot_notes %>
-</p>
-
-<p>
-  <b>Share:</b>
-  <%= @concept.share %>
-</p>
-
-
-<%= link_to 'Edit', edit_concept_path(@concept) %> |
-<%= link_to 'Back', concepts_path %>
+      </div>
+<!--</div>-->
