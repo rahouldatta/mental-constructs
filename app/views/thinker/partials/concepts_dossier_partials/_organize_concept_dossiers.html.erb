@@ -15,8 +15,7 @@
       <div class="span9">
         <div class="tab-content blanker-box" style="padding:13px">
           <div class="tab-pane fade in active" id="concepts-standalone">
-            STANDALONE
-            <!--<div id="construct_to_dossier"> <%#= render 'thinker/partials/stand_alone_display' %></div>-->
+            <div id="concept-to-dossier"> <%= render 'thinker/partials/concepts_dossier_partials/stand_alone_display' %></div>
           </div>
           <% @concept_dossiers.each do |dossier| %>
               <div class="tab-pane fade" id="<%= dossier.dossier_name %>">

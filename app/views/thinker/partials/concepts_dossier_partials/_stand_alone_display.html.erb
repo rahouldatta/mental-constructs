@@ -1,0 +1,8 @@
+<% @stand_alone_concepts.each do |construct|%>
+    <%= construct.inspect %>
+<%= form_tag({:controller => "thinker",:action => "add_concept_to_dossier"}, :remote => true) do |f|%>
+    <%= select_tag :dossier, options_for_select(@concept_dossiers.map {|d| d.dossier_name.upcase}), :class=>"span6", :construct => construct %>
+    <%= hidden_field_tag :construct_id, construct.id%>
+    <%= submit_tag "Move To Dossier", class: "btn btn-small btn-primary", :title => "Map This Construct to Dossier of your choice"%>
+<% end %>
+<% end %>

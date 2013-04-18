@@ -18,6 +18,7 @@ class ThinkerController < ApplicationController
   def show
     @thinker = current_thinker
     @concept = current_thinker.concepts.new
+    @stand_alone_concepts= current_thinker.concepts.find_all_by_dossier_id(nil) rescue nil
   end
 
   # =================== Cognition Methods =========================
@@ -113,12 +114,23 @@ class ThinkerController < ApplicationController
     redirect_to :back
   end
 
+  def set_concept_dossier_quality
+    Dossier.find(params[:dossier_id]).update_attributes(:dossier_quality => params[:dossier_quality])
+    @concept_dossiers = current_thinker.treatment_concept_dossiers.order("dossier_quality DESC")
+  end
+
   def delete_dossier
     current_thinker.constructs.find_all_by_dossier_id(params[:id]).each do |c|
       c.update_attributes(:dossier_id => nil)
     end
     Dossier.find(params[:id]).destroy
     redirect_to :back
+  end
+
+  def add_concept_to_dossier
+    concept = Concept.find(params[:construct_id])
+    concept.update_attributes(:dossier_id => current_thinker.treatment_concept_dossiers.find_by_dossier_name(params[:dossier]).id)
+    @stand_alone_concepts= current_thinker.concepts.find_all_by_dossier_id(nil) rescue nil
   end
 
 end

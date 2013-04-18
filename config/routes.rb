@@ -27,6 +27,7 @@ MentalConstructs::Application.routes.draw do
       post 'record_link'
       post 'decide_concepts_display_order'
       post 'add_concept_dossier'
+      post 'add_concept_to_dossier'
       post 'set_concept_dossier_quality'
     end
   end
