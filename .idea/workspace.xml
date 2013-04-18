@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130418211543_create_dossiers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/dossier.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/dossier_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/dossiers.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/treatment_concept_dossier.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concept.rb" afterPath="$PROJECT_DIR$/app/models/concept.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/show.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thinker.rb" afterPath="$PROJECT_DIR$/app/models/thinker.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366309178529" ignored="false" />
     <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366321548995" ignored="false" />
-    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366322886461" ignored="false" />
+    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366323273024" ignored="false" />
     <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366322076835" ignored="false" />
     <file path="/content_helper.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365970405132" ignored="false" />
     <file path="/20130414195739_devise_create_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971089274" ignored="false" />
@@ -110,7 +95,7 @@
       <file leaf-file-name="_organize_concept_dossiers.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="16" selection-start="2713" selection-end="2713" vertical-scroll-proportion="0.8150289">
+            <state line="37" column="41" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.82797205">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -120,19 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_concept_dossier_list.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.12">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="thinker_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="19" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.0">
+            <state line="110" column="65" selection-start="3751" selection-end="3751" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,8 +155,8 @@
         <option value="$PROJECT_DIR$/app/models/dossier.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
       </list>
     </option>
   </component>
@@ -1191,13 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.12">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="11" selection-start="325" selection-end="339" vertical-scroll-proportion="-8.6">
@@ -1205,16 +1174,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="332" selection-end="332" vertical-scroll-proportion="0.1849711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="19" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.0">
+        <state line="110" column="65" selection-start="3751" selection-end="3751" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="16" selection-start="2713" selection-end="2713" vertical-scroll-proportion="0.8150289">
+        <state line="37" column="41" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.82797205">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />

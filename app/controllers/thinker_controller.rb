@@ -108,7 +108,7 @@ class ThinkerController < ApplicationController
   end
 
   def add_concept_dossier
-    concept_dossiers = current_thinker.treatment_concepts
+    concept_dossiers = current_thinker.treatment_concept_dossiers
     concept_dossiers.create(:dossier_name => params[:dossier_name]) if concept_dossiers.where(:dossier_name => params[:dossier_name].parameterize.strip.upcase.gsub(" ","_")).blank?
     redirect_to :back
   end
