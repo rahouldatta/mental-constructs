@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130417175948) do
+ActiveRecord::Schema.define(:version => 20130418211543) do
 
   create_table "cognitions", :force => true do |t|
     t.integer  "thinker_id"
@@ -32,6 +32,15 @@ ActiveRecord::Schema.define(:version => 20130417175948) do
     t.boolean  "share"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "dossiers", :force => true do |t|
+    t.integer  "thinker_id"
+    t.string   "type"
+    t.string   "dossier_name"
+    t.integer  "dossier_quality"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "link_hoards", :force => true do |t|

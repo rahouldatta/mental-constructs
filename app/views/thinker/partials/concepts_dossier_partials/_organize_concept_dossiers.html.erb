@@ -1,0 +1,68 @@
+    <div class="row-fluid">
+      <!--=================================== Dossiers ===================================-->
+      <div class="span3">
+        <div class="blanker-box" style="padding:13px">
+
+          <div id="concept-dossier-list-display"><%= render 'thinker/partials/concepts_dossier_partials/concept_dossier_list' %></div>
+          <br><br>
+          <button class="btn btn-mini" type="button" id="dossier_form_toggle"> Add Dossier to Briefcase (Max 9)</button>
+          <br>
+          <div id="add_dossier"> <%= render 'thinker/partials/concepts_dossier_partials/concept_dossier_form' %></div>
+        </div>
+      </div>
+
+      <!--================================ Main Organizer ===================================-->
+      <div class="span9">
+        <div class="tab-content blanker-box" style="padding:13px">
+          <div class="tab-pane fade in active" id="concepts-standalone">
+            STANDALONE
+            <!--<div id="construct_to_dossier"> <%#= render 'thinker/partials/stand_alone_display' %></div>-->
+          </div>
+          <% @concept_dossiers.each do |dossier| %>
+              <div class="tab-pane fade" id="<%= dossier.dossier_name %>">
+                <div style="color:lightgrey;text-align: center"><strong><i class="icon-folder-open icon-white"></i> <%=dossier.dossier_name %></strong></div>
+                <br>
+
+                <div class="row-fluid">
+                  <div class="span10">
+
+                    <div class="form-inline">
+                      <%= form_tag({:controller => "thinker",:action => "set_concept_dossier_quality"}, :remote => true) do |f|%>
+                          <%= select_tag :dossier_quality, options_for_select(["#{dossier.dossier_quality}","1","2","3","4","5"]), :class=>"input-mini" %>
+                          <%= hidden_field_tag :dossier_id, dossier.id%>
+                          <%= submit_tag "Set Dossier Quality", class: "btn btn-mini btn-primary", :title => "Set the quality of this Dossier according to the Quality of Constructs in it."%>
+                      <% end %>
+                    </div>
+
+                  </div>
+                  <div class="span2">
+                    <div class="">
+                      <div id="tooltip_show"><%= link_to delete_dossier_thinker_path(dossier), :title=>"Permanently Delete This Dossier",:class=>"btn btn-mini btn-danger", :confirm => "Are your sure? This Dossier would be removed from your Suitcase! All mapped constructs would be Floating!" do %>
+                            <i class="icon-remove-sign icon-white"></i> Delete Dossier
+                        <% end %></div></div>
+
+                  </div>
+                </div>
+                <br>
+                <div id="<%= dossier.dossier_name.downcase  %>_render"><%#= render 'thinker/partials/dossier_data_display', :dossier => dossier%></div>
+              </div>
+          <% end %>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#add_dossier').hide(); //Initially form wil be hidden.
+        $('#dossier_form_toggle').click(function() {
+            $('#add_dossier').toggle();//Form shows on button click
+        });
+    });
+</script>
+

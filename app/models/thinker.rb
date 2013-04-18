@@ -11,6 +11,7 @@ class Thinker < ActiveRecord::Base
   has_many :remembralls
   has_many :link_hoards
   has_many :concepts
+  has_many :treatment_concept_dossiers
 
   def to_param
     "#{self.alias}"

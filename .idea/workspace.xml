@@ -2,18 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130418211543_create_dossiers.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/dossier.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/dossier_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/dossiers.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/treatment_concept_dossier.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/concepts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/concepts/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concept.rb" afterPath="$PROJECT_DIR$/app/models/concept.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/show.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thinker.rb" afterPath="$PROJECT_DIR$/app/models/thinker.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366309178529" ignored="false" />
-    <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366311639005" ignored="false" />
-    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366315533394" ignored="false" />
-    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366318306424" ignored="false" />
+    <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366321548995" ignored="false" />
+    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366322886461" ignored="false" />
+    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366322076835" ignored="false" />
     <file path="/content_helper.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365970405132" ignored="false" />
     <file path="/20130414195739_devise_create_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971089274" ignored="false" />
-    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366313045914" ignored="false" />
+    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366320187200" ignored="false" />
     <file path="/20130414200047_add_columns_to_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971385968" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/models/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973091351" ignored="false" />
     <file path="/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973084004" ignored="false" />
@@ -52,12 +66,17 @@
     <file path="/_link_category_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366210520552" ignored="false" />
     <file path="/concepts_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366309596615" ignored="false" />
     <file path="/_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366228981212" ignored="false" />
-    <file path="/concept.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366222296161" ignored="false" />
+    <file path="/concept.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366320078607" ignored="false" />
     <file path="/index.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366308753462" ignored="false" />
     <file path="/home_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366308579342" ignored="false" />
-    <file path="/_list_concepts.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366315665139" ignored="false" />
+    <file path="/_list_concepts.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366319854267" ignored="false" />
     <file path="/destroy.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366310120093" ignored="false" />
     <file path="/delete_concept.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366310458523" ignored="false" />
+    <file path="/treatment_concept_dossier.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366319998895" ignored="false" />
+    <file path="/dossier.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366322169206" ignored="false" />
+    <file path="/_organize_concept_dossiers.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366323159161" ignored="false" />
+    <file path="/_concept_dossier_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366321600439" ignored="false" />
+    <file path="/_concept_dossier_list.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366322453717" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +96,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="2154" selection-end="2154" vertical-scroll-proportion="-20.48">
+            <state line="61" column="35" selection-start="2726" selection-end="2726" vertical-scroll-proportion="-39.04">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -88,10 +107,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="_organize_concept_dossiers.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+            <state line="46" column="16" selection-start="2713" selection-end="2713" vertical-scroll-proportion="0.8150289">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_concept_dossier_list.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="24" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.12">
               <folding />
             </state>
           </provider>
@@ -100,48 +132,7 @@
       <file leaf-file-name="thinker_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="6" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thinker.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="37" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/concepts/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="32" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-16.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_list_concepts.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="824" selection-end="824" vertical-scroll-proportion="-9.6">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/concepts/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="850" selection-end="850" vertical-scroll-proportion="0.3236994">
+            <state line="119" column="19" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,7 +141,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="607" selection-end="636" vertical-scroll-proportion="-15.64">
+            <state line="15" column="11" selection-start="325" selection-end="339" vertical-scroll-proportion="-8.6">
               <folding />
             </state>
           </provider>
@@ -174,22 +165,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/concepts/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" />
-        <option value="$PROJECT_DIR$/app/controllers/concepts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/concepts/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/concepts/destroy.js.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/destroy.js.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/delete_concept.js.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/decide_concepts_display_order.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" />
         <option value="$PROJECT_DIR$/app/views/concepts/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/treatment_concept_dossier.rb" />
+        <option value="$PROJECT_DIR$/app/models/concept.rb" />
+        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/dossier.rb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb" />
       </list>
     </option>
   </component>
@@ -399,6 +390,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concepts_dossier_partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1076,76 +1097,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="64" selection-start="345" selection-end="345" vertical-scroll-proportion="0.15135135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="290" selection-end="290" vertical-scroll-proportion="0.3468208">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/concepts/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/concepts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="4" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.7150685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_factoid.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="12" selection-start="607" selection-end="636" vertical-scroll-proportion="-15.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_link.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="123" selection-start="0" selection-end="123" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="696" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="37" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_concept.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/decide_concepts_display_order.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="109" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
@@ -1153,9 +1104,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/concepts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="60" selection-start="952" selection-end="952" vertical-scroll-proportion="-10.88">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.046242774">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/concepts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="35" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.78612715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/treatment_concept_dossier.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="31" selection-start="65" selection-end="65" vertical-scroll-proportion="0.043835618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/concept.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="44" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="2154" selection-end="2154" vertical-scroll-proportion="-20.48">
+        <state line="61" column="35" selection-start="2726" selection-end="2726" vertical-scroll-proportion="-39.04">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1165,36 +1170,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/concepts/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="32" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-16.44">
+        <state line="1" column="51" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/link_hoard.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="61" selection-start="434" selection-end="434" vertical-scroll-proportion="0.35068494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/dossier.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="81" selection-start="230" selection-end="269" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_concept_dossier_list.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="325" selection-end="339" vertical-scroll-proportion="-8.6">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="6" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.0">
+        <state line="119" column="19" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_concepts.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/concepts_dossier_partials/_organize_concept_dossiers.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="824" selection-end="824" vertical-scroll-proportion="-9.6">
+        <state line="46" column="16" selection-start="2713" selection-end="2713" vertical-scroll-proportion="0.8150289">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/concepts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="850" selection-end="850" vertical-scroll-proportion="0.3236994">
-          <folding />
         </state>
       </provider>
     </entry>

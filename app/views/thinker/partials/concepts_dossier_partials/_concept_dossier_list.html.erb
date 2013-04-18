@@ -1,0 +1,24 @@
+<%  if @concept_dossiers.blank? %>
+    <div class="">
+      No Dossiers have been created yet.
+    </div>
+<%  else %>
+    <ul class="nav nav-pills nav-stacked" id="conceptDossierTabs">
+      <center><p class="text-info"><strong><i class="icon-briefcase icon-white"></i>
+        Dossiers</strong><p></center>
+      <li class="active"><a href="#concepts-standalone" data-toggle="tab"><i class="icon-question-sign icon-white"></i> STAND-ALONE</a></li>
+      <br>
+      <% @concept_dossiers.each do |dossier| %>
+          <li><a href="#<%= dossier.dossier_name %>" data-toggle="tab"><i class="icon-folder-close icon-white"></i>
+            <%= dossier.dossier_name %></a></li>
+          <li class="divider"></li>
+      <%  end %>
+
+    </ul>
+<% end %>
+<script>
+    $('#conceptDossierTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>

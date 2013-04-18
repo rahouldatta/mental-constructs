@@ -13,6 +13,7 @@ MentalConstructs::Application.routes.draw do
       get 'delete_link'
       get 'delete_concept'
       get 'mark_remembrall_as_complete'
+      get 'delete_dossier'
     end
     collection do
       post 'google_search'
@@ -25,6 +26,8 @@ MentalConstructs::Application.routes.draw do
       post 'record_remembrall'
       post 'record_link'
       post 'decide_concepts_display_order'
+      post 'add_concept_dossier'
+      post 'set_concept_dossier_quality'
     end
   end
 

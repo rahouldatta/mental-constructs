@@ -12,6 +12,7 @@ class ThinkerController < ApplicationController
     @incomplete_tasks = @remembralls.where(:status => false)
     @link_hoards = current_thinker.link_hoards.group_by(&:category)
     @concepts = current_thinker.concepts.order("affinity_level DESC")
+    @concept_dossiers = current_thinker.treatment_concept_dossiers.order("dossier_quality DESC")
   end
 
   def show
@@ -78,7 +79,7 @@ class ThinkerController < ApplicationController
     redirect_to "http://search.yahoo.com/search?p=#{params[:yahoo_search_parameter].strip.gsub(/\s+/,"+")}"
   end
 
-   #====================== Miscelleneuos Methods ========================
+   #====================== Link Methods ========================
 
   def record_link
     params[:new_category].blank? ? current_thinker.link_hoards.create(:description => params[:description],:link => params[:link], :category => params[:category])
@@ -91,7 +92,7 @@ class ThinkerController < ApplicationController
     @link_hoards = LinkHoard.where(:thinker_id => current_thinker.id).group_by(&:category)
   end
 
-  #====================== Miscelleneuos Methods ========================
+  #====================== Concept Methods ========================
 
   def delete_concept
     Concept.find(params[:id]).destroy
@@ -104,6 +105,20 @@ class ThinkerController < ApplicationController
       @concepts = current_thinker.concepts.order("#{order_seq} DESC")
       session[:sequencing_type] = params[:sequencing_type]
     end
+  end
+
+  def add_concept_dossier
+    concept_dossiers = current_thinker.treatment_concepts
+    concept_dossiers.create(:dossier_name => params[:dossier_name]) if concept_dossiers.where(:dossier_name => params[:dossier_name].parameterize.strip.upcase.gsub(" ","_")).blank?
+    redirect_to :back
+  end
+
+  def delete_dossier
+    current_thinker.constructs.find_all_by_dossier_id(params[:id]).each do |c|
+      c.update_attributes(:dossier_id => nil)
+    end
+    Dossier.find(params[:id]).destroy
+    redirect_to :back
   end
 
 end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  thinker_id: 1
+  type: 
+  dossier_name: MyString
+  dossier_quality: 1
+
+two:
+  thinker_id: 1
+  type: 
+  dossier_name: MyString
+  dossier_quality: 1
