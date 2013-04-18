@@ -29,7 +29,7 @@
             <%= f.select(:affinity_level, ('1'..'10'),{},{class: "span2"}) %>
             </div>
           </div>
-            <div class="span4">
+            <div class="span3">
               <br>
               <% unless @concept.share? %>
                   <label class="checkbox inline">
@@ -39,7 +39,7 @@
                   <div class="muted">Already Exhibited</div>
               <% end %>
             </div>
-        <div class="span4">
+        <div class="span5">
           <div class="">
             <%= f.label :foot_notes, 'Foot Notes : ' , :class => "muted"%>
             <%= f.text_area :foot_notes, :rows=>3, class: "span12", :placeholder => "FootNotes - (Generally some conclusion based on your Concept)" %>

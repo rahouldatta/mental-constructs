@@ -58,7 +58,7 @@ class ConceptsController < ApplicationController
     @concept.destroy
 
     respond_to do |format|
-      format.html { redirect_to concepts_url }
+      format.html { redirect_to thinker_path(current_thinker) }
       format.json { head :no_content }
     end
   end

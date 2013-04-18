@@ -91,4 +91,19 @@ class ThinkerController < ApplicationController
     @link_hoards = LinkHoard.where(:thinker_id => current_thinker.id).group_by(&:category)
   end
 
+  #====================== Miscelleneuos Methods ========================
+
+  def delete_concept
+    Concept.find(params[:id]).destroy
+    #@concepts = current_thinker.concepts.order("affinity_level DESC")
+  end
+
+  def decide_concepts_display_order
+    unless params[:sequencing_type].blank?
+      order_seq = current_thinker.get_order_sequencing_type(params[:sequencing_type])
+      @concepts = current_thinker.concepts.order("#{order_seq} DESC")
+      session[:sequencing_type] = params[:sequencing_type]
+    end
+  end
+
 end

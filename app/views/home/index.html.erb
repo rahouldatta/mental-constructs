@@ -14,7 +14,6 @@
 <!--</div>-->
 <!--</div>-->
 <!--</div>-->
-<% if !thinker_signed_in? %>
 <!--====================================== image and signup form ====================================-->
 <div id="banner">
   <div id="flash"><%= render 'layouts/partials/flash_messages', :object => flash%></div>
@@ -96,7 +95,7 @@
           </li>
           <li>
             <h3>Research Options for Quick Searching</h3>
-            <p>Who has time? We know that you do not. But then don't be in doubt. Clarify them. Search the Web immediately for answers through tools provided.
+            <p>Who has time? We know that you do not. But then don't ever be in doubt. Clarify them. Search the Web immediately for answers through tools provided.
               Validate facts and delve deeper into your epiphanies and brainwaves using quick search options.</p>
             <p><a href="#" class="button-style">Read More</a></p>
           </li>
@@ -144,23 +143,6 @@
     <%= link_to "Close", root_path, :class=>"btn btn-danger" %>
   </div>
 </div>
-
-<% else %>
-    Welcome back
-    <div id="banner">
-      <div id="flash"><%= render 'layouts/partials/flash_messages', :object => flash%></div>
-
-      <!--<div class="img-border" style="background-image: url(<%#= asset_path 'nature-bg-img.jpg' %>) ; background-repeat: no-repeat; background-position: center center ; background-size: cover;  background-break: each-box;">-->
-      <div class="img-border" style="background-image: url(<%= asset_path 'header-img.jpg' %>) ; background-repeat: no-repeat; background-position: center center ; background-size: cover;  background-break: each-box;">
-        <br>
-        <br>
-        <br>
-        <div class="lead" style="text-align: center;">Welcome Back, <%= current_thinker.alias.titleize %></div>
-      </div>
-      </div>
-
-<% end%>
-
 
 <script>
     $('#terms_and_conditions').on('hide', function (e) {

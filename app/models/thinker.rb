@@ -21,4 +21,15 @@ class Thinker < ActiveRecord::Base
   def parameterize_alias
     self.alias = self.alias.parameterize
   end
+
+  def get_order_sequencing_type(seq)
+    if seq.eql? "Shared Concepts"
+      return "share"
+    elsif seq.eql? "StandAlone Concepts"
+      return "dossier_id"
+    else
+      return seq.downcase.gsub(" ","_")
+    end
+  end
+
 end
