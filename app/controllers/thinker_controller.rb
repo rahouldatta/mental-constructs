@@ -97,6 +97,7 @@ class ThinkerController < ApplicationController
 
   def delete_construct
     Construct.find(params[:id]).destroy
+    @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
   end
 
   def decide_constructs_display_order

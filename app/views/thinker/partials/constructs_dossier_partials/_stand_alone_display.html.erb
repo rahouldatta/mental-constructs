@@ -18,7 +18,7 @@
                 <%= link_to edit_construct_path(construct), :class=>"btn-small btn-inverse" do %>
                     <i class="icon-edit icon-white"></i>
                 <% end %>               &nbsp;|&nbsp;
-                <%= link_to delete_construct_thinker_path(construct), :class=>"btn-small btn-danger", :confirm => "Are you sure want to Delete this Construct?" do %>
+                <%= link_to delete_construct_thinker_path(construct), :class=>"btn-small btn-danger", :confirm => "Are you sure want to Delete this Construct?", :remote => true do %>
                     <i class="icon-trash icon-white"></i>
                 <% end %></p>
               <span class="muted"><small><%= construct.created_at.utc.localtime.to_s(:short)%></small></span>

@@ -3,14 +3,14 @@
       <!--<div class="content">-->
       <div class="pull-left">
         <%= f.label  :title, 'TITLE :', class: "muted"%>
-        <%= f.text_field :title, :placeholder => "Appropriate Title...", :required => true %>
+        <%= f.text_field :title, :placeholder => "Appropriate Title...", :required => true, :onkeyup => "CheckMaxlength(this);", :maxlength => 53 %>
       </div>
       <div class="pull-right">
         <% if @construct_dossiers.blank? %>
             <p>No Dossiers have been created yet.</p>
         <% else %>
             <div class="muted" id="tooltip_show">Select Dossier :
-              <% a=["Select Dossier"];@construct_dossiers.map {|d| a << "#{d.id}.#{d.dossier_name}"}%>
+              <% a=["Select Dossier"];@construct_dossiers.map {|d| a << "#{d.dossier_name}"}%>
               <%= f.select :dossier_id, options_for_select(a), :class => "span4", :title => "Select Dossier you would like to move this into. Leave blank to have this construct as StandAlone."  %></div>
         <% end %>
       </div>

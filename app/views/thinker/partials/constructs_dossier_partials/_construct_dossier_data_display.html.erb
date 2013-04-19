@@ -34,7 +34,7 @@
                           <%= link_to remove_construct_from_dossier_thinker_path(construct), :title=>"Remove Construct from this Dossier",class: "btn btn-mini btn-warning", :remote => true do %>
                               <i class="icon-minus-sign icon-white"></i><% end %>
                           &nbsp;|&nbsp;
-                          <%= link_to(construct, class: "btn btn-mini btn-danger", :title=>"Delete this Construct", confirm: "Are you sure?", method: :delete) do %>
+                          <%= link_to delete_construct_thinker_path(construct), :class=>"btn-small btn-danger", :confirm => "Are you sure want to Delete this Construct?", :remote => true do %>
                               <i class="icon-trash icon-white"></i>
                           <% end %>
                         </div>

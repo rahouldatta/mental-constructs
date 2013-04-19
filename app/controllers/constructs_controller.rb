@@ -33,6 +33,7 @@ class ConstructsController < ApplicationController
   def create
     @construct = Construct.new(params[:construct])
     @construct.thinker_id = current_thinker.id
+    @construct.dossier_id = current_thinker.treatment_construct_dossiers.find_by_dossier_name(params[:construct][:dossier_id]).id unless params[:construct][:dossier_id].eql?("Select Dossier")
     respond_to do |format|
       if @construct.save
         format.html { redirect_to thinker_path(current_thinker), notice: 'Construct was successfully created.' }
@@ -65,10 +66,10 @@ class ConstructsController < ApplicationController
   def destroy
     @construct = Construct.find(params[:id])
     @construct.destroy
-
-    respond_to do |format|
-      format.html { redirect_to thinker_path(current_thinker) }
-      format.json { head :no_content }
-    end
+    thinker_path(current_thinker)
+    #respond_to do |format|
+    #  format.html { redirect_to thinker_path(current_thinker) }
+    #  format.json { head :no_content }
+    #end
   end
 end
