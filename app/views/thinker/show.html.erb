@@ -58,15 +58,13 @@
             realizations generally result in the most innovative, intriguing and fascinating thoughts. Cognitions
             are branched into 3 subcategories - Epiphanies, BrainWaves and Factoids.<br>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             Epiphanies are sudden realizations or thoughts which are slightly philosophical or meta-physical in nature.
-            Epiphanies are enhanced to <strong>Concepts</strong><br>&nbsp;&nbsp;&bull;&nbsp;&nbsp; BrainWaves are ideas,
-            generally for projects. BrainWaves are enhanced to <strong>BrainChilds</strong><br>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            Factoids are accurate data pertaining to a relevant construct. Factoids are enhanced to <strong>Discourses</strong>
+            Epiphanies are enhanced to <strong>Constructs</strong><br>&nbsp;&nbsp;&bull;&nbsp;&nbsp; BrainWaves are ideas,
+            generally for projects. It can be used with 6 Thinking Hats.<br>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            Factoids are accurate data pertaining to a relevant construct.
             <br>This is the first level of categorization and organization of your thoughts.</p>
           <br>
           <hr>
-          <% unless @epiphanies.blank? or @factoids.blank? or @brainwaves.blank? %>
             <%= render 'thinker/partials/cognition_sample_display' %>
-              <% end %>
         </div>
         <div class="tab-pane fade" id="main-epiphanies">
           <%= render 'thinker/partials/epiphany_display' %>

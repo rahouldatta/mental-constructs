@@ -1,50 +1,67 @@
 <div class="row-fluid">
   <div class="span4">
     <div class="blanker-box" style="padding: 13px">
-      <span class="text-info" style="font-size:15px">Most Recent Epiphany -</span>
-      <p>&bull;&nbsp;<%= @epiphanies.first.cognition.capitalize rescue "No Epiphanies Yet."%></p>
-      <br>
-      <%= link_to delete_epiphany_thinker_path(@epiphanies.first), class: "btn btn-mini btn-danger", confirm: "Are you sure this is a Worthless Epiphany?",:title => "Delete This Epiphany", :remote => true do %>
-          <i class="icon-trash icon-white"></i>
-      <% end %>&nbsp;|
-      <%#= link_to convert_epiphany_to_construct_thinker_path(epiphany), class: "btn btn-small btn-success", :title => "Convert this Epiphany into A CONSTRUCT" do %>
-      <%= link_to "#", class: "btn btn-mini btn-success", :title => "Convert this Epiphany into a Concept" do %>
-          <i class="icon-th icon-white"></i>
-      <% end %>
-      <div id="openResearchTabs" class="pull-right">
-        <a href="http://www.google.com/search?q=<%= @epiphanies.first.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
-      </div>
+    <% if @epiphanies.blank? %>
+        <p>No Epiphanies have been recorded yet.</p>
+    <% else %>
 
+          <span class="text-info" style="font-size:15px">Most Recent Epiphany -</span>
+          <p>&bull;&nbsp;<%= @epiphanies.first.cognition.capitalize rescue "No Epiphanies Yet."%></p>
+          <br>
+          <%= link_to delete_epiphany_thinker_path(@epiphanies.first), class: "btn btn-mini btn-danger", confirm: "Are you sure this is a Worthless Epiphany?",:title => "Delete This Epiphany", :remote => true do %>
+              <i class="icon-trash icon-white"></i>
+          <% end %>&nbsp;|
+          <%#= link_to convert_epiphany_to_construct_thinker_path(epiphany), class: "btn btn-small btn-success", :title => "Convert this Epiphany into A CONSTRUCT" do %>
+          <%= link_to "#", class: "btn btn-mini btn-success", :title => "Convert this Epiphany into a Concept" do %>
+              <i class="icon-th icon-white"></i>
+          <% end %>
+          <div id="openResearchTabs" class="pull-right">
+            <a href="http://www.google.com/search?q=<%= @epiphanies.first.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+          </div>
+
+
+
+  <% end %>
     </div>
   </div>
   <div class="span4">
     <div class="blanker-box" style="padding: 13px">
-      <span class="text-info" style="font-size:15px">Most Regarded BrainWave -</span>
-      <p>&bull;&nbsp;<%= @brainwaves.first.cognition.capitalize rescue "No BrainWaves Yet."%></p>
-      <br>
-      <%= link_to(delete_brainwave_thinker_path(@brainwaves.first), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Brainwave.", confirm: "Are you sure?", :remote => true) do %>
-          <i class="icon-trash icon-white"></i>
-      <% end %>&nbsp;|&nbsp;
-      <%= link_to("#", class: "btn btn-mini btn-success", :title => "Enhance the BrainWave. Convert it into a BrainChild") do %>
-          <i class="icon-eye-open icon-white"></i>
-      <% end %>&nbsp;|&nbsp;
-      <a href="http://www.google.com/search?q=<%= @brainwaves.first.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small pull-right" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+    <% if @brainwaves.blank? %>
+        <p>No BrainWaves have been recorded Yet.</p>
+    <% else %>
 
+          <span class="text-info" style="font-size:15px">Most Regarded BrainWave -</span>
+          <p>&bull;&nbsp;<%= @brainwaves.first.cognition.capitalize rescue "No BrainWaves Yet."%></p>
+          <br>
+          <%= link_to(delete_brainwave_thinker_path(@brainwaves.first), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Brainwave.", confirm: "Are you sure?", :remote => true) do %>
+              <i class="icon-trash icon-white"></i>
+          <% end %>&nbsp;|&nbsp;
+          <%= link_to("#", class: "btn btn-mini btn-success", :title => "Enhance the BrainWave. Convert it into a BrainChild") do %>
+              <i class="icon-eye-open icon-white"></i>
+          <% end %>&nbsp;|&nbsp;
+          <a href="http://www.google.com/search?q=<%= @brainwaves.first.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small pull-right" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+
+  <% end %>
     </div>
   </div>
   <div class="span4">
     <div class="blanker-box" style="padding: 13px">
-      <span class="text-info" style="font-size:15px">Most Recent Factoid-</span>
-      <p>&bull;&nbsp;<%= @factoids.first.cognition.capitalize rescue "No BrainWaves Yet."%></p>
-      <br>
-      <%= link_to(delete_brainwave_thinker_path(@factoids.first), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Brainwave.", confirm: "Are you sure?", :remote => true) do %>
-          <i class="icon-trash icon-white"></i>
-      <% end %>&nbsp;|&nbsp;
-      <%= link_to("#", class: "btn btn-mini btn-success", :title => "Enhance the BrainWave. Convert it into a BrainChild") do %>
-          <i class="icon-eye-open icon-white"></i>
-      <% end %>&nbsp;|&nbsp;
-      <a href="http://www.google.com/search?q=<%= @factoids.first.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small pull-right" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+    <% if @factoids.blank? %>
+        <p>No factoids have been recorded yet.</p>
+    <% else %>
 
+          <span class="text-info" style="font-size:15px">Most Recent Factoid-</span>
+          <p>&bull;&nbsp;<%= @factoids.first.cognition.capitalize rescue "No BrainWaves Yet."%></p>
+          <br>
+          <%= link_to(delete_brainwave_thinker_path(@factoids.first), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Brainwave.", confirm: "Are you sure?", :remote => true) do %>
+              <i class="icon-trash icon-white"></i>
+          <% end %>&nbsp;|&nbsp;
+          <%= link_to("#", class: "btn btn-mini btn-success", :title => "Enhance the BrainWave. Convert it into a BrainChild") do %>
+              <i class="icon-eye-open icon-white"></i>
+          <% end %>&nbsp;|&nbsp;
+          <a href="http://www.google.com/search?q=<%= @factoids.first.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small pull-right" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+
+  <% end %>
     </div>
   </div>
 </div>

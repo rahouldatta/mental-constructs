@@ -27,7 +27,7 @@
 
                     <div class="form-inline">
                       <%= form_tag({:controller => "thinker",:action => "set_construct_dossier_quality"}, :remote => true) do |f|%>
-                          <%= select_tag :dossier_quality, options_for_select(["#{dossier.dossier_quality}","1","2","3","4","5"]), :class=>"input-mini" %>
+                          <%= select_tag :dossier_quality, options_for_select(["#{dossier.dossier_quality}","1","2","3","4","5"].uniq), :class=>"input-mini" %>
                           <%= hidden_field_tag :dossier_id, dossier.id%>
                           <%= submit_tag "Set Dossier Quality", class: "btn btn-mini btn-primary", :title => "Set the quality of this Dossier according to the Quality of Constructs in it."%>
                       <% end %>
