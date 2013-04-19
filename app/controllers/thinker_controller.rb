@@ -128,7 +128,7 @@ class ThinkerController < ApplicationController
   end
 
   def add_concept_to_dossier
-    concept = Concept.find(params[:construct_id])
+    concept = Concept.find(params[:concept_id])
     concept.update_attributes(:dossier_id => current_thinker.treatment_concept_dossiers.find_by_dossier_name(params[:dossier]).id)
     @stand_alone_concepts= current_thinker.concepts.find_all_by_dossier_id(nil) rescue nil
   end

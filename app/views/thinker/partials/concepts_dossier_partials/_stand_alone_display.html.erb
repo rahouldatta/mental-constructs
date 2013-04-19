@@ -1,8 +1,42 @@
-<% @stand_alone_concepts.each do |construct|%>
-    <%= construct.inspect %>
-<%= form_tag({:controller => "thinker",:action => "add_concept_to_dossier"}, :remote => true) do |f|%>
-    <%= select_tag :dossier, options_for_select(@concept_dossiers.map {|d| d.dossier_name.upcase}), :class=>"span6", :construct => construct %>
-    <%= hidden_field_tag :construct_id, construct.id%>
-    <%= submit_tag "Move To Dossier", class: "btn btn-small btn-primary", :title => "Map This Construct to Dossier of your choice"%>
-<% end %>
+<% if @stand_alone_concepts.blank? %>
+<p>    No Floating Stand Alone Concepts...</p>
+<% else %>
+    <div class="container-fluid">
+    <caption><p class="text-info"><strong>Floating Concepts unattached to any Dossiers -</strong></p></caption>
+
+    <% @stand_alone_concepts.each do |concept|%>
+
+          <div class="row-fluid">
+            <div class="span3" style="text-align: center">
+              <br>
+              <p><%= link_to concept_path(concept), :class=>"btn btn-mini btn-default" do %>
+                    <i class="icon-file"></i>
+                <% end %>               &nbsp;|&nbsp;
+                <%= link_to edit_concept_path(concept), :class=>"btn-small btn-inverse" do %>
+                    <i class="icon-edit icon-white"></i>
+                <% end %>               &nbsp;|&nbsp;
+                <%= link_to delete_concept_thinker_path(concept), :class=>"btn-small btn-danger", :confirm => "Are you sure want to Delete this Concept?" do %>
+                    <i class="icon-trash icon-white"></i>
+                <% end %></p>
+              <span class="muted"><small><%= concept.created_at.utc.localtime.to_s(:short)%></small></span>
+
+            </div>
+            <div class="span5">
+              <h5 class="text-info"><%= concept.title.titleize %></h5>
+              <p><%=raw "#{concept.concept.capitalize[0..73]}..." %></p>
+            </div>
+            <div class="span4 form-inline">
+              <br>
+              <%= form_tag({:controller => "thinker",:action => "add_concept_to_dossier"}, :remote => true) do |f|%>
+                  <%= select_tag :dossier, options_for_select(@concept_dossiers.map {|d| d.dossier_name.upcase}), :class=>"span9", :concept => concept %>
+                  <%= hidden_field_tag :concept_id, concept.id%>
+                  <%= submit_tag "Move", class: "btn btn-small btn-primary", :title => "Map This Concept to Dossier of your choice"%>
+              <% end %>
+
+            </div>
+          </div>
+
+        <hr>
+    <% end %>
+    </div>
 <% end %>
