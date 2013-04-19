@@ -13,58 +13,33 @@
 
   <div class="tab-content">
 
-
-
     <!--======================================= CONSTRUCTS =======================================-->
     <div class="tab-pane fade in active" id="constructs">
 
       <ul class="nav nav-pills" id="constructsTabs">
-        <li class="active"><a href="#constructs-median"><i class="icon-book icon-white"></i> Median - Constructs</a></li>
-        <li><a href="#main-concepts"><i class="icon-th icon-white"></i> Concepts</a></li>
-        <li><a href="#main-brain_childs"><i class="icon-eye-open icon-white"></i> BrainChilds</a></li>
-        <li><a href="#main-discourses"><i class="icon-qrcode icon-white"></i> Discourses</a></li>
+        <li class="active"><a href="#constructs-organizer"><i class="icon-briefcase icon-white"></i> Organizer</a></li>
+        <li ><a href="#list-constructs"><i class="icon-th-list icon-white"></i> List Constructs</a></li>
+        <li><a href="#new-construct"><i class="icon-file icon-white"></i> New Construct</a></li>
       </ul>
+      <div class="blanker-box" style="padding: 13px">
       <div class="tab-content">
-        <div class="tab-pane fade in active" id="constructs-median">
-          Median
-        </div>
-        <div class="tab-pane fade" id="main-concepts">
-
-          <div class="blanker-box" style="padding: 13px">
-          <ul class="nav nav-pills" id="conceptsTabs">
-            <li class="active"><a href="#list-concepts"><i class="icon-th-list icon-white"></i> List Concepts</a></li>
-            <li><a href="#concepts-organizer"><i class="icon-briefcase icon-white"></i> Organizer</a></li>
-            <li><a href="#new-concept"><i class="icon-file icon-white"></i> New Concept</a></li>
-          </ul>
-
-          <div class="tab-content">
-
-
-            <div class="tab-pane fade in active" id="list-concepts">
-              <%= render 'thinker/partials/list_concepts' %>
+            <div class="tab-pane fade in active" id="constructs-organizer">
+              ORGANIZER
+              <%= render 'thinker/partials/constructs_dossier_partials/organize_construct_dossiers' %>
             </div>
 
-
-            <div class="tab-pane fade" id="concepts-organizer">
-              <%= render 'thinker/partials/concepts_dossier_partials/organize_concept_dossiers' %>
+            <div class="tab-pane fade" id="list-constructs">
+              <%= render 'thinker/partials/list_constructs' %>
             </div>
 
-            <div class="tab-pane fade" id="new-concept">
-              <%= render 'concepts/form' %>
+            <div class="tab-pane fade" id="new-construct">
+              <%= render 'constructs/form' %>
             </div>
+
             </div>
             </div>
 
           </div>
-        <div class="tab-pane fade" id="main-brain_childs">
-          BRAIN CHILDS
-        </div>
-        <div class="tab-pane fade" id="main-discourses">
-          DISCOURSES
-        </div>
-      </div>
-
-    </div>
 
 
     <!--======================================= COGNITIONS =======================================-->
@@ -89,8 +64,9 @@
             <br>This is the first level of categorization and organization of your thoughts.</p>
           <br>
           <hr>
-
+          <% unless @epiphanies.blank? or @factoids.blank? or @brainwaves.blank? %>
             <%= render 'thinker/partials/cognition_sample_display' %>
+              <% end %>
         </div>
         <div class="tab-pane fade" id="main-epiphanies">
           <%= render 'thinker/partials/epiphany_display' %>
@@ -155,9 +131,9 @@
     })
 </script>
 <script>
-    $('#conceptsTabs a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-    })
+//    $('#conceptsTabs a').click(function (e) {
+//        e.preventDefault();
+//        $(this).tab('show');
+//    })
 </script>
 

@@ -1,0 +1,4 @@
+$("#constructs-standalone").html("<%= escape_javascript( render(:partial => "thinker/partials/constructs_dossier_partials/stand_alone_display") ) %>");
+<% @construct_dossiers.each do |dossier| %>
+$("#<%= dossier.dossier_name.downcase  %>_render").html("<%= escape_javascript( render(:partial => "thinker/partials/constructs_dossier_partials/construct_dossier_data_display", :locals => {:dossier => dossier} ) ) %>");
+<% end %>

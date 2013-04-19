@@ -11,14 +11,14 @@ class ThinkerController < ApplicationController
     @remembralls = current_thinker.remembralls
     @incomplete_tasks = @remembralls.where(:status => false)
     @link_hoards = current_thinker.link_hoards.group_by(&:category)
-    @concepts = current_thinker.concepts.order("affinity_level DESC")
-    @concept_dossiers = current_thinker.treatment_concept_dossiers.order("dossier_quality DESC")
+    @constructs = current_thinker.constructs.order("affinity_level DESC")
+    @construct_dossiers = current_thinker.treatment_construct_dossiers.order("dossier_quality DESC")
   end
 
   def show
     @thinker = current_thinker
-    @concept = current_thinker.concepts.new
-    @stand_alone_concepts= current_thinker.concepts.find_all_by_dossier_id(nil) rescue nil
+    @construct = current_thinker.constructs.new
+    @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
   end
 
   # =================== Cognition Methods =========================
@@ -93,30 +93,29 @@ class ThinkerController < ApplicationController
     @link_hoards = LinkHoard.where(:thinker_id => current_thinker.id).group_by(&:category)
   end
 
-  #====================== Concept Methods ========================
+  #====================== Constructs Methods ========================
 
-  def delete_concept
-    Concept.find(params[:id]).destroy
-    #@concepts = current_thinker.concepts.order("affinity_level DESC")
+  def delete_construct
+    Construct.find(params[:id]).destroy
   end
 
-  def decide_concepts_display_order
+  def decide_constructs_display_order
     unless params[:sequencing_type].blank?
       order_seq = current_thinker.get_order_sequencing_type(params[:sequencing_type])
-      @concepts = current_thinker.concepts.order("#{order_seq} DESC")
+      @constructs = current_thinker.constructs.order("#{order_seq} DESC")
       session[:sequencing_type] = params[:sequencing_type]
     end
   end
 
-  def add_concept_dossier
-    concept_dossiers = current_thinker.treatment_concept_dossiers
-    concept_dossiers.create(:dossier_name => params[:dossier_name]) if concept_dossiers.where(:dossier_name => params[:dossier_name].parameterize.strip.upcase.gsub(" ","_")).blank?
+  def add_construct_dossier
+    construct_dossiers = current_thinker.treatment_construct_dossiers
+    construct_dossiers.create(:dossier_name => params[:dossier_name]) if construct_dossiers.where(:dossier_name => params[:dossier_name].parameterize.strip.upcase.gsub(" ","_")).blank?
     redirect_to :back
   end
 
-  def set_concept_dossier_quality
+  def set_construct_dossier_quality
     Dossier.find(params[:dossier_id]).update_attributes(:dossier_quality => params[:dossier_quality])
-    @concept_dossiers = current_thinker.treatment_concept_dossiers.order("dossier_quality DESC")
+    @construct_dossiers = current_thinker.treatment_construct_dossiers.order("dossier_quality DESC")
   end
 
   def delete_dossier
@@ -127,10 +126,10 @@ class ThinkerController < ApplicationController
     redirect_to :back
   end
 
-  def add_concept_to_dossier
-    concept = Concept.find(params[:concept_id])
-    concept.update_attributes(:dossier_id => current_thinker.treatment_concept_dossiers.find_by_dossier_name(params[:dossier]).id)
-    @stand_alone_concepts= current_thinker.concepts.find_all_by_dossier_id(nil) rescue nil
+  def add_construct_to_dossier
+    construct = Construct.find(params[:construct_id])
+    construct.update_attributes(:dossier_id => current_thinker.treatment_construct_dossiers.find_by_dossier_name(params[:dossier]).id)
+    @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
   end
 
 end

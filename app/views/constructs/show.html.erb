@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Thinker:</b>
+  <%= @construct.thinker_id %>
+</p>
+
+<p>
+  <b>Dossier:</b>
+  <%= @construct.dossier_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @construct.title %>
+</p>
+
+<p>
+  <b>Construct:</b>
+  <%= @construct.construct %>
+</p>
+
+<p>
+  <b>Foot notes:</b>
+  <%= @construct.foot_notes %>
+</p>
+
+<p>
+  <b>Affinity level:</b>
+  <%= @construct.affinity_level %>
+</p>
+
+<p>
+  <b>Share:</b>
+  <%= @construct.share %>
+</p>
+
+
+<%= link_to 'Edit', edit_construct_path(@construct) %> |
+<%= link_to 'Back', constructs_path %>

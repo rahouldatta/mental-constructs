@@ -2,6 +2,7 @@ class Dossier < ActiveRecord::Base
   attr_accessible :dossier_name, :dossier_quality, :thinker_id, :type
 
   has_many :concepts
+  belongs_to :thinker
 
   before_create :treatment_dossier
 

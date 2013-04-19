@@ -10,8 +10,9 @@ class Thinker < ActiveRecord::Base
   has_many :epiphanies
   has_many :remembralls
   has_many :link_hoards
-  has_many :concepts
-  has_many :treatment_concept_dossiers
+  has_many :constructs
+  has_many :dossiers
+  has_many :treatment_construct_dossiers
 
   def to_param
     "#{self.alias}"

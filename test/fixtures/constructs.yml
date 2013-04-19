@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  thinker_id: 1
+  dossier_id: 1
+  title: MyString
+  construct: MyText
+  foot_notes: MyText
+  affinity_level: 1
+  share: false
+
+two:
+  thinker_id: 1
+  dossier_id: 1
+  title: MyString
+  construct: MyText
+  foot_notes: MyText
+  affinity_level: 1
+  share: false

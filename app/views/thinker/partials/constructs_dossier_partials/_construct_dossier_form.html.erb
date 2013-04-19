@@ -1,0 +1,5 @@
+<br>
+<%= form_tag({:controller => "thinker",:action => "add_construct_dossier"}) do %>
+    <%= text_field(nil,:dossier_name, :placeholder => "Dossier Name", :required => true, :class => "span12", :onkeyup => "CheckMaxlength(this);", :maxlength => 17 ) %> <br>
+    <%= submit_tag "Create Dossier", class: "btn btn-small btn-success"%>
+<% end %>

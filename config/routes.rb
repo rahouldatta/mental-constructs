@@ -1,7 +1,7 @@
 MentalConstructs::Application.routes.draw do
 
 
-  resources :concepts
+  resources :constructs
 
 
   resources :thinker do
@@ -11,7 +11,7 @@ MentalConstructs::Application.routes.draw do
       get 'delete_factoid'
       get 'delete_remembrall'
       get 'delete_link'
-      get 'delete_concept'
+      get 'delete_construct'
       get 'mark_remembrall_as_complete'
       get 'delete_dossier'
     end
@@ -25,10 +25,10 @@ MentalConstructs::Application.routes.draw do
       post 'record_brainwaves'
       post 'record_remembrall'
       post 'record_link'
-      post 'decide_concepts_display_order'
-      post 'add_concept_dossier'
-      post 'add_concept_to_dossier'
-      post 'set_concept_dossier_quality'
+      post 'decide_constructs_display_order'
+      post 'add_construct_dossier'
+      post 'add_construct_to_dossier'
+      post 'set_construct_dossier_quality'
     end
   end
 

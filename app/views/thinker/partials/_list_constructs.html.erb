@@ -1,0 +1,52 @@
+<div class="row-fluid">
+  <div class="span3">  <br>
+    <div style="text-align: center;font-size: 15px;color:  white">Order your Constructs -</div></div>
+  <div class="span6">
+    <div class="blanker-box form-inline" style="padding:13px;">
+      <%= form_tag({:controller => "thinker",:action => "decide_constructs_display_order"}, :remote => true, :style => "margin: 0px;") do %>
+          <div id="tooltip-show"><%= select_tag :sequencing_type, options_for_select([session[:sequencing_type],"Created At","Updated At","Affinity Level","Shared Constructs", "StandAlone Constructs"].uniq), :class=>"span7" %>
+            &nbsp;&nbsp;
+            <%= submit_tag "Display", :title => "Select Type of Sequencing ...",class: "span4 btn btn-primary"%></div>
+      <% end %>
+    </div>
+    <br>
+    <hr>
+  </div>
+  <div class="span3"></div>
+</div>
+
+<% @constructs.each do |construct| %>
+    <div class="container-fluid">
+      <div class="row-fluid">
+
+        <div class="span2">
+          <p><div class="muted" style="text-align: center">Construct Quality - <%= construct.affinity_level%></div></p>
+          <p><%= link_to construct_path(construct), :class=>"span 12 btn btn-default" do %>
+                <i class="icon-file"></i> Review
+            <% end %></p>
+          <br>
+          <br>
+          <p style="text-align: center">
+            <%= link_to edit_construct_path(construct), :class=>"btn-small btn-inverse" do %>
+                <i class="icon-edit icon-white"></i> Edit
+            <% end %>               &nbsp;|&nbsp;
+            <%= link_to delete_construct_thinker_path(construct), :class=>"btn-small btn-danger", :confirm => "Are you sure want to Delete this Construct?", :remote => true do %>
+                <i class="icon-trash icon-white"></i> Delete
+            <% end %></p>
+
+        </div>
+
+        <div class="span8">
+          <h5 class="text-info"><%= construct.title.titleize %><span class="muted">&nbsp;&nbsp;- &nbsp;<small><%= construct.created_at.utc.localtime.to_s(:short)%></small></span></h5>
+          <p><%=raw "#{construct.construct.capitalize[0..233]}..." %></p>
+        </div>
+
+        <div class="span2">
+
+          <p class="muted">Belongs To Dossier - <%= "None" %></p>
+        </div>
+
+      </div>
+      <hr>
+    </div>
+<% end %>

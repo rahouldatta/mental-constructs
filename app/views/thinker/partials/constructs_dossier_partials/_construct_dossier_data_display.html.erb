@@ -1,0 +1,68 @@
+<div class="muted pull-right"><strong><%= "Dossier Quality - #{dossier.dossier_quality}" %></strong></div>
+<br>
+<p class="text-info"><small>Constructs in this Dossier -</small></p>
+<div class="accordion opaqify-container" id="<%= dossier.id %>">
+
+  <% @constructs.each do |construct| %>
+      <% unless construct.dossier_id != dossier.id %>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle btn" data-toggle="collapse" data-parent="#<%= dossier.id %>" href="#construct_<%= construct.id %>">
+                <div class="text-info"><strong><%= "#{construct.title.capitalize}" rescue ''%></strong><div class="muted"><small><%=  %></small></div></div>
+              </a>
+            </div>
+            <div id="construct_<%= construct.id %>" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="">
+                  <!--<div class="muted"><small><%#= "Written on - #{exhibit.created_at.to_s(:short)}" %></small></div>-->
+
+                  <!--================================= Accordion Inner Data ===============================          -->
+
+                  <div class=row-fluid>
+
+                    <div class="span12">
+
+
+                      <div class="span4">
+                        <div id="tooltip_show" style="text-align: center"> <%= link_to(construct_path(construct), class: "btn btn-mini btn-inverse", :title=>"View Entire Construct") do %>
+                              <i class="icon-file icon-white"></i>
+                          <% end %>&nbsp;|&nbsp;
+                          <%= link_to(edit_construct_path(construct), class: "btn btn-mini", :title => "Edit this Construct") do %>
+                              <i class="icon-edit"></i>
+                          <% end %>
+                          &nbsp;|&nbsp;
+                          <%#= link_to remove_construct_from_dossier_thinker_path(construct), :title=>"Remove Construct from this Dossier",class: "btn btn-mini btn-warning", :remote => true do %>
+                              <i class="icon-minus-sign icon-white"></i><%# end %>
+                          &nbsp;|&nbsp;
+                          <%= link_to(construct, class: "btn btn-mini btn-danger", :title=>"Delete this Construct", confirm: "Are you sure?", method: :delete) do %>
+                              <i class="icon-trash icon-white"></i>
+                          <% end %>
+                        </div>
+                        <br><br>
+                        <p class="" style="text-align: center"><small>    <%= construct.created_at.utc.localtime.to_s(:short)%></small></p>
+                        <!--</div>-->
+                      </div>
+                      <div class="span8">
+                        <p class=""><strong><%= construct.title.titleize %></strong>   </p>
+                        <div class="muted"><%=raw "#{construct.construct.titleize[0..233]}..." %></div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <!--</div>-->
+              </div>
+            </div>
+          </div>
+          <!--<br>-->
+      <% end %>
+  <% end %>
+
+</div>
+
+<script>
+    $('#tooltip_show').tooltip('show')
+</script>
