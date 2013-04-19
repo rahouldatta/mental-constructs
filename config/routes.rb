@@ -14,6 +14,7 @@ MentalConstructs::Application.routes.draw do
       get 'delete_construct'
       get 'mark_remembrall_as_complete'
       get 'delete_dossier'
+      get 'remove_construct_from_dossier'
     end
     collection do
       post 'google_search'

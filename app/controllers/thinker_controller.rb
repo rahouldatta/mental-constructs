@@ -132,4 +132,10 @@ class ThinkerController < ApplicationController
     @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
   end
 
+  def remove_construct_from_dossier
+    c=Construct.find(params[:id])
+    c.update_attributes(:dossier_id => nil)
+    @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
+  end
+
 end
