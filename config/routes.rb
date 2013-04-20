@@ -2,7 +2,13 @@ MentalConstructs::Application.routes.draw do
 
 
   resources :constructs do
-
+    collection do
+      post 'record_black_hat_thought'
+      post 'record_white_hat_thought'
+      post 'record_red_hat_thought'
+      post 'record_green_hat_thought'
+      post 'record_yellow_hat_thought'
+    end
   end
 
 

@@ -141,6 +141,7 @@ class ThinkerController < ApplicationController
 
   def build_construct
     a = current_thinker.constructs.create
+    ThinkingHat.create(:construct_id => a.id)
     redirect_to edit_construct_path(a)
   end
 

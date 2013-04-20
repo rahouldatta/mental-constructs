@@ -23,17 +23,95 @@
 
   </div>
   <div class="span3">
-    <button class="btn btn-small" type="button" id="thinking-hat-toggle"> About 5 Thinking Hats</button>
+    <button class="btn btn-default" type="button" id="thinking-hat-toggle"> About 5 Thinking Hats</button>
     <br>
   </div>
 </div>
 
 <br>
 <div class="blanker-box" style="padding: 13px;">
-<% if @thinking_hat.nil? %>
-    <p>Start Thinking Hat process</p>
-<% else %>
-<% end %>
+  <!--====================== WHITE HAT ======================-->
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="opaqify-container" style="background-color:rgba(255,255,255,0.125);" id="white-hat-form">
+          <%= render 'constructs/thinking_hat/thinking_hat_forms/white_hat_form' %>
+        </div>
+      </div>
+
+      <div class="span8">
+        <div id="white-hat-data-display" class="blanker-box">
+          <% unless @thinking_hat.nil?%>
+          <%= render 'constructs/thinking_hat/thinking_hat_display/white_hat_data_display' %>
+          <% end %>
+        </div>
+        WHITE HAT DATA
+      </div>
+    </div>
+  </div>
+  <br><hr>
+  <!--====================== RED HAT ======================-->
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="opaqify-container" style="background-color:rgba(255,0,0,0.125);">
+          <%= render 'constructs/thinking_hat/thinking_hat_forms/red_hat_form' %>
+        </div>
+      </div>
+
+      <div class="span8">
+        RED HAT DATA
+      </div>
+    </div>
+  </div>
+  <br><hr>
+  <!--====================== BLACK HAT ======================-->
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="opaqify-container" style="background-color:rgba(0,0,0,0.275);">
+          <%= render 'constructs/thinking_hat/thinking_hat_forms/black_hat_form' %>
+        </div>
+      </div>
+
+      <div class="span8">
+        BLACK HAT DATA
+      </div>
+    </div>
+  </div>
+  <br><hr>
+  <!--====================== YELLOW HAT ======================-->
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="opaqify-container" style="background-color:rgba(255,255,0,0.275);">
+          <%= render 'constructs/thinking_hat/thinking_hat_forms/yellow_hat_form' %>
+        </div>
+      </div>
+
+      <div class="span8">
+        YELLOW HAT DATA
+      </div>
+    </div>
+  </div>
+  <br><hr>
+  <!--====================== GREEN HAT ======================-->
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="opaqify-container" style="background-color:rgba(0,255,0,0.1);">
+          <%= render 'constructs/thinking_hat/thinking_hat_forms/green_hat_form' %>
+        </div>
+      </div>
+
+      <div class="span8">
+        GREEN HAT DATA
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
 
 <script>

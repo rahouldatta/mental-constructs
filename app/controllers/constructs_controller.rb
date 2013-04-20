@@ -6,6 +6,7 @@ class ConstructsController < ApplicationController
 
   def load
     @construct_dossiers = current_thinker.treatment_construct_dossiers.order("dossier_quality DESC")
+
   end
 
   def show
@@ -28,6 +29,7 @@ class ConstructsController < ApplicationController
 
   def edit
     @construct = Construct.find(params[:id])
+    @thinking_hat = @construct.thinking_hat
   end
 
   #def create
@@ -65,6 +67,31 @@ class ConstructsController < ApplicationController
     @construct = Construct.find(params[:id])
     @construct.destroy
     thinker_path(current_thinker)
+  end
+
+    #============================== Thinking Hat Methods ==============================
+  def record_black_hat_thought
+
+  end
+
+  def record_white_hat_thought
+    c = Construct.find(params[:construct_id])
+    t = c.thinking_hat
+    t.update_attributes(:white_hat => t.white_hat << params[:flash])
+    @thinking_hat = c.thinking_hat
+    @construct = Construct.find(params[:construct_id])
+  end
+
+  def record_red_hat_thought
+
+  end
+
+  def record_green_hat_thought
+
+  end
+
+  def record_yellow_hat_thought
+
   end
 
 end
