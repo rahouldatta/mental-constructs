@@ -49,9 +49,16 @@
               </p>
               <!--</div>-->
               <br>
-              <div class="blanker-box" style="padding: 19px;">
-              <%= link_to "BUILD CONSTRUCT", build_construct_thinker_path, :class=>"btn btn-large btn-default btn-block", :style=>"font-size: 33px;padding: 27px;" %>
-              </div>
+
+
+                <div class="row-fluid">
+                  <div class="span4"></div>
+                  <div class="span4">
+                    <%= link_to "Build Construct", build_construct_thinker_path, :class=>"span12 btn btn-large btn-default", :style=>"font-size: 23px;padding: 19px;" , :confirm => "Build New Construct from Scratch?"  %>
+                  </div>
+                  <div class="span4"></div>
+                </div>
+
               <%#= render 'constructs/form' %>
             </div>
 
