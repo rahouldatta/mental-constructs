@@ -3,4 +3,10 @@ class Construct < ActiveRecord::Base
 
   belongs_to :thinker
   belongs_to :dossier
+  before_create :treatment_construct
+
+  def treatment_construct
+    self.title = "Set Title" if self.title.nil? or self.title.blank?
+    self.construct = "Build your Construct" if self.construct.nil? or self.construct.blank?
+  end
 end

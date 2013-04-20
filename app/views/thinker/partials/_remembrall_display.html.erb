@@ -2,8 +2,9 @@
     No ToDo's Recorded yet. Record something so that you are reminded...
 <% else %>
     <div id="tooltip-show"><a style="float: right;" id="marquee-toggle" title="Hide/Show Ticker" class="btn-mini btn-inverse "><i class="icon-bullhorn icon-white"></i></a></div>
-    <% sample = @incomplete_tasks.sample %>
+
     &nbsp;
+    <% sample = @incomplete_tasks.sample %>
     <div class="blanker-box" id="marquee-display">
       <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="alternate" style="color:white;padding: 5px" ><%= sample.task.capitalize rescue "No Recorded Tasks."%>&nbsp;&nbsp;:-&nbsp;
         <span class="muted"><small><%= sample.created_at.utc.localtime.to_s(:short) rescue nil%></small></span></marquee>

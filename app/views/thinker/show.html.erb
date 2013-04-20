@@ -1,3 +1,8 @@
+<br>
+<hr>
+<br>
+<div class="blanker-box" style="padding: 7px">
+
 <ul class="nav nav-pills" id="mainTabs" >
   <li class="active"><a href="#constructs" style="font-size: 14px;"><i class="icon-book icon-white"></i> Constructs</a></li>
   <li><a href="#cognitions" data-toggle="tab" style="font-size: 14px;"><i class="icon-cog icon-white"></i> Cognitions</a></li>
@@ -33,7 +38,21 @@
             </div>
 
             <div class="tab-pane fade" id="new-construct">
-              <%= render 'constructs/form' %>
+              <p style="font-size:39px;color: white;text-align: center;font-family: papyrus">Constructs</p>
+
+              <p>Constructs are entire thought processes built into tangible form. We provide various tools to help you build your thought processes.
+                <br>
+                Constructs should be built over time and not in just one sitting. Keep saving your updates to your construct.
+                <br>
+                All data used for tools will be saved for your future reference. Use this tool well.
+                <br>Need to write more
+              </p>
+              <!--</div>-->
+              <br>
+              <div class="blanker-box" style="padding: 19px;">
+              <%= link_to "BUILD CONSTRUCT", build_construct_thinker_path, :class=>"btn btn-large btn-default btn-block", :style=>"font-size: 33px;padding: 27px;" %>
+              </div>
+              <%#= render 'constructs/form' %>
             </div>
 
             </div>
@@ -107,6 +126,7 @@
       <%= render 'thinker/partials/remembrall_display' %>
     </div>
   </div>
+</div>
 </div>
 
 
