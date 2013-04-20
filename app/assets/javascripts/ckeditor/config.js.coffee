@@ -1,7 +1,7 @@
 CKEDITOR.editorConfig = (config) ->
   config.language = 'en'
   #  config.width = '725'
-  config.height = '433'
+  config.height = '533'
   config.scayt_autoStartup = true;
   config.toolbar_Pure = [
     { name: 'document',    items: [ 'Source','-','NewPage','DocProps','Preview','Print','-','Templates' ] },

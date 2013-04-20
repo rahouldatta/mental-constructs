@@ -1,0 +1,46 @@
+<div class="row-fluid">
+  <div class="span9">
+    <div class="blanker-box" style="padding: 13px;" id="thinking-hats-description">
+      <br>Add more help<br><br>
+      <p><strong>5 Thinking Hats</strong> (Edward de Bono's technique) is a simple, effective technique that helps you become more productive. You can learn how to separate thinking into five distinct categories. Each category is identified with its own colored metaphorical "thinking hat." By mentally wearing and switching "hats," you can easily focus or redirect thoughts, . </p>
+      <p><strong>The Five Thinking Hats (or modes)</strong><br>
+        <em>The White Hat</em><br>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;The White Hat calls for information known or needed.<br>
+
+        <em>The Red Hat</em><br>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;The Red Hat signifies feelings, hunches and intuition.<br>
+
+        <em>The Black Hat</em><br>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;The Black Hat is judgment -- the devil's advocate or why something may not work.<br>
+
+        <em>The Yellow Hat</em><br>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;The Yellow Hat symbolizes brightness and optimism.<br>
+
+        <em>The Green Hat</em><br>
+        &nbsp;&nbsp;&bull;&nbsp;&nbsp;The Green Hat focuses on creativity: the possibilities, alternatives and new ideas.<br>
+      </p>
+    </div>
+
+  </div>
+  <div class="span3">
+    <button class="btn btn-small" type="button" id="thinking-hat-toggle"> About 5 Thinking Hats</button>
+    <br>
+  </div>
+</div>
+
+<br>
+<div class="blanker-box" style="padding: 13px;">
+<% if @thinking_hat.nil? %>
+    <p>Start Thinking Hat process</p>
+<% else %>
+<% end %>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#thinking-hats-description').hide(); //Initially form wil be hidden.
+        $('#thinking-hat-toggle').click(function() {
+            $('#thinking-hats-description').toggle();//Form shows on button click
+        });
+    });
+</script>

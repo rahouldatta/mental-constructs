@@ -10,7 +10,7 @@ class ConstructsController < ApplicationController
 
   def show
     @construct = Construct.find(params[:id])
-
+    @thinking_hat = @construct.thinking_hat
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @construct }

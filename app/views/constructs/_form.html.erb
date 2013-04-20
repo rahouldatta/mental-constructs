@@ -3,19 +3,20 @@
       <!--<div class="content">-->
       <div class="pull-left">
         <%= f.label  :title, 'TITLE :', class: "muted"%>
-        <%= f.text_field :title, :placeholder => "Appropriate Title...", :required => true, :onkeyup => "CheckMaxlength(this);", :maxlength => 53 %>
+        <%= f.text_field :title, :placeholder => "Appropriate Title...", :required => true, :onkeyup => "CheckMaxlength(this);", :maxlength => 53, :id => "constructTitleBox" %>
       </div>
       <div class="pull-right">
         <% if @construct_dossiers.blank? %>
             <p>No Dossiers have been created yet.</p>
         <% else %>
             <div class="muted" id="tooltip_show">Select Dossier :
-              <% a=["Select Dossier"];@construct_dossiers.map {|d| a << "#{d.dossier_name}"}%>
+              <% a=["Select Dossier"];@construct_dossiers.map {|d| a << "#{d.dossier_name}"}%>&nbsp;
               <%= f.select :dossier_id, options_for_select(a), :class => "span4", :title => "Select Dossier you would like to move this into. Leave blank to have this construct as StandAlone."  %></div>
         <% end %>
       </div>
       <br><br><br><br>
-      <%= f.submit "UPDATE",:class => "btn btn-small btn-success pull-right" %>
+      <%= f.submit "Save",:class => "btn btn-small btn-success pull-right" %>
+      <br>
       <div class="field">
         <%= f.label  :construct, 'Construct :', class: "muted" %>
         <%= f.text_area :construct, :class => "ckeditor" %>
@@ -49,7 +50,7 @@
       </div>
       <br>
       <div class="actions">
-        <%= f.submit "UPDATE",:class => "btn btn-large btn-success" %><br>
+        <%= f.submit "Save Changes",:class => "btn btn-large btn-success" %><br>
       </div>
       <% unless @construct.id.nil? %>
           <%= link_to(@construct, class: "btn btn btn-danger pull-right", confirm: "Are you sure?", method: :delete) do %>

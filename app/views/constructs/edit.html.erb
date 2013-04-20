@@ -1,59 +1,85 @@
-<br>
-<hr>
-<br>
+<br><hr><br>
+
+<div class="opaqify-container">
+<div class="blanker-box"  style="padding: 5px">
+  <h3 class="constructTitleDisplay" style="color:white;text-align: center;" ></h3>
+</div>
+</div>
+
+<br><br>
+
 <div class="blanker-box" style="padding: 13px">
   <ul class="nav nav-pills" id="mainConstructsTabs">
-    <li class="active"><a href="#main-construct"><i class="icon-briefcase icon-white"></i> CONSTRUCT</a></li>
-    <li><a href="#construct-brainstorm"><i class="icon-magnet icon-white"></i> BrainStorm</a></li>
+    <li class="active"><a href="#main-construct" ><i class="icon-book icon-white"></i> CONSTRUCT</a></li>
+    <li><a href="#construct-tools" style="font-size: 13px;"><i class="icon-wrench icon-white"></i> Tools</a></li>
+    <div class="pull-right nav nav-pills" id="mainConstructsTabs">
+    <li><a href="#construct-tools-help" style="font-size: 13px;"><i class="icon-question-sign icon-white"></i> Essential Read - How to optimally use these tools</a></li>
+    </div>
   </ul>
 
   <div class="opaqify-container">
     <div class="tab-content">
       <div class="tab-pane fade in active" id="main-construct">
-
-      <ul class="nav nav-pills" id="buildConstructsTabs">
-      <li class="active"><a href="#update-construct"><i class="icon-briefcase icon-white"></i> <%= @construct.title.titleize %></a></li>
-      <li ><a href="#provoke-thoughts"><i class="icon-leaf icon-white"></i> Provoke Thoughts</a></li>
-      <li><a href="#construct-flow-of-thought"><i class="icon-th-list icon-white"></i> Serialization</a></li>
-      <li><a href="#thinking-hats"><i class="icon-certificate icon-white"></i> 5 Thinking Hats</a></li>
-    </ul>
-
-    <div class="tab-content">
-
-      <div class="tab-pane fade in active" id="update-construct">
-        <div class="blanker-box" style="padding: 13px">
-        <%= render 'form' %>
-      </div>
-      </div>
-      <div class="tab-pane fade" id="provoke-thoughts">
-        PROVOKE THOUGHTS
-      </div>
-      <div class="tab-pane fade" id="construct-flow-of-thought">
-        FLOW CHARTING AND SERIALIZING
-      </div>
-      <div class="tab-pane fade" id="thinking-hats">
-        THINKING HATS
-      </div>
+          <%= render 'form' %>
     </div>
-    </div>
-      <div class="tab-pane fade" id="construct-brainstorm">
-        BRAIN STORM
+
+
+
+          <div class="tab-pane fade" id="construct-tools">
+            <ul class="nav nav-pills" id="constructToolsTabs">
+              <li class="active"><a href="#construct-brainstorm"><i class="icon-magnet icon-white"></i> BrainStorm</a></li>
+              <li ><a href="#provoke-thoughts"><i class="icon-leaf icon-white"></i> Provoke Thoughts</a></li>
+              <li><a href="#construct-flow-of-thought"><i class="icon-th-list icon-white"></i> Serialization</a></li>
+              <li><a href="#thinking-hats"><i class="icon-certificate icon-white"></i> 5 Thinking Hats</a></li>
+            </ul>
+            <div class="tab-content">
+
+              <div class="tab-pane fade in active" id="construct-brainstorm">
+                BRAIN STORM
+              </div>
+
+              <div class="tab-pane fade" id="provoke-thoughts">
+                PROVOKE THOUGHTS
+              </div>
+
+              <div class="tab-pane fade" id="construct-flow-of-thought">
+                FLOW CHARTING AND SERIALIZING
+              </div>
+
+              <div class="tab-pane fade" id="thinking-hats">
+                <div id="main-thinking-hats">
+                  <%= render 'constructs/thinking_hat/main_thinking_hat' %>
+                </div>
+              </div>
+
+            </div>
+
+      </div>
+      <div class="tab-pane fade" id="construct-tools-help">
+        HELP<br>
+        Data provided in every tool can be inserted into constructs
+      </div>
       </div>
 
     </div>
   </div>
-</div>
 <br>
 
+<script>
+    $("#constructTitleBox").keyup(function () {
+        var value = $(this).val();
+        $(".constructTitleDisplay").text(value);
+    }).keyup();
+</script>
 
 <script>
-        $('#buildConstructsTabs a').click(function (e) {
+        $('#mainConstructsTabs a').click(function (e) {
             e.preventDefault();
             $(this).tab('show');
         })
 </script>
 <script>
-        $('#mainConstructsTabs a').click(function (e) {
+        $('#constructToolsTabs a').click(function (e) {
             e.preventDefault();
             $(this).tab('show');
         })
