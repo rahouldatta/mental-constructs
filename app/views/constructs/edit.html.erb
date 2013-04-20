@@ -2,10 +2,59 @@
 <hr>
 <br>
 <div class="blanker-box" style="padding: 13px">
+  <ul class="nav nav-pills" id="mainConstructsTabs">
+    <li class="active"><a href="#main-construct"><i class="icon-briefcase icon-white"></i> CONSTRUCT</a></li>
+    <li><a href="#construct-brainstorm"><i class="icon-magnet icon-white"></i> BrainStorm</a></li>
+  </ul>
 
+  <div class="opaqify-container">
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="main-construct">
 
-  <%= render 'form' %>
+      <ul class="nav nav-pills" id="buildConstructsTabs">
+      <li class="active"><a href="#update-construct"><i class="icon-briefcase icon-white"></i> <%= @construct.title.titleize %></a></li>
+      <li ><a href="#provoke-thoughts"><i class="icon-leaf icon-white"></i> Provoke Thoughts</a></li>
+      <li><a href="#construct-flow-of-thought"><i class="icon-th-list icon-white"></i> Serialization</a></li>
+      <li><a href="#thinking-hats"><i class="icon-certificate icon-white"></i> 5 Thinking Hats</a></li>
+    </ul>
 
+    <div class="tab-content">
 
+      <div class="tab-pane fade in active" id="update-construct">
+        <div class="blanker-box" style="padding: 13px">
+        <%= render 'form' %>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="provoke-thoughts">
+        PROVOKE THOUGHTS
+      </div>
+      <div class="tab-pane fade" id="construct-flow-of-thought">
+        FLOW CHARTING AND SERIALIZING
+      </div>
+      <div class="tab-pane fade" id="thinking-hats">
+        THINKING HATS
+      </div>
+    </div>
+    </div>
+      <div class="tab-pane fade" id="construct-brainstorm">
+        BRAIN STORM
+      </div>
+
+    </div>
+  </div>
 </div>
 <br>
+
+
+<script>
+        $('#buildConstructsTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+</script>
+<script>
+        $('#mainConstructsTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+</script>

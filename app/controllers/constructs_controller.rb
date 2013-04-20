@@ -26,7 +26,6 @@ class ConstructsController < ApplicationController
   #  end
   #end
 
-  # GET /constructs/1/edit
   def edit
     @construct = Construct.find(params[:id])
   end

@@ -15,8 +15,9 @@
         <% end %>
       </div>
       <br><br><br><br>
+      <%= f.submit "UPDATE",:class => "btn btn-small btn-success pull-right" %>
       <div class="field">
-        <%= f.label  :construct, 'Your Philosophical Construct :', class: "muted" %>
+        <%= f.label  :construct, 'Construct :', class: "muted" %>
         <%= f.text_area :construct, :class => "ckeditor" %>
       </div>
       <br>
@@ -48,7 +49,7 @@
       </div>
       <br>
       <div class="actions">
-        <%= f.submit "Create My Philosophical Construct",:class => "btn btn-large btn-success" %><br>
+        <%= f.submit "UPDATE",:class => "btn btn-large btn-success" %><br>
       </div>
       <% unless @construct.id.nil? %>
           <%= link_to(@construct, class: "btn btn btn-danger pull-right", confirm: "Are you sure?", method: :delete) do %>
