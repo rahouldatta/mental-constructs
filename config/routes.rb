@@ -1,15 +1,7 @@
 MentalConstructs::Application.routes.draw do
 
 
-  resources :constructs do
-    collection do
-      post 'record_black_hat_thought'
-      post 'record_white_hat_thought'
-      post 'record_red_hat_thought'
-      post 'record_green_hat_thought'
-      post 'record_yellow_hat_thought'
-    end
-  end
+  resources :constructs
 
 
   resources :thinker do
@@ -23,7 +15,7 @@ MentalConstructs::Application.routes.draw do
       get 'mark_remembrall_as_complete'
       get 'delete_dossier'
       get 'remove_construct_from_dossier'
-      get 'build_construct'
+      #get 'build_construct'
     end
     collection do
       post 'google_search'

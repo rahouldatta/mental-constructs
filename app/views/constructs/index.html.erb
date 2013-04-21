@@ -1,0 +1,35 @@
+<h1>Listing constructs</h1>
+
+<table>
+  <tr>
+    <th>Thinker</th>
+    <th>Dossier</th>
+    <th>Title</th>
+    <th>Construct</th>
+    <th>Foot notes</th>
+    <th>Affinity level</th>
+    <th>Share</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @constructs.each do |construct| %>
+  <tr>
+    <td><%= construct.thinker_id %></td>
+    <td><%= construct.dossier_id %></td>
+    <td><%= construct.title %></td>
+    <td><%= construct.construct %></td>
+    <td><%= construct.foot_notes %></td>
+    <td><%= construct.affinity_level %></td>
+    <td><%= construct.share %></td>
+    <td><%= link_to 'Show', construct %></td>
+    <td><%= link_to 'Edit', edit_construct_path(construct) %></td>
+    <td><%= link_to 'Destroy', construct, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Construct', new_construct_path %>

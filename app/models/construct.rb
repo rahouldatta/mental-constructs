@@ -11,3 +11,5 @@ class Construct < ActiveRecord::Base
     self.construct = "Build your Construct" if self.construct.nil? or self.construct.blank?
   end
 end
+
+

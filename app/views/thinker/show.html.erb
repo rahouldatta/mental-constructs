@@ -6,6 +6,7 @@
 <ul class="nav nav-pills" id="mainTabs" >
   <li class="active"><a href="#constructs" style="font-size: 14px;"><i class="icon-book icon-white"></i> Constructs</a></li>
   <li><a href="#cognitions" data-toggle="tab" style="font-size: 14px;"><i class="icon-cog icon-white"></i> Cognitions</a></li>
+  <li><a href="#brainstorm" data-toggle="tab" style="font-size: 14px;"><i class="icon-cog icon-white"></i> BrainStorm</a></li>
   <div class="pull-right nav nav-pills" id="mainTabs">
     <li><a href="#link_hoard" data-toggle="tab"><i class="icon-tags icon-white"></i> LinkCache</a></li>
     <li><a href="#remembrall" data-toggle="tab"><i class="icon-list icon-white"></i> Remembrall</a></li>
@@ -38,28 +39,7 @@
             </div>
 
             <div class="tab-pane fade" id="new-construct">
-              <p style="font-size:39px;color: white;text-align: center;font-family: papyrus">Constructs</p>
-
-              <p>Constructs are entire thought processes built into tangible form. We provide various tools to help you build your thought processes.
-                <br>
-                Constructs should be built over time and not in just one sitting. Keep saving your updates to your construct.
-                <br>
-                All data used for tools will be saved for your future reference. Use this tool well.
-                <br>Need to write more
-              </p>
-              <!--</div>-->
-              <br>
-
-
-                <div class="row-fluid">
-                  <div class="span4"></div>
-                  <div class="span4">
-                    <%= link_to "Build Construct", build_construct_thinker_path, :class=>"span12 btn btn-large btn-default", :style=>"font-size: 23px;padding: 19px;" , :confirm => "Build New Construct from Scratch?"  %>
-                  </div>
-                  <div class="span4"></div>
-                </div>
-
-              <%#= render 'constructs/form' %>
+              <%= render 'constructs/form' %>
             </div>
 
             </div>
@@ -105,6 +85,9 @@
 
     </div>
 
+    <div class="tab-pane fade" id="brainstorm">
+      BRAINSTORM
+    </div>
     <div class="tab-pane fade" id="link_hoard">
       <div class="row-fluid">
         <div class="span8">

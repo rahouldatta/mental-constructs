@@ -139,10 +139,10 @@ class ThinkerController < ApplicationController
     @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
   end
 
-  def build_construct
-    a = current_thinker.constructs.create
-    ThinkingHat.create(:construct_id => a.id)
-    redirect_to edit_construct_path(a)
-  end
+  #def build_construct
+  #  a = current_thinker.constructs.create
+  #  ThinkingHat.create(:construct_id => a.id)
+  #  redirect_to edit_construct_path(a)
+  #end
 
 end
