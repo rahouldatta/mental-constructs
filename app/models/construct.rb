@@ -1,7 +1,7 @@
 class Construct < ActiveRecord::Base
   attr_accessible :affinity_level, :construct, :dossier_id, :foot_notes, :share, :thinker_id, :title
 
-  has_one :thinking_hat
+  has_one :brain_storm_session
   belongs_to :thinker
   belongs_to :dossier
   before_create :treatment_construct

@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130421003244) do
+ActiveRecord::Schema.define(:version => 20130421153534) do
+
+  create_table "brain_storm_sessions", :force => true do |t|
+    t.integer  "construct_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "cognitions", :force => true do |t|
     t.integer  "thinker_id"
@@ -41,6 +47,14 @@ ActiveRecord::Schema.define(:version => 20130421003244) do
     t.integer  "dossier_quality"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "flashes", :force => true do |t|
+    t.integer  "brain_storm_session_id"
+    t.text     "flash"
+    t.text     "sub_points"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
   end
 
   create_table "link_hoards", :force => true do |t|

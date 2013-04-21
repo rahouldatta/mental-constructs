@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  brain_storm_session_id: 1
+  flash: MyText
+  sub_points: MyText
+
+two:
+  brain_storm_session_id: 1
+  flash: MyText
+  sub_points: MyText
