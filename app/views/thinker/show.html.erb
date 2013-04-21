@@ -86,8 +86,23 @@
     </div>
 
     <div class="tab-pane fade" id="brainstorm">
-      BRAINSTORM
+      <ul class="nav nav-pills" id="brainStormTabs">
+        <li class="active"><a href="#list-brainstorms"><i class="icon-th-list icon-white"></i> List BrainStorm Sessions</a></li>
+        <li><a href="#new-brainstorm-session"><i class="icon-file icon-white"></i> New BrainStorm Session</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="list-brainstorms">
+          LIST BRAIN STORMS
+        </div>
+        <div class="tab-pane fade" id="new-brainstorm-session">
+          NEW BRAINSTORM SESSION
+        </div>
+      </div>
+
     </div>
+
+
     <div class="tab-pane fade" id="link_hoard">
       <div class="row-fluid">
         <div class="span8">
@@ -134,6 +149,12 @@
 </script>
 <script>
     $('#cognitionsTabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+<script>
+    $('#brainStormTabs a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
     })
