@@ -150,6 +150,7 @@ class ThinkerController < ApplicationController
   #=========================== BrainStorm Session Methods ============================
   def new_brain_storm_session
     @current_brain_storm_session = current_thinker.brain_storm_sessions.create(:session_title => params[:session_title]) if current_thinker.brain_storm_sessions.find_by_session_title(params[:session_title].strip.titleize).nil?
+    current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
   end
 
@@ -157,6 +158,13 @@ class ThinkerController < ApplicationController
     @current_brain_storm_session = current_thinker.brain_storm_sessions.find_by_session_title(params[:brain_storm_session])
     current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+  end
+
+  def insert_subpoints
+    f = Flash.find(params[:flash_id])
+    f.update_attributes(:sub_points => f.sub_points << params[:sub_point])
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @current_brain_storm_session = @brain_storm_sessions.find(current_thinker.last_brain_storm_session_id) rescue nil
   end
 
 end

@@ -1,16 +1,29 @@
 <!--<div class="opaqify-container">-->
-    <% @current_brain_storm_session.flashes.each do |flash| %>
+    <% @current_brain_storm_session.flashes.order("created_at ASC").each do |flash| %>
         <div class="row-fluid">
-          <div class="span4"></div>
-          <div class="span4 blanker-box" style="padding: 5px;text-align: center">
-            <%= flash.flash.capitalize %></div>
-          <div class="span4">
-            <% flash.sub_points.each do |point|%>
-                <div class="blanker-box" style="padding: 3px"><%= point.capitalize %>
-                </div>
-            <% end %>
+          <div class="span2"></div>
+          <div class="span5 blanker-box" style="padding: 9px;">
+            <p style="text-align: center"><%= flash.flash.capitalize %></p></div>
+          <div class="span5"><p style="padding-left: 25px;padding-top: 15px;">Sub Points -</p>
+            <div class="blanker-box" style="padding: 13px">
+              <% flash.sub_points.each_with_index do |point,i|%>
+                  <p>&nbsp;&bull;&nbsp;&nbsp;&nbsp;<%= point.capitalize %>
+                  </p>
+              <% end %>
+              <div class="opaqify-container form-inline">
+                <%= form_tag({:controller => "thinker",:action => "insert_subpoints"}, :remote => true, :style => "margin: 0px;") do %>
+                    <div id="tooltip-show"><%= text_field(nil,:sub_point, :class=> "span10", :rows => "3", :placeholder => "Add SubPoint ... ", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
+                      <%= hidden_field_tag :flash_id, flash.id%>
+                      <%= submit_tag "Add", :title => "add your sub points to \" #{flash.flash}\"",class: "span2 btn btn-small btn-primary"%></div>
+                <% end %>
+              </div>
+
+            </div>
+
           </div>
         </div>
+          <!--</div>-->
+
       <br>
       <hr>
     <% end %>

@@ -37,15 +37,18 @@
     </div>
     </div>
     </div>
-<br>
+<%  unless @current_brain_storm_session.nil?%>
+<p>Showing Last Updated BrainStorm Session - </p>
 <div class="blanker-box" style="padding: 13px">
   <div class="container-fluid">
-        <%  unless @current_brain_storm_session.nil?%>
+
+
         <p class="lead" style="color: #ffffff;text-align: center"><%= @current_brain_storm_session.session_title %></p>
             <%= render 'thinker/partials/brain_storm_session_partials/display_ongoing_brain_storm_session_data' %>
-    <% end%>
+
   </div>
 </div>
+<% end%>
 
 <script>
     $(document).ready(function() {

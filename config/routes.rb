@@ -32,6 +32,7 @@ MentalConstructs::Application.routes.draw do
       post 'add_construct_dossier'
       post 'add_construct_to_dossier'
       post 'set_construct_dossier_quality'
+      post 'insert_subpoints'
     end
   end
 
