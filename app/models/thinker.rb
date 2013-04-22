@@ -13,6 +13,7 @@ class Thinker < ActiveRecord::Base
   has_many :constructs
   has_many :dossiers
   has_many :treatment_construct_dossiers
+  has_many :brain_storm_sessions
 
   def to_param
     "#{self.alias}"

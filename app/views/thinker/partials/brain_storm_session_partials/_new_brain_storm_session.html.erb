@@ -1,0 +1,39 @@
+<div class="blanker-box" style="padding: 13px">
+  <div class="container-fluid">
+
+    <% if @current_brain_storm_session.nil?%>
+    <div class="row-fluid">
+      <div class="span5">
+        <div class="opaqify-container" style="text-align: center">
+
+          <% unless @brain_storm_sessions.blank? %>
+              <%a=[]; @brain_storm_sessions.each {|x| a <<  x.session_title}%>
+              <div class="text-info"><h5>Select Previously started BrainStorm Session.</h5></div>
+              <%= form_tag({:controller => "thinker",:action => "start_previous_brain_storm_session"}, :remote => true, :style => "margin: 0px;") do %>
+                  <%= select_tag :brain_storm_session, options_for_select(a), :class=>"span11" %>
+                  <div id="tooltip-show"><%= submit_tag "Start Previous BrainStorm Session", :title => "Resume a previously halted brain storm session and map it to a construct",class: "span12 btn btn-large btn-success"%></div>
+              <% end %>
+
+        <% else %>
+          <p>No BrainStorm Sessions have ever been initiated.</p>
+          <% end %>
+        </div>
+      </div>
+      <div class="span2">
+      </div>
+
+      <div class="span5">
+        <div class="opaqify-container" style="text-align: center">
+          <div class="text-info"><h5>Start a BrainStorm Session!</h5></div>
+          <%= form_tag({:controller => "thinker",:action => "new_brain_storm_session"}, :remote => true, :style => "margin: 0px;") do %>
+              <%= text_field(nil,:session_title, :class=> "span10", :placeholder => "BrainStorm Session Title", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
+              <div id="tooltip-show"><%= submit_tag "New BrainStorm Session", :title => "Start a new BrainStorm session and come up with organized ideas and streamlined thought process.",class: "span12 btn btn-large btn-primary"%></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+        <% else%>
+    <%= @current_brain_storm_session.inspect %>
+    <% end%>
+  </div>
+</div>

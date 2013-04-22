@@ -15,9 +15,10 @@ MentalConstructs::Application.routes.draw do
       get 'mark_remembrall_as_complete'
       get 'delete_dossier'
       get 'remove_construct_from_dossier'
-      #get 'build_construct'
     end
     collection do
+      post 'new_brain_storm_session'
+      post 'start_previous_brain_storm_session'
       post 'google_search'
       post 'wikipedia_search'
       post 'bing_search'
