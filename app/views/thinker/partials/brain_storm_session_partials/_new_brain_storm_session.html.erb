@@ -1,7 +1,9 @@
+<button id="bs-form-toggle" class="btn btn-small btn-default pull-right">Start Different Session</button>
+<br>
+<br>
+<div id="new-brain-storm-session-forms">
 <div class="blanker-box" style="padding: 13px">
   <div class="container-fluid">
-
-    <% if @current_brain_storm_session.nil?%>
     <div class="row-fluid">
       <div class="span5">
         <div class="opaqify-container" style="text-align: center">
@@ -15,7 +17,7 @@
               <% end %>
 
         <% else %>
-          <p>No BrainStorm Sessions have ever been initiated.</p>
+          <p>No BrainStorm Sessions have ever been initiated. Begin a new one.</p>
           <% end %>
         </div>
       </div>
@@ -32,8 +34,24 @@
         </div>
       </div>
     </div>
-        <% else%>
-    <%= @current_brain_storm_session.inspect %>
+    </div>
+    </div>
+    </div>
+<br>
+<div class="blanker-box" style="padding: 13px">
+  <div class="container-fluid">
+        <%  unless @current_brain_storm_session.nil?%>
+        <p class="lead" style="color: #ffffff;text-align: center"><%= @current_brain_storm_session.session_title %></p>
+            <%= render 'thinker/partials/brain_storm_session_partials/display_ongoing_brain_storm_session_data' %>
     <% end%>
   </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('#new-brain-storm-session-forms').hide(); //Initially form wil be hidden.
+        $('#bs-form-toggle').click(function() {
+            $('#new-brain-storm-session-forms').toggle();//Form shows on button click
+        });
+    });
+</script>

@@ -1,0 +1,17 @@
+<!--<div class="opaqify-container">-->
+    <% @current_brain_storm_session.flashes.each do |flash| %>
+        <div class="row-fluid">
+          <div class="span4"></div>
+          <div class="span4 blanker-box" style="padding: 5px;text-align: center">
+            <%= flash.flash.capitalize %></div>
+          <div class="span4">
+            <% flash.sub_points.each do |point|%>
+                <div class="blanker-box" style="padding: 3px"><%= point.capitalize %>
+                </div>
+            <% end %>
+          </div>
+        </div>
+      <br>
+      <hr>
+    <% end %>
+<!--</div>-->

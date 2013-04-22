@@ -20,11 +20,7 @@ class ThinkerController < ApplicationController
     @construct = current_thinker.constructs.new
     @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
-    puts @brain_storm_sessions.class
-    puts @brain_storm_sessions.count
-    puts @brain_storm_sessions.inspect
-
-    puts "=========="
+    @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue nil
   end
 
   # =================== Cognition Methods =========================
@@ -154,10 +150,13 @@ class ThinkerController < ApplicationController
   #=========================== BrainStorm Session Methods ============================
   def new_brain_storm_session
     @current_brain_storm_session = current_thinker.brain_storm_sessions.create(:session_title => params[:session_title]) if current_thinker.brain_storm_sessions.find_by_session_title(params[:session_title].strip.titleize).nil?
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
   end
 
   def start_previous_brain_storm_session
-    @current_brain_storm_session = current_thinker.brain_storm_sessions.where(:session_title => params[:brain_storm_session])
+    @current_brain_storm_session = current_thinker.brain_storm_sessions.find_by_session_title(params[:brain_storm_session])
+    current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
   end
 
 end

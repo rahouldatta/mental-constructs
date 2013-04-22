@@ -2,7 +2,7 @@ class Thinker < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :alias, :first_name, :last_name, :age, :gender
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :alias, :first_name, :last_name, :age, :gender, :last_brain_storm_session_id
 
   #======================= ASSOCIATIONS ========================
   has_many :factoids

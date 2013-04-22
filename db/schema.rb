@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422185625) do
+ActiveRecord::Schema.define(:version => 20130422201932) do
 
   create_table "brain_storm_sessions", :force => true do |t|
     t.integer  "construct_id"
@@ -77,23 +77,24 @@ ActiveRecord::Schema.define(:version => 20130422185625) do
   end
 
   create_table "thinkers", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "email",                       :default => "", :null => false
+    t.string   "encrypted_password",          :default => "", :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          :default => 0
+    t.integer  "sign_in_count",               :default => 0
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
+    t.datetime "created_at",                                  :null => false
+    t.datetime "updated_at",                                  :null => false
     t.string   "alias"
     t.string   "first_name"
     t.string   "last_name"
     t.integer  "age"
     t.string   "gender"
+    t.integer  "last_brain_storm_session_id"
   end
 
   add_index "thinkers", ["email"], :name => "index_thinkers_on_email", :unique => true
