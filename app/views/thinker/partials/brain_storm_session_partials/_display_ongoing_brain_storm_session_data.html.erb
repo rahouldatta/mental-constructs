@@ -67,11 +67,11 @@
     <%# end%>
   </div>
   <div class="span5">
-    <p>Add To Your BrainStorms ... </p>
+    <p>Add New Major Points (Parent Points) To Your BrainStorms ... </p>
 
     <div class="opaqify-container form-inline" style="background-color:rgba(255,255,255,0.15);" >
       <%= form_tag({:controller => "thinker",:action => "add_new_flash"}, :remote => true, :style => "margin: 0px;") do %>
-          <div id="tooltip-show"><%= text_field(nil,:flash, :class=> "span10", :rows => "3", :placeholder => "Main Point... ", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
+          <div id="tooltip-show"><%= text_field(nil,:flash, :class=> "span10", :rows => "3", :placeholder => "New Parent Point ... ", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
             <%= hidden_field_tag :brain_storm_session_id, @current_brain_storm_session.id%>
             <%= submit_tag "Add", :title => "Add new Flash",class: "span2 btn btn-small btn-primary"%></div>
       <% end %>
