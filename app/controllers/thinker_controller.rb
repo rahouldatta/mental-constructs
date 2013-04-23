@@ -167,5 +167,12 @@ class ThinkerController < ApplicationController
     @current_brain_storm_session = @brain_storm_sessions.find(current_thinker.last_brain_storm_session_id) rescue nil
   end
 
+  def add_new_flash
+    b = BrainStormSession.find(params[:brain_storm_session_id])
+    b.flashes.create(:flash => params[:flash])
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @current_brain_storm_session = b rescue nil
+  end
+
 end
 

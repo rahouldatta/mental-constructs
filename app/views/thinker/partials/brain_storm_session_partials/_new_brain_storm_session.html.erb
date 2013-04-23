@@ -38,16 +38,17 @@
     </div>
     </div>
 <%  unless @current_brain_storm_session.nil?%>
-<p>Showing Last Updated BrainStorm Session - </p>
-<div class="blanker-box" style="padding: 13px">
+<!--<p>Showing Last Updated BrainStorm Session - </p>-->
+<!--<div class="blanker-box" style="padding: 13px">-->
   <div class="container-fluid">
 
 
-        <p class="lead" style="color: #ffffff;text-align: center"><%= @current_brain_storm_session.session_title %></p>
+    <div class="text-info" style="text-align: center;"><h5 style="font-size: 21px;"><%= @current_brain_storm_session.session_title %></h5></div>
+    <br>
             <%= render 'thinker/partials/brain_storm_session_partials/display_ongoing_brain_storm_session_data' %>
 
   </div>
-</div>
+<!--</div>-->
 <% end%>
 
 <script>

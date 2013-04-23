@@ -1,16 +1,18 @@
 <!--<div class="opaqify-container">-->
-    <% @current_brain_storm_session.flashes.order("created_at ASC").each do |flash| %>
+<% flashes = @current_brain_storm_session.flashes %>
+    <% flashes.order("created_at ASC").each_with_index do |flash,i| %>
+    <div class="blanker-box" style="padding: 13px">
         <div class="row-fluid">
           <div class="span2"></div>
-          <div class="span5 blanker-box" style="padding: 9px;">
-            <p style="text-align: center"><%= flash.flash.capitalize %></p></div>
-          <div class="span5"><p style="padding-left: 25px;padding-top: 15px;">Sub Points -</p>
-            <div class="blanker-box" style="padding: 13px">
+          <div class="span5 opaqify-container" style="background-color:rgba(255,255,255,0.15);" >
+            <p style="text-align: center;font-size: 15px"><%= flash.flash.capitalize %></p></div>
+          <div class="span5"><p  style="padding-left: 25px;padding-top: 5px;">Sub Points -</p>
+            <div class="blanker-box" style="padding: 11px">
               <% flash.sub_points.each_with_index do |point,i|%>
                   <p>&nbsp;&bull;&nbsp;&nbsp;&nbsp;<%= point.capitalize %>
                   </p>
               <% end %>
-              <div class="opaqify-container form-inline">
+              <div class="opaqify-container form-inline" style="background-color:rgba(255,255,255,0.15);padding: 7px">
                 <%= form_tag({:controller => "thinker",:action => "insert_subpoints"}, :remote => true, :style => "margin: 0px;") do %>
                     <div id="tooltip-show"><%= text_field(nil,:sub_point, :class=> "span10", :rows => "3", :placeholder => "Add SubPoint ... ", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
                       <%= hidden_field_tag :flash_id, flash.id%>
@@ -24,7 +26,32 @@
         </div>
           <!--</div>-->
 
-      <br>
-      <hr>
+    </div>
+    <% unless flashes.count == i+1 %>
+        <div style="text-align: center;color: white">|</div>
+      <!--<hr>-->
     <% end %>
+    <% end %>
+<br>
+<hr>
+<div class="row-fluid">
+  <div class="span2">
+    <%# if flashes.blank? %>
+    <%# end%>
+  </div>
+  <div class="span5">
+    <p>Add To Your BrainStorms ... </p>
+
+    <div class="opaqify-container form-inline" style="background-color:rgba(255,255,255,0.15);" >
+      <%= form_tag({:controller => "thinker",:action => "add_new_flash"}, :remote => true, :style => "margin: 0px;") do %>
+          <div id="tooltip-show"><%= text_field(nil,:flash, :class=> "span10", :rows => "3", :placeholder => "Main Point... ", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
+            <%= hidden_field_tag :brain_storm_session_id, @current_brain_storm_session.id%>
+            <%= submit_tag "Add", :title => "Add new Flash",class: "span2 btn btn-small btn-primary"%></div>
+      <% end %>
+    </div>
+
+  </div>
+  <div class="span5"></div>
+</div>
+
 <!--</div>-->
