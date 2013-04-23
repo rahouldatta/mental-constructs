@@ -37,7 +37,8 @@
                     </div>
                   </div>
               <% end %>
-
+              <br>
+                                       <hr>
               <div class="opaqify-container form-inline" style="background-color:rgba(255,255,255,0.15);padding: 7px">
                 <%= form_tag({:controller => "thinker",:action => "insert_subpoints"}, :remote => true, :style => "margin: 0px;") do %>
                     <div id="tooltip-show"><%= text_field(nil,:sub_point, :class=> "span10", :rows => "3", :placeholder => "Add SubPoint ... ", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
