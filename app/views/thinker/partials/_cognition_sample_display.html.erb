@@ -59,7 +59,7 @@
           <%= link_to("#", class: "btn btn-mini btn-success", :title => "Enhance the BrainWave. Convert it into a BrainChild") do %>
               <i class="icon-eye-open icon-white"></i>
           <% end %>&nbsp;|&nbsp;
-          <a href="http://www.google.com/search?q=<%= @factoids.first.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small pull-right" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+          <a href="http://www.google.com/search?q=<%= @factoids.first.cognition.gsub(" ","+") rescue nil%>" target="_blank" class="btn btn-small pull-right" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
 
   <% end %>
     </div>

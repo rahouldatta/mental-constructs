@@ -19,6 +19,7 @@ MentalConstructs::Application.routes.draw do
       get 'delete_subpoint'
     end
     collection do
+      post 'search_thinker_data'
       post 'new_brain_storm_session'
       post 'start_previous_brain_storm_session'
       post 'google_search'

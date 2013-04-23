@@ -1,3 +1,4 @@
+<div class="blanker-box" style="padding: 13px">
 <% if @factoids.blank? %>
     No registered factoids yet. Record facts for future references...  <i class="icon-pencil icon-white"></i>
 <% else %>
@@ -8,7 +9,7 @@
 
           <div class="span8">
             <div class="">
-              <p class=""><%= factoid.cognition.titleize%></p>
+              <p class=""><%= factoid.cognition.titleize rescue nil%></p>
             </div>
           </div>
           <div class="span4">
@@ -25,7 +26,7 @@
                   <div class="pull-right">
                     <%#= link_to ("http://www.google.com/search?q=#{factoid.factoid.gsub(" ","+")}"), :target => "_blank", :class => "btn btn-small" do %>
                     <!--<i class="icon-eye-open"></i> Google This<%#end %>&nbsp;|&nbsp;-->
-                    <a href="http://www.google.com/search?q=<%= factoid.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
+                    <a href="http://www.google.com/search?q=<%= factoid.cognition.gsub(" ","+") rescue nil%>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
                     &nbsp;
                   </div>
                 </div>
@@ -37,6 +38,7 @@
     <% end %>
     <%#= will_paginate @constructs,:container => false, :renderer => BootstrapPagination::Rails %>
 <% end %>
+</div>
 <script>
     $('#tooltip_show').tooltip('show')
 </script>

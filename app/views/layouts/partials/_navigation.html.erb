@@ -19,15 +19,17 @@
         <!--<li class="divider-vertical"></li>-->
         <li class=""><%= link_to "#" do %><i class="icon-globe icon-white"></i> Exhibits<% end %></li>
         <li class=""><%= link_to "#" do %><i class="icon-fire icon-white"></i> HOWL<% end %></li>
-        <% if request.fullpath == "/exhibits"%>
-
+        <% unless request.fullpath == root_path%>
+            <li class="divider-vertical"></li>
             <li class="">
-              <div class="form-inline">
-                <%= render 'exhibits/partials/find_exhibits'%></div></li>
+              <div class="form-search">
+                <%= render 'thinker/partials/search_form' %></div></li>
         <%end%>
       </ul>
     </div>
     <!-- Everything you want hidden at 940px or less, place within here -->
+
+
     <div class="nav-collapse collapse">
       <!--======================= Navbar Login Form and Options ============================-->
       <ul class="nav navbar-form pull-right">

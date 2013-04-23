@@ -33,7 +33,7 @@ class ThinkerController < ApplicationController
   end
 
   def delete_factoid
-    Factoids.find(params[:id]).destroy unless params[:id].nil?
+    Factoid.find(params[:id]).destroy unless params[:id].nil?
   end
 
   def delete_remembrall

@@ -1,3 +1,4 @@
+<div class="blanker-box" style="padding: 13px">
 <% if @epiphanies.blank? %>
     No registered Epiphanies yet. Seems like something is a little rusty...  <i class="icon-pencil icon-white"></i>
 <% else %>
@@ -33,6 +34,7 @@
     <% end %>
     <%#= will_paginate @constructs,:container => false, :renderer => BootstrapPagination::Rails %>
 <% end %>
+</div>
 <script>
     $('#tooltip_show').tooltip('show')
 </script>
