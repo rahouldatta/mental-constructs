@@ -3,15 +3,30 @@
     <% flashes.order("created_at ASC").each_with_index do |flash,i| %>
     <div class="blanker-box" style="padding: 13px">
         <div class="row-fluid">
-          <div class="span2"></div>
+          <div class="span2">
+            <div class="opaqify-container" id="tooltip_show">
+              <%= link_to delete_flash_thinker_path(flash), :class=>"btn btn-small btn-danger", :confirm => "Are you sure you want to delete this. All sub points will also be lost?", :title => "Delete this flash.", :remote => true do%>
+                <i class="icon-trash icon-white"></i>
+              <% end %>
+            </div>
+          </div>
           <div class="span5 opaqify-container" style="background-color:rgba(255,255,255,0.15);" >
-            <p style="text-align: center;font-size: 15px"><%= flash.flash.capitalize %></p></div>
+            <div style="text-align: center;font-size: 19px;color: white"><%= flash.flash.capitalize %></div></div>
           <div class="span5"><p  style="padding-left: 25px;padding-top: 5px;">Sub Points -</p>
             <div class="blanker-box" style="padding: 11px">
-              <% flash.sub_points.each_with_index do |point,i|%>
-                  <p>&nbsp;&bull;&nbsp;&nbsp;&nbsp;<%= point.capitalize %>
-                  </p>
+              <% flash.sub_points.each_with_index do |point,subpoint_id|%>
+                  <div class="row-fluid">
+                    <div class="span10" style="color: white">
+                      &nbsp;&bull;&nbsp;&nbsp;&nbsp;<%= point.capitalize %>
+                    </div>
+                    <div class="span2">&nbsp;
+                      <%= link_to delete_subpoint_thinker_path(flash,subpoint_id), :class=>"btn btn-mini btn-danger", :title => "Delete this flash.", :remote => true do%>
+                          <i class="icon-trash icon-white"></i>
+                      <% end %>
+                    </div>
+                  </div>
               <% end %>
+
               <div class="opaqify-container form-inline" style="background-color:rgba(255,255,255,0.15);padding: 7px">
                 <%= form_tag({:controller => "thinker",:action => "insert_subpoints"}, :remote => true, :style => "margin: 0px;") do %>
                     <div id="tooltip-show"><%= text_field(nil,:sub_point, :class=> "span10", :rows => "3", :placeholder => "Add SubPoint ... ", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>

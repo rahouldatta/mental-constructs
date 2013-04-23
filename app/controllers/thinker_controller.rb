@@ -174,5 +174,19 @@ class ThinkerController < ApplicationController
     @current_brain_storm_session = b rescue nil
   end
 
+  def delete_subpoint
+    f = Flash.find(params[:id])
+    f.sub_points.delete_at(params[:format].to_i)
+    f.save
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue nil
+  end
+
+  def delete_flash
+    Flash.find(params[:id]).destroy
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue nil
+  end
+
 end
 

@@ -15,6 +15,8 @@ MentalConstructs::Application.routes.draw do
       get 'mark_remembrall_as_complete'
       get 'delete_dossier'
       get 'remove_construct_from_dossier'
+      get 'delete_flash'
+      get 'delete_subpoint'
     end
     collection do
       post 'new_brain_storm_session'
