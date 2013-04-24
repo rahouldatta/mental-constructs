@@ -68,7 +68,8 @@ class ThinkerController < ApplicationController
   # =================== Search Methods =========================
 
   def search_thinker_data
-    @search_results = current_thinker.find_relevant_data(params[:search_parameter])
+    params[:search_parameter].nil? ? @search_results = nil :
+            @search_results = current_thinker.find_relevant_data(params[:search_parameter])
   end
 
   def google_search
