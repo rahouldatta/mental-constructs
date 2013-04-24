@@ -41,10 +41,17 @@
 <!--<p>Showing Last Updated BrainStorm Session - </p>-->
 <!--<div class="blanker-box" style="padding: 13px">-->
   <div class="container-fluid">
-
-
-    <div class="text-info" style="text-align: center;"><h5 style="font-size: 21px;"><%= @current_brain_storm_session.session_title %></h5></div>
+    <div class="row-fluid">
+      <div class="span2"></div>
+      <div class="span8">
+        <div class="blanker-box" style="padding: 13px">
+          <div class="text-info" style="text-align: center;"><h5 style="font-size: 21px;"><%= @current_brain_storm_session.session_title %></h5></div>
+        </div>
+      </div>
+      <div class="span2"></div>
+    </div>
     <br>
+    <hr>
             <%= render 'thinker/partials/brain_storm_session_partials/display_ongoing_brain_storm_session_data' %>
 
   </div>

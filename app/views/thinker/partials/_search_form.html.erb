@@ -1,4 +1,4 @@
 <%= form_tag({:controller => "thinker",:action => "search_thinker_data"}, :remote => true, :style => "margin: 0px; padding :3px 1px 3px 2px;", :class => "form-search") do %>
-    <div id="tooltip-show">  <%= text_field(nil,:search_data, :class=> "span4 input-medium search-query", :placeholder => "Search your personal contents ...", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true, :id=>"" ) %>
+    <div id="tooltip-show">  <%= text_field(nil,:search_parameter, :class=> "span4 input-medium search-query", :placeholder => "Search your personal contents ...", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true, :id=>"" ) %>
       <%= submit_tag "Search", :title => "Search your personally recorded Constructs, Epiphanies, Factoids and Brainwaves", class: "btn btn-success", :disable_with => "Searching ...", :onClick => "goToTop();" %></div>
 <% end %>

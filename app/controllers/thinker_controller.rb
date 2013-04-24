@@ -16,6 +16,7 @@ class ThinkerController < ApplicationController
   end
 
   def show
+    @search_results = nil
     @thinker = current_thinker
     @construct = current_thinker.constructs.new
     @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
@@ -64,7 +65,11 @@ class ThinkerController < ApplicationController
     current_thinker.remembralls.create(:task => params[:task], :status => false)
   end
 
-  # =================== WWW Search Methods =========================
+  # =================== Search Methods =========================
+
+  def search_thinker_data
+    @search_results = current_thinker.find_relevant_data(params[:search_parameter])
+  end
 
   def google_search
     redirect_to "http://www.google.com/search?q=#{params[:google_search_parameter].strip.gsub(/\s+/,"+")}"

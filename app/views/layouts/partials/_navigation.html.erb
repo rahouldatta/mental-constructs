@@ -19,11 +19,13 @@
         <!--<li class="divider-vertical"></li>-->
         <li class=""><%= link_to "#" do %><i class="icon-globe icon-white"></i> Exhibits<% end %></li>
         <li class=""><%= link_to "#" do %><i class="icon-fire icon-white"></i> HOWL<% end %></li>
-        <% unless request.fullpath == root_path%>
+        <% if thinker_signed_in?%>
+        <%# if request.fullpath == thinker_path(current_thinker)%>
             <li class="divider-vertical"></li>
             <li class="">
               <div class="form-search">
                 <%= render 'thinker/partials/search_form' %></div></li>
+        <%#end%>
         <%end%>
       </ul>
     </div>
