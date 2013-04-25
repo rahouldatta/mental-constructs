@@ -41,6 +41,7 @@ class Thinker < ActiveRecord::Base
 
   #========================== Search Methods ==========================
   SEARCH_IN_FEATURES = ["constructs","epiphanies","factoids",'brain_wave','brain_storm_sessions']
+
   def find_relevant_data(search_string)
     search_results = {}
     unless search_string.blank?

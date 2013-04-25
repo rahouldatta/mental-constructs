@@ -33,6 +33,7 @@ class ConstructsController < ApplicationController
   def create
     @construct = Construct.new(params[:construct])
     @construct.thinker_id = current_thinker.id
+    @construct.dossier_id = nil if params[:construct][:dossier_id].eql? "Select Dossier"
     respond_to do |format|
       if @construct.save
         format.html { redirect_to thinker_path(current_thinker), notice: 'Construct was successfully created.' }
@@ -48,7 +49,7 @@ class ConstructsController < ApplicationController
   # PUT /constructs/1.json
   def update
     @construct = Construct.find(params[:id])
-
+    @construct.dossier_id = nil if params[:construct][:dossier_id].eql? "Select Dossier"
     respond_to do |format|
       if @construct.update_attributes(params[:construct])
         format.html { redirect_to thinker_path(current_thinker), notice: 'Construct was successfully updated.' }

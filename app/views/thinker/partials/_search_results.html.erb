@@ -1,93 +1,103 @@
 <% if @search_results.nil?%>
 
 <% else %>
-    <div class="">
-      <div class="pull-right"><%= link_to "X", search_thinker_data_thinker_index_path , :class => "btn-link", :remote => true, :method => 'post'%></div>
-      <center><p class="text-info" style="text-align:  center;"><strong>Search Results</strong></p></center>
-      <div class="row-fluid">
+    <div class="pull-right" xmlns="http://www.w3.org/1999/html"><%= link_to "X", search_thinker_data_thinker_index_path , :class => "btn-link", :remote => true, :method => 'post'%></div>
+    <center><p class="text-info" style="text-align:  center;"><strong>Search Results</strong></p></center>
 
-        <!--=============================== Constructs Search Display ===============================   -->
-        <div class="span5">
+    <div class="row-fluid">
 
-          <% if @search_results[:constructs].blank? %>
-              Your search yielded no Constructs ...
-          <% else %>
-              <div class="opaqify">
-                <ul><center><p class="text-info" style="text-align:  center;"><strong>Constructs</strong></p></center>
+      <div class="span8">
+        <!--<div class="opaqify-container">-->
+          <div class="blank-box" style="padding:13px">
+        <% if @search_results[:constructs].blank? %>
+            Your search yielded no Constructs ...
+        <% else %>
 
-                  <% @search_results[:constructs].each do |c| %>
-                      <div class="row-fluid">
+              <ul><center><p class="text-info" style="text-align:  center;"><strong>Constructs</strong></p></center>
 
-                        <div class="span3">
-                          <div id="tooltip_show"> <%= link_to(construct_path(c), class: "btn btn-mini btn-inverse", :title=>"View Entire Construct") do %>
-                                <i class="icon-file icon-white"></i><% end %>
-                            &nbsp;|&nbsp;
-                            <%= link_to(edit_construct_path(c), class: "btn btn-mini btn-default", :title => "Edit this Construct") do %>
-                                <i class="icon-edit"></i>
-                            <% end %>
-                          </div>
-                        </div>
-                        <div class="span9" style="padding-top: 5px;">
-                          <li><strong><%= c.title %></strong>&nbsp;-&nbsp;&nbsp;
-                            <span class="muted"><i class="icon-folder-close icon-white"></i>&nbsp;<%= Dossier.find(c.dossier_id).dossier_name rescue "Stand Alone"%></span></li>
-                        </div>
-                      </div>
-                  <% end %>
-                </ul>
-              </div>
-          <% end %>
+                <% @search_results[:constructs].each do |c| %>
+                    <div class="row-fluid">
 
-        </div>
-
-        <!--=============================== Factoids Search Display ===============================-->
-        <div class="span3">
-
-          <% if @search_results[:factoids].blank? %>
-              Your search yielded no Factoids.
-          <% else %>
-              <div class="opaqify">
-                <center><p class="text-info" style="text-align:  center;"><strong>Factoids</strong></p></center>
-                <ul>
-                  <% @search_results[:factoids].each do |f| %>
-                      <li><%= f.cognition.titleize %></li>
-                  <% end %>
-                </ul>
-              </div>
-
-          <% end %>
-        </div>
-
-        <!--=============================== Epiphanies Search Display ===============================-->
-
-        <div class="span4">
-
-          <% if @search_results[:epiphanies].blank? %>
-              Your search yielded no Epiphanies.
-          <% else %>
-              <div class="opaqify">
-                <center><p class="text-info" style="text-align:  center;"><strong>Epiphanies</strong></p></center>
-                <ul>
-                  <% @search_results[:epiphanies].each do |e| %>
-                      <div class="row-fluid">
-                        <div class="span2">
-                          <%= link_to convert_epiphany_to_construct_thinker_path(e), class: "btn btn-mini btn-success", :title => "Convert this Epiphany into A CONSTRUCT" do %>
-                              <i class="icon-pencil icon-white"></i>
+                      <div class="span2">
+                        <div id="tooltip_show"> <%= link_to(construct_path(c), class: "btn btn-mini btn-inverse", :title=>"View Entire Construct") do %>
+                              <i class="icon-file icon-white"></i><% end %>
+                          &nbsp;|&nbsp;
+                          <%= link_to(edit_construct_path(c), class: "btn btn-mini btn-default", :title => "Edit this Construct") do %>
+                              <i class="icon-edit"></i>
                           <% end %>
                         </div>
-                        <div class="span10" style="padding-top: 5px;">
-                          <li><%= e.cognition.titleize %></li>
-                        </div>
                       </div>
-                  <% end %>
-                </ul>
+                      <div class="span7">
+                        <p>&nbsp;&nbsp;&nbsp;<%= c.title.titleize %></p>
+                      </div>
+                      <div class="span3">
+                        <i class="icon-folder-close icon-white" style="text-align: center"></i>
+                        <span class="muted" style="text-align: center">&nbsp;<%= Dossier.find(c.dossier_id).dossier_name rescue "Stand Alone"%></span></li>
+                      </div>
+                    </div>
+                <% end %>
+              </ul>
+
+        <% end %>
+          </div>
+        <br>
+        <hr>
+        <div class="row-fluid">
+          <div class="span7">
+            <div class="blank-box" style="padding: 13px">
+            <% if @search_results[:epiphanies].blank? %>
+                Your search yielded no Epiphanies.
+            <% else %>
+                  <center><p class="text-info" style="text-align:  center;"><strong>Epiphanies</strong></p></center>
+                    <% @search_results[:epiphanies].each do |e| %>
+                            <p>&bull;&nbsp;&nbsp;<%= e.cognition.titleize %></p>
+                    <% end %>
+            <% end %>
+            </div>
+          </div>
+          <div class="span5">
+            <div class="blank-box" style="padding: 13px">
+            <% if @search_results[:factoids].blank? %>
+                Your search yielded no Factoids.
+            <% else %>
+                  <center><p class="text-info" style="text-align:  center;"><strong>Factoids</strong></p></center>
+                    <% @search_results[:factoids].each do |f| %>
+                        <p>&bull;&nbsp;&nbsp;<%= f.cognition.titleize %></p>
+                    <% end %>
+            <% end %>
               </div>
+          </div>
+          <!--</div>-->
+          </div>
+          </div>
+
+      <div class="span4">
+        <div class="blank-box" style="padding: 13px">
+          <% if @search_results[:brain_storm_sessions].blank? %>
+              Your search yielded no BrainStorm Sessions.
+          <% else %>
+              <center><p class="text-info" style="text-align:  center;"><strong>BrainStorm Sessions</strong></p></center>
+              <% @search_results[:brain_storm_sessions].each do |bss| %>
+                  <p>&bull;&nbsp;&nbsp;<%= bss.session_title.titleize %></p>
+              <% end %>
           <% end %>
         </div>
-      </div>
-    </div>
-    <br>
-<% end %>
+        <br>
+        <hr>
+        <div class="blank-box" style="padding: 13px">
+          <% if @search_results[:brain_waves].blank? %>
+              Your search yielded no BrainWaves.
+          <% else %>
+              <center><p class="text-info" style="text-align:  center;"><strong>BrainWaves</strong></p></center>
+              <% @search_results[:brain_waves].each do |bw| %>
+                  <p>&bull;&nbsp;&nbsp;<%= bw.cognition.titleize %></p>
+              <% end %>
+          <% end %>
 
+        </div>
+    </div>
+    </div>
+<% end %>
 <script>
     $('#tooltip_show').tooltip('show')
 </script>
