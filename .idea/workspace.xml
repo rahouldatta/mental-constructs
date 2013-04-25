@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/constructs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/thinker.css.scss.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/thinker.css.scss.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thinker.rb" afterPath="$PROJECT_DIR$/app/models/thinker.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +12,7 @@
     <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366834269928" ignored="false" />
     <file path="/content_helper.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365970405132" ignored="false" />
     <file path="/20130414195739_devise_create_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971089274" ignored="false" />
-    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366834316203" ignored="false" />
+    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366927705910" ignored="false" />
     <file path="/20130414200047_add_columns_to_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971385968" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/models/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973091351" ignored="false" />
     <file path="/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973084004" ignored="false" />
@@ -128,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search_results.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_search_results.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="44" selection-start="3947" selection-end="3947" vertical-scroll-proportion="0.65317917">
+            <state line="25" column="35" selection-start="1324" selection-end="1324" vertical-scroll-proportion="-11.68">
               <folding>
                 <element signature="n#style#0;n#p#0;n#center#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -160,10 +155,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thinker.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="thinker.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="95" selection-start="1261" selection-end="1281" vertical-scroll-proportion="0.0">
+            <state line="93" column="0" selection-start="2787" selection-end="2787" vertical-scroll-proportion="0.82147837">
               <folding />
             </state>
           </provider>
@@ -217,10 +212,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/constructs/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
         <option value="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/thinker.css.scss.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
       </list>
     </option>
   </component>
@@ -1258,16 +1253,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="95" selection-start="1261" selection-end="1281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="44" selection-start="3947" selection-end="3947" vertical-scroll-proportion="0.65317917">
+        <state line="25" column="35" selection-start="1324" selection-end="1324" vertical-scroll-proportion="-11.68">
           <folding>
             <element signature="n#style#0;n#p#0;n#center#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1283,6 +1271,13 @@
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#center#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="2787" selection-end="2787" vertical-scroll-proportion="0.82147837">
+          <folding />
         </state>
       </provider>
     </entry>

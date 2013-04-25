@@ -87,8 +87,14 @@ class Thinker < ActiveRecord::Base
   def search_brain_storm_sessions(brain_storm_sessions,search_string)
     found = []
     brain_storm_sessions.each do |brain_storm_session|
-      found << brain_storm_session if exists_somewhere?(brain_storm_session.session_title,search_string)
-    end
+      if exists_somewhere?(brain_storm_session.session_title,search_string)
+        found << brain_storm_session
+      else
+        brain_storm_session.flashes.each do |flash|
+          found << brain_storm_session if exists_somewhere?(flash.flash,search_string) or exists_somewhere?(flash.sub_points.to_s,search_string)
+        end
+      end
+      end
     found
   end
 
