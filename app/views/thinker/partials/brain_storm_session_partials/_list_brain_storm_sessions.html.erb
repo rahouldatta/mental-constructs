@@ -1,34 +1,40 @@
-<% @brain_storm_sessions.each do |brain_storm_session| %>
-    <div class="container-fluid">
-      <div class="row-fluid">
+<div class="blanker-box" style="padding: 13px;">
+<% if @brain_storm_sessions.blank? %>
+    <p>No Brain Storm Sessions have been initiated yet.</p>
+<% else %>
+    <% @brain_storm_sessions.each do |brain_storm_session| %>
+        <div class="container-fluid">
+          <div class="row-fluid">
 
-        <div class="span2">
-          <p><%= link_to "#", :class=>"span 12 btn btn-default" do %>
-                <i class="icon-file"></i> Review
-            <% end %></p>
-          <br>
-          <br>
-          <p style="text-align: center">
-            <%= link_to delete_brain_storm_thinker_path(brain_storm_session), :class=>"btn-small btn-danger", :confirm => "Are you sure this entire BrainStorm is to be Dropped?", :remote => true do %>
-                <i class="icon-trash icon-white"></i> Delete
-            <% end %></p>
+            <div class="span2">
+              <p><%= link_to "#", :class=>"span 12 btn btn-default" do %>
+                    <i class="icon-file"></i> Review
+                <% end %></p>
+              <br>
+              <br>
+              <p style="text-align: center">
+                <%= link_to delete_brain_storm_thinker_path(brain_storm_session), :class=>"btn-small btn-danger", :confirm => "Are you sure this entire BrainStorm is to be Dropped?", :remote => true do %>
+                    <i class="icon-trash icon-white"></i> Delete
+                <% end %></p>
 
+            </div>
+
+            <div class="span7">
+              <h5 class="text-info"><%= brain_storm_session.session_title.titleize %><span class="muted">&nbsp;&nbsp;- &nbsp;<small><%= brain_storm_session.created_at.utc.localtime.to_s(:short)%></small></span></h5>
+              <% brain_storm_session.flashes.each do |flash| %>
+                  <p>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;<%="#{flash.flash.capitalize}" %>&nbsp;&nbsp;&nbsp;<span class="muted"><%= "-- (#{flash.sub_points.count} subpoints)" %></span> </p>
+              <% end %>
+            </div>
+
+            <div class="span3">
+
+              <p class="muted" style="text-align: center">Belongs To Construct -
+              <div class="blanker-box" style="padding: 7px;text-align: center;color: white"> <%= "None" %></div></p>
+            </div>
+
+          </div>
+          <hr>
         </div>
-
-        <div class="span7">
-          <h5 class="text-info"><%= brain_storm_session.session_title.titleize %><span class="muted">&nbsp;&nbsp;- &nbsp;<small><%= brain_storm_session.created_at.utc.localtime.to_s(:short)%></small></span></h5>
-          <% brain_storm_session.flashes.each do |flash| %>
-          <p>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;<%="#{flash.flash.capitalize}" %>&nbsp;&nbsp;&nbsp;<span class="muted"><%= "-- (#{flash.sub_points.count} subpoints)" %></span> </p>
-          <% end %>
-        </div>
-
-        <div class="span3">
-
-          <p class="muted" style="text-align: center">Belongs To Construct -
-          <div class="blanker-box" style="padding: 7px;text-align: center;color: white"> <%= "None" %></div></p>
-        </div>
-
-      </div>
-      <hr>
-    </div>
+    <% end %>
 <% end %>
+</div>
