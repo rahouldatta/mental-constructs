@@ -1,0 +1,10 @@
+<div class="muted" style="text-align: center">Map this BrainStorm to Construct - </div>
+<% selected_construct  = Construct.find(@current_brain_storm_session.construct_id).title.titleize rescue "Select Construct"%>
+<% constructs = [selected_construct]; @constructs.each {|c| ( constructs << c.title )if c.brain_storm_session.nil?} %>
+<div class="blanker-box" style="padding: 13px;">
+<%= form_tag({:controller => "thinker",:action => "map_brainstorm_to_construct"}, :remote => true, :style => "margin: 0px;") do %>
+    <%= select_tag :construct, options_for_select(constructs.uniq), :class=>"span12" %>
+    <%= hidden_field_tag :brain_storm_id, @current_brain_storm_session.id%>
+    <div id="tooltip-show"><%= submit_tag "Map to Construct", :title => "Map this brainwave to the construct of your choice.",class: "span6 btn btn-primary"%></div>
+<% end %>
+</div>

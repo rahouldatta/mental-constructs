@@ -201,5 +201,14 @@ class ThinkerController < ApplicationController
     current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
   end
 
+  def map_brainstorm_to_construct
+    c = Construct.find_by_title("#{params[:construct]}") rescue nil
+    brain_storm = BrainStormSession.find(params[:brain_storm_id])
+    brain_storm.update_attributes(:construct_id => c.id)
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @current_brain_storm_session = brain_storm
+
+  end
+
 end
 

@@ -7,7 +7,9 @@
       <div style="text-align: center;font-size: 27px;color: black">START</div>
     </div>
   </div>
-  <div class="span4"></div>
+  <div class="span4" id="select-construct-form">
+    <%= render 'thinker/partials/brain_storm_session_partials/select_construct_form' %>
+  </div>
 </div>
 <div style="text-align: center;color: white">|</div>
 <% flashes = @current_brain_storm_session.flashes %>

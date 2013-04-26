@@ -38,6 +38,7 @@ MentalConstructs::Application.routes.draw do
       post 'set_construct_dossier_quality'
       post 'insert_subpoints'
       post 'add_new_flash'
+      post 'map_brainstorm_to_construct'
     end
   end
 
