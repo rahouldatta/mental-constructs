@@ -21,7 +21,7 @@ class ThinkerController < ApplicationController
     @construct = current_thinker.constructs.new
     @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
-    @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue nil
+    @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue @brain_storm_sessions.first
   end
 
   # =================== Cognition Methods =========================
@@ -192,6 +192,13 @@ class ThinkerController < ApplicationController
     Flash.find(params[:id]).destroy
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
     @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue nil
+  end
+
+  def delete_brain_storm
+    BrainStormSession.find(params[:id]).destroy
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @current_brain_storm_session = @brain_storm_sessions.first
+    current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
   end
 
 end

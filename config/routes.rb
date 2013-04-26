@@ -17,6 +17,7 @@ MentalConstructs::Application.routes.draw do
       get 'remove_construct_from_dossier'
       get 'delete_flash'
       get 'delete_subpoint'
+      get 'delete_brain_storm'
     end
     collection do
       post 'search_thinker_data'
