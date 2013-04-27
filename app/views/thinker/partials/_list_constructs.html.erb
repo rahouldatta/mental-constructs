@@ -42,14 +42,14 @@
           <div class="pull-right">
             <% bs = construct.brain_storm_session %>
             <% unless bs.nil? %>
-            <p class="muted" style="text-align: center">Mapped to BrainStorm - <div class="blanker-box" style="padding:7px;color: white;text-align: center"><%=  bs.session_title.titleize  %></div> </p>
+            <p class="muted" style="text-align: center">BrainStorm - <div class="blanker-box" style="padding:7px;color: white;text-align: center"><%=  bs.session_title.titleize  %></div> </p>
             <% end %>
           </div>
         </div>
 
         <div class="span2">
 
-          <p class="muted" style="text-align: center">Belongs To Dossier - <div class="blanker-box" style="padding:7px;color: white;text-align: center"><%= construct.dossier_id.nil? ? "StandAlone" : construct.dossier.dossier_name  %></div> </p>
+          <p class="muted" style="text-align: center">Dossier - <div class="blanker-box" style="padding:7px;color: white;text-align: center"><%= construct.dossier_id.nil? ? "StandAlone" : construct.dossier.dossier_name  %></div> </p>
 
         </div>
 

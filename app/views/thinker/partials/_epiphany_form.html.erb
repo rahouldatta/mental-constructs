@@ -1,5 +1,5 @@
 <div class="text-info"><h5>A Sudden Realization or Thought?</h5></div>
 <%= form_tag({:controller => "thinker",:action => "record_epiphanies"}, :remote => true, :style => "margin: 0px;") do %>
     <%= text_area(nil,:cognition, :class=> "span12", :rows => "4",:placeholder => "Record your Valuable Epiphany (333 characters)", :onkeyup => "CheckMaxlength(this);", :maxlength => 333, :required => true ) %>
-    <div id="tooltip-show"><%= submit_tag "Record Epiphany", :title => "Record your Epiphany and later convert it into a Construct", class: "span5 btn btn-primary"%></div>
+    <div id="tooltip-show"><%= submit_tag "Record Epiphany", :title => "Record your Epiphany and later convert it into a Construct. Find it in Cognitions Tab", class: "span5 btn btn-primary"%></div>
 <% end %>

@@ -7,10 +7,16 @@
       <div style="text-align: center;font-size: 27px;color: black">START</div>
     </div>
   </div>
-  <div class="span4" id="select-construct-form">
-    <div style="color: white;text-align: center"><%= "Belongs to - [ #{@current_brain_storm_session.construct.title.titleize} ]" rescue "Not Mapped to any Construct"%></div>
+  <div class="span4" id="select-construct-form" style="text-align: center">
+    <button id="bs-map-construct-form-toggle" class="btn btn-small btn-default">Construct Mapping</button>
     <br>
+    <br>
+    <div class="opaqify-container" id="map-bs-to-construct-form">
+    <div style="color: white;text-align: center"><%= "Belongs to Construct - [ #{@current_brain_storm_session.construct.title.titleize} ]" rescue "Not Mapped to any Construct"%></div>
+    <br>
+    <hr>
     <%= render 'thinker/partials/brain_storm_session_partials/select_construct_form' %>
+    </div>
   </div>
 </div>
 <div style="text-align: center;color: white">|</div>
@@ -89,5 +95,15 @@
   </div>
 
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('#map-bs-to-construct-form').hide(); //Initially form wil be hidden.
+        $('#bs-map-construct-form-toggle').click(function() {
+            $('#map-bs-to-construct-form').toggle();//Form shows on button click
+        });
+    });
+</script>
+
 
 <!--</div>-->

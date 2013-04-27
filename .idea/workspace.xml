@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_factoid_form.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_factoid_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/constructs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/show.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
@@ -25,7 +26,7 @@
     <file path="/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973084004" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/assets/javascripts/application.js" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365974234132" ignored="false" />
     <file path="/_navigation.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367089914906" ignored="false" />
-    <file path="/thinker.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366743411563" ignored="false" />
+    <file path="/thinker.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367106352243" ignored="false" />
     <file path="/home.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365976161494" ignored="false" />
     <file path="/home.css.scss" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365976208307" ignored="false" />
     <file path="/thinker.css.scss" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366034098070" ignored="false" />
@@ -39,7 +40,7 @@
     <file path="/cognition_sti_class_loader.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366039009054" ignored="false" />
     <file path="/record_epiphanies.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366136708372" ignored="false" />
     <file path="/_brain_wave_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366057858349" ignored="false" />
-    <file path="/_factoid_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366041224997" ignored="false" />
+    <file path="/_factoid_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367105532112" ignored="false" />
     <file path="/_remembrall_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366047868923" ignored="false" />
     <file path="/remembrall.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366122708172" ignored="false" />
     <file path="/_epiphany_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366749506520" ignored="false" />
@@ -98,16 +99,17 @@
     <file path="/brain_storm_session.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367015178634" ignored="false" />
     <file path="/flash.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366660528219" ignored="false" />
     <file path="/_new_brain_storm_session.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367097600521" ignored="false" />
-    <file path="/_display_ongoing_brain_storm_session_data.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367097248778" ignored="false" />
+    <file path="/_display_ongoing_brain_storm_session_data.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367104655766" ignored="false" />
     <file path="$PROJECT_DIR$/../modal-form/public/javascripts/application.js" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366741700856" ignored="false" />
     <file path="/edit_flash.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366743030902" ignored="false" />
     <file path="/_search_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366833088330" ignored="false" />
     <file path="/searcher.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366833235361" ignored="false" />
     <file path="/_search_results.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366926546596" ignored="false" />
     <file path="/search_thinker_data.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366834020064" ignored="false" />
-    <file path="/_list_brain_storm_sessions.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367020730271" ignored="false" />
+    <file path="/_list_brain_storm_sessions.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367105936101" ignored="false" />
     <file path="/_select_construct_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367018760519" ignored="false" />
     <file path="/provocation.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367082639463" ignored="false" />
+    <file path="/_epiphany_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367105523047" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,39 +129,17 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="112" selection-end="112" vertical-scroll-proportion="-3.84">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_display_ongoing_brain_storm_session_data.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="54" selection-start="413" selection-end="413" vertical-scroll-proportion="-6.4">
+            <state line="12" column="8" selection-start="231" selection-end="231" vertical-scroll-proportion="65.76">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_link_data_display.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="110" selection-start="489" selection-end="489" vertical-scroll-proportion="-7.04">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_list_brain_storm_sessions.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="22" selection-start="1430" selection-end="1430" vertical-scroll-proportion="-13.44">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,27 +147,32 @@
       <file leaf-file-name="_new_brain_storm_session.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="8" selection-start="2162" selection-end="2162" vertical-scroll-proportion="-14.6">
+            <state line="48" column="40" selection-start="2489" selection-end="2489" vertical-scroll-proportion="-14.88">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_list_constructs.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/constructs/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="24" selection-start="2247" selection-end="2247" vertical-scroll-proportion="0.5695067">
+            <state line="6" column="22" selection-start="108" selection-end="108" vertical-scroll-proportion="0.13617021">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_list_brain_storm_sessions.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="22" selection-start="412" selection-end="412" vertical-scroll-proportion="-6.4">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,22 +232,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/thinker/map_brainstorm_to_construct.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_select_construct_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb" />
-        <option value="$PROJECT_DIR$/config/initializers/provocating_words.rb" />
-        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/provocation.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_factoid_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
       </list>
     </option>
   </component>
@@ -676,6 +661,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinking_hat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1208,44 +1219,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="82" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="9" selection-start="496" selection-end="496" vertical-scroll-proportion="0.30498534">
-          <folding>
-            <element signature="e#310#337#0" expanded="true" />
-            <element signature="e#374#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_epiphany.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/provocation.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/construct.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="30" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
@@ -1295,43 +1268,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="112" selection-end="112" vertical-scroll-proportion="-3.84">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="1430" selection-end="1430" vertical-scroll-proportion="-13.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="413" selection-end="413" vertical-scroll-proportion="-6.4">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="8" selection-start="2162" selection-end="2162" vertical-scroll-proportion="-14.6">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="24" selection-start="2247" selection-end="2247" vertical-scroll-proportion="0.5695067">
+        <state line="51" column="54" selection-start="2553" selection-end="2553" vertical-scroll-proportion="-19.72">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1340,6 +1279,89 @@
             <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="132" selection-start="535" selection-end="560" vertical-scroll-proportion="0.07174888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_factoid_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="116" selection-start="510" selection-end="510" vertical-scroll-proportion="0.047832586">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="517" selection-end="517" vertical-scroll-proportion="0.09566517">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="412" selection-end="412" vertical-scroll-proportion="-6.4">
+          <folding>
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="8" selection-start="231" selection-end="231" vertical-scroll-proportion="65.76">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="81" selection-start="156" selection-end="195" vertical-scroll-proportion="0.115606934">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="87" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.41618496">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="40" selection-start="2489" selection-end="2489" vertical-scroll-proportion="-14.88">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/constructs/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="108" selection-end="108" vertical-scroll-proportion="0.13617021">
+          <folding />
         </state>
       </provider>
     </entry>

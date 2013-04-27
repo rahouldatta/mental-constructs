@@ -7,11 +7,14 @@
           <div class="row-fluid">
 
             <div class="span2">
-              <p><%= link_to "#", :class=>"span 12 btn btn-default" do %>
+              <% unless brain_storm_session.construct_id.nil? %>
+                  <br>
+              <p><%= link_to construct_path(brain_storm_session.construct_id), :class=>"span 12 btn btn-default" do %>
                     <i class="icon-file"></i> Review
                 <% end %></p>
               <br>
               <br>
+              <% end %>
               <p style="text-align: center">
                 <%= link_to delete_brain_storm_thinker_path(brain_storm_session), :class=>"btn-small btn-danger", :confirm => "Are you sure this entire BrainStorm is to be Dropped?", :remote => true do %>
                     <i class="icon-trash icon-white"></i> Delete

@@ -1,4 +1,4 @@
 <%= form_tag({:controller => "thinker",:action => "record_factoids"}, :remote => true, :style => "margin: 0px; padding :3px 1px 3px 2px;") do %>
     <div id="tooltip-show">  <%= text_area(nil,:cognition, :class=> "span9", :rows => "2", :placeholder => "(Factoid) Fact snippet you would like to recollect later...", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
-      <%= submit_tag "Record", :title => "Record Facts you would like to re-collect later", class: "span3 btn btn-primary"%></div>
+      <%= submit_tag "Record", :title => "Record Facts you would like to re-collect later. Find it in Cognitions Tab", class: "span3 btn btn-primary"%></div>
 <% end %>
