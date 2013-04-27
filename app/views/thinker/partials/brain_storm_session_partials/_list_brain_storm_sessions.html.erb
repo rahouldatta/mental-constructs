@@ -28,8 +28,17 @@
 
             <div class="span3">
 
-              <p class="muted" style="text-align: center">Belongs To Construct -
-              <div class="blanker-box" style="padding: 7px;text-align: center;color: white"> <%= brain_storm_session.construct.title.titleize rescue "Not Mapped to any Construct"%></div></p>
+
+              <% cq = brain_storm_session.construct %>
+              <% if cq.nil?%>
+                  <p class="muted" style="text-align: center">Belongs To Construct -
+                  <div class="blanker-box" style="padding: 7px;text-align: center;color: red"> Not Mapped to any Construct </div></p>
+            <% else%>
+                  <p class="muted" style="text-align: center">Belongs To Construct -
+                  <div class="blanker-box" style="padding: 7px;text-align: center;color: white"> <%= brain_storm_session.construct.title.titleize rescue "Not Mapped to any Construct"%></div></p>
+              <% end%>
+
+
             </div>
 
           </div>
