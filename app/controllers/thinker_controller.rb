@@ -24,6 +24,10 @@ class ThinkerController < ApplicationController
     @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue @brain_storm_sessions.first
   end
 
+  def provocation
+    @provocating_word = current_thinker.pick_random_provocating_word unless params[:id].eql? "0"
+  end
+
   # =================== Cognition Methods =========================
   def delete_epiphany
     Epiphany.find(params[:id]).destroy unless params[:id].nil?

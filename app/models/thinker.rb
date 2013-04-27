@@ -18,9 +18,17 @@ class Thinker < ActiveRecord::Base
   has_many :treatment_construct_dossiers
   has_many :brain_storm_sessions
 
+
   def to_param
     "#{self.alias}"
   end
+
+  def pick_random_provocating_word
+    arr = []
+    3.times { arr << (PROVOCATIVE_WORDS[rand(PROVOCATIVE_WORDS.length)]).to_s.titleize }
+    arr
+  end
+
   #======================= CALLBACKS ========================
   before_create :parameterize_alias
 

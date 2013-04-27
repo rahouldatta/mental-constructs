@@ -1,0 +1,14 @@
+<% unless @provocating_word.nil? or @provocating_word.blank?%>
+    <%= link_to "X", provocation_thinker_path(0), :class=>"btn-link pull-right", :remote => true %><br>
+    <div class="opaqify-container">
+      <div class="row-fluid">
+        <% @provocating_word.each do |word|%>
+            <div class="span4" style="text-align: center;">
+              <strong class="lead" style="color:white;"><%= word %></strong>
+            </div>
+        <% end %>
+      </div>
+
+    </div>
+    <br>
+<% end %>

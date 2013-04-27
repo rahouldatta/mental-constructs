@@ -25,7 +25,16 @@
             <li class="">
               <div class="form-search">
                 <%= render 'thinker/partials/search_form' %></div></li>
-        <%#end%>
+
+            <li class="divider-vertical"></li>
+            <li class="divider-vertical"></li>
+            <!--<li class="">-->
+            <span id="tooltip_show">
+              <%= link_to provocation_thinker_path, :class=>"btn btn-default", :remote => true ,:title => "Edward de Bono's method of Random words being thrown at you which inturn stimulates your mind into parallel thinking." do%>
+                    <i class="icon-random"></i>&nbsp;&nbsp;Provoke Thoughts&nbsp;&nbsp;<i class="icon-random"></i>
+              <% end %></span>
+            <!--</li>-->
+            <%#end%>
         <%end%>
       </ul>
     </div>
@@ -36,13 +45,6 @@
       <!--======================= Navbar Login Form and Options ============================-->
       <ul class="nav navbar-form pull-right">
         <% if thinker_signed_in? %>
-
-            <!--<li>-->
-            <!--<a class="" href="#">-->
-            <!--<i class="icon-search icon-white"></i> Search for other Thinkers-->
-            <!--</a>-->
-            <!--</li>-->
-
 
             <li class="divider"></li>
 
