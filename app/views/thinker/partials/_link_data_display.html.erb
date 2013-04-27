@@ -9,6 +9,9 @@
   </div>
   <% @link_hoards.each do |category,link_hoards|%>
   <div class="tab-pane fade" id="link-hoard-category-<%= category %>">
+    <div class="text-info" style="text-align: center;font-size: 23px;"><strong><em><%= category.upcase %></em></strong></div>
+    <br>
+    <br>
     <% link_hoards.each do |link_data| %>
         <div class="row-fluid">
           <div class="span10">

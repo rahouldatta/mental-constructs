@@ -8,6 +8,8 @@
     </div>
   </div>
   <div class="span4" id="select-construct-form">
+    <div style="color: white;text-align: center"><%= "Belongs to - [ #{@current_brain_storm_session.construct.title.titleize} ]" rescue "Not Mapped to any Construct"%></div>
+    <br>
     <%= render 'thinker/partials/brain_storm_session_partials/select_construct_form' %>
   </div>
 </div>

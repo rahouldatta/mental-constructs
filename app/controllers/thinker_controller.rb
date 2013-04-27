@@ -20,7 +20,7 @@ class ThinkerController < ApplicationController
     @thinker = current_thinker
     @construct = current_thinker.constructs.new
     @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue @brain_storm_sessions.first
   end
 
@@ -161,26 +161,26 @@ class ThinkerController < ApplicationController
   def new_brain_storm_session
     @current_brain_storm_session = current_thinker.brain_storm_sessions.create(:session_title => params[:session_title]) if current_thinker.brain_storm_sessions.find_by_session_title(params[:session_title].strip.titleize).nil?
     current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
   end
 
   def start_previous_brain_storm_session
     @current_brain_storm_session = current_thinker.brain_storm_sessions.find_by_session_title(params[:brain_storm_session])
     current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
   end
 
   def insert_subpoints
     f = Flash.find(params[:flash_id])
     f.update_attributes(:sub_points => f.sub_points << params[:sub_point])
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = @brain_storm_sessions.find(current_thinker.last_brain_storm_session_id) rescue nil
   end
 
   def add_new_flash
     b = BrainStormSession.find(params[:brain_storm_session_id])
     b.flashes.create(:flash => params[:flash])
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = b rescue nil
   end
 
@@ -188,19 +188,19 @@ class ThinkerController < ApplicationController
     f = Flash.find(params[:id])
     f.sub_points.delete_at(params[:format].to_i)
     f.save
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue nil
   end
 
   def delete_flash
     Flash.find(params[:id]).destroy
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue nil
   end
 
   def delete_brain_storm
     BrainStormSession.find(params[:id]).destroy
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = @brain_storm_sessions.first
     current_thinker.update_attributes(:last_brain_storm_session_id => @current_brain_storm_session.id)
   end
@@ -209,7 +209,7 @@ class ThinkerController < ApplicationController
     c = Construct.find_by_title("#{params[:construct]}") rescue nil
     brain_storm = BrainStormSession.find(params[:brain_storm_id])
     brain_storm.update_attributes(:construct_id => c.id)
-    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("created_at DESC")
+    @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = brain_storm
 
   end

@@ -33,7 +33,11 @@ class ConstructsController < ApplicationController
   def create
     @construct = Construct.new(params[:construct])
     @construct.thinker_id = current_thinker.id
-    @construct.dossier_id = nil if params[:construct][:dossier_id].eql? "Select Dossier"
+    if params[:construct][:dossier_id].eql? "Select Dossier"
+      @construct.dossier_id = nil
+    else
+      @construct.dossier_id = Dossier.find_by_dossier_name(params[:construct][:dossier_id]).id rescue nil
+    end
     respond_to do |format|
       if @construct.save
         format.html { redirect_to thinker_path(current_thinker), notice: 'Construct was successfully created.' }

@@ -39,11 +39,18 @@
         <div class="span8">
           <h5 class="text-info"><%= construct.title.titleize %><span class="muted">&nbsp;&nbsp;- &nbsp;<small><%= construct.created_at.utc.localtime.to_s(:short)%></small></span></h5>
           <p><%=raw "#{construct.construct.capitalize[0..233]}..." %></p>
+          <div class="pull-right">
+            <% bs = construct.brain_storm_session %>
+            <% unless bs.nil? %>
+            <p class="muted" style="text-align: center">Mapped to BrainStorm - <div class="blanker-box" style="padding:7px;color: white;text-align: center"><%=  bs.session_title.titleize  %></div> </p>
+            <% end %>
+          </div>
         </div>
 
         <div class="span2">
 
           <p class="muted" style="text-align: center">Belongs To Dossier - <div class="blanker-box" style="padding:7px;color: white;text-align: center"><%= construct.dossier_id.nil? ? "StandAlone" : construct.dossier.dossier_name  %></div> </p>
+
         </div>
 
       </div>
