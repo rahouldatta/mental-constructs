@@ -7,6 +7,7 @@ class Construct < ActiveRecord::Base
   before_create :treatment_construct
 
   def treatment_construct
+    self.construct = self.construct.strip
     self.title = "Set Title" if self.title.nil? or self.title.blank?
     self.construct = "Build your Construct" if self.construct.nil? or self.construct.blank?
   end

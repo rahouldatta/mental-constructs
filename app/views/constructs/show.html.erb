@@ -5,43 +5,134 @@
   <%= render 'thinker/partials/search_results' %>
 </div>
 
-<p id="notice"><%= notice %></p>
+<div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
+      <div class="lead text-info"><strong><%= @construct.title.titleize %></strong> </div>
+            <div class="pull-right muted">
+              <button class="btn btn-warning btn-small"><i class="icon-share"></i>&nbsp;Exhibit</button>
+                <%#= render 'constructs/share_display', :construct => @construct %>
+              <br><br>
 
-<p>
-  <b>Thinker:</b>
-  <%= @construct.thinker_id %>
-</p>
+            </div>
+      <small><strong>Your Rating of this Construct : </strong> </small><% @construct.affinity_level.times do%><i class="icon-star icon-white"></i><%end%><% (10-@construct.affinity_level).times do%><i class="icon-star-empty"></i><%end%>
+  <% dossier = @construct.dossier %>
+  <% unless dossier.nil?%>
+      <br>
+      <small><strong>Belongs to Dossier : [ <%= @construct.dossier.dossier_name%> ]</strong></small>
+  <% end %>
+  <br>
+  <small><strong><%= "Written on - #{@construct.created_at.to_s(:long)}" %></strong></small>
 
-<p>
-  <b>Dossier:</b>
-  <%= @construct.dossier_id %>
-</p>
+</div>
+<br>
 
-<p>
-  <b>Title:</b>
-  <%= @construct.title %>
-</p>
-
-<p>
-  <b>Construct:</b>
-  <%= @construct.construct %>
-</p>
-
-<p>
-  <b>Foot notes:</b>
-  <%= @construct.foot_notes %>
-</p>
-
-<p>
-  <b>Affinity level:</b>
-  <%= @construct.affinity_level %>
-</p>
-
-<p>
-  <b>Share:</b>
-  <%= @construct.share %>
-</p>
+<div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
+  <div class="lead text-info"><small><em><strong><%= @construct.title.titleize %></strong></em></small></div>
+  <%= raw @construct.construct %>
+</div>
 
 
-<%= link_to 'Edit', edit_construct_path(@construct) %> |
-<%= link_to 'Back', constructs_path %>
+<% brain_storm = @construct.brain_storm_session %>
+<% unless brain_storm.nil? %>
+    <br>
+    <div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
+      <div class="text-info" style="text-align: center;"><h5 style="font-size: 21px;"><%= brain_storm.session_title %></h5><br>
+        <button class="btn btn-success btn-large" id="show-flow-chart-bs-toggle">View BrainStorm Flow Chart</button>
+      </div>
+    </div>
+    <br>
+
+    <!--<div class="opaqify-container">-->
+    <div id="show-flow-chart-bs">
+    <div class="row-fluid">
+      <div class="span4"></div>
+      <div class="span4">
+        <div class="opaqify-container" style="background-color:rgba(255,255,255,0.6);padding: 19px">
+          <div style="text-align: center;font-size: 27px;color: black">START</div>
+        </div>
+      </div>
+      <div class="span4"></div>
+    </div>
+    <div style="text-align: center;color: white">|</div>
+    <% flashes = brain_storm.flashes %>
+    <% flashes.order("created_at ASC").each_with_index do |flash,i| %>
+          <div class="row-fluid">
+            <div class="span3"></div>
+            <div class="span6 blanker-box" style="padding: 13px;">
+              <div class="opaqify-container" style="background-color:rgba(255,255,255,0.15);" >
+                <div style="text-align: center;font-size: 19px;color: white"><%= flash.flash.capitalize %></div></div>
+              <div class="">
+                <br>
+                <div class="blanker-box" style="padding: 11px">
+                  <% flash.sub_points.each_with_index do |point,subpoint_id|%>
+                      <div class="row-fluid">
+                        <div class="span10" style="color: white">
+                          &nbsp;&bull;&nbsp;&nbsp;&nbsp;<%= point.capitalize %>
+                        </div>
+                        <div class="span2">&nbsp;
+                        </div>
+                      </div>
+                  <% end %>
+
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="span3"></div>
+          </div>
+          <!--</div>-->
+
+        <!--</div>-->
+            <div style="text-align: center;color: white">|</div>
+            <!--<hr>-->
+    <% end %>
+    <div class="row-fluid">
+      <div class="span4"></div>
+      <div class="span4">
+        <div class="opaqify-container" style="background-color:rgba(255,255,255,0.6);padding: 19px">
+          <div style="text-align: center;font-size: 27px;color: black">END</div>
+        </div>
+      </div>
+      <div class="span4"></div>
+    </div>
+
+    </div>
+<% end %>
+
+
+<br>
+<div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
+  <div class="text-info" style="font-size: 19px"><small><em><strong>Foot Notes : </strong></em></small></div>
+  <br>
+  <p><%= raw @construct.foot_notes %></p>
+</div>
+<br>
+<br>
+<div class="opaqify-container">
+  <%= link_to thinker_path(current_thinker), class: "btn btn-inverse" do%><i class="icon-arrow-left icon-white"></i><% end %>
+  &nbsp;|&nbsp;
+  <%= link_to(edit_construct_path(@construct), class: "btn") do %>
+      <i class="icon-edit"></i>
+  <% end %>
+  &nbsp;|&nbsp;
+  <%= link_to(@construct, class: "btn btn btn-danger", confirm: "Are you sure?", method: :delete) do %>
+      <i class="icon-trash icon-white"></i>
+  <% end %>
+  <div class="pull-right">
+    <%= link_to("#", class: "btn btn-warning") do %>
+        <i class="icon-download "></i> Export
+    <% end %>
+  </div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#show-flow-chart-bs').hide(); //Initially form wil be hidden.
+        $('#show-flow-chart-bs-toggle').click(function() {
+            $('#show-flow-chart-bs').toggle();//Form shows on button click
+        });
+    });
+</script>
+

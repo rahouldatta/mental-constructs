@@ -56,7 +56,7 @@ class ConstructsController < ApplicationController
     @construct.dossier_id = nil if params[:construct][:dossier_id].eql? "Select Dossier"
     respond_to do |format|
       if @construct.update_attributes(params[:construct])
-        format.html { redirect_to thinker_path(current_thinker), notice: 'Construct was successfully updated.' }
+        format.html { redirect_to :back, notice: 'Construct was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
