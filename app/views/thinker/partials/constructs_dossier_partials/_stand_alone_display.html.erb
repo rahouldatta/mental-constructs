@@ -33,7 +33,7 @@
               <%= form_tag({:controller => "thinker",:action => "add_construct_to_dossier"}, :remote => true) do |f|%>
                   <%= select_tag :dossier, options_for_select(@construct_dossiers.map {|d| d.dossier_name.upcase}), :class=>"span9", :construct => construct%>
                   <%= hidden_field_tag :construct_id, construct.id%>
-                  <%= submit_tag "Move", class: "btn btn-small btn-primary", :title => "Map This Construct to Dossier of your choice"%>
+                  <%= submit_tag "Move", class: "span3 btn btn-small btn-primary", :title => "Map This Construct to Dossier of your choice"%>
               <% end %>
 
             </div>

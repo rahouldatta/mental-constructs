@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/constructs/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/constructs/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/map_brainstorm_to_construct.js.erb" afterPath="$PROJECT_DIR$/app/views/thinker/map_brainstorm_to_construct.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +64,7 @@
     <file path="/_organize_concept_dossiers.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366353913392" ignored="false" />
     <file path="/_concept_dossier_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366321600439" ignored="false" />
     <file path="/_concept_dossier_list.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366322453717" ignored="false" />
-    <file path="/_stand_alone_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366403172364" ignored="false" />
+    <file path="/_stand_alone_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367111373839" ignored="false" />
     <file path="/add_concept_to_dossier.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366353947936" ignored="false" />
     <file path="/_concept_dossier_data_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366354565175" ignored="false" />
     <file path="/construct.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367110250051" ignored="false" />
@@ -165,13 +166,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_display_ongoing_brain_storm_session_data.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_display_ongoing_brain_storm_session_data.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="769" selection-end="769" vertical-scroll-proportion="0.23121387">
+            <state line="15" column="32" selection-start="769" selection-end="769" vertical-scroll-proportion="-6.4">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_stand_alone_display.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="76" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.39884394">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -230,7 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_link_data_display.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" />
@@ -245,6 +254,7 @@
         <option value="$PROJECT_DIR$/app/views/constructs/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/constructs/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/map_brainstorm_to_construct.js.erb" />
       </list>
     </option>
@@ -496,6 +506,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="constructs_dossier_partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="brain_storm_session_partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -659,32 +699,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="constructs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mental-constructs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mental-constructs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="constructs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thinking_hat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1217,27 +1231,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="54" selection-start="2553" selection-end="2553" vertical-scroll-proportion="-19.72">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="132" selection-start="535" selection-end="560" vertical-scroll-proportion="0.07174888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_factoid_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="116" selection-start="510" selection-end="510" vertical-scroll-proportion="0.047832586">
@@ -1359,19 +1352,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/map_brainstorm_to_construct.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="157" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+        <state line="15" column="32" selection-start="769" selection-end="769" vertical-scroll-proportion="-6.4">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/delete_brain_storm.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/map_brainstorm_to_construct.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="769" selection-end="769" vertical-scroll-proportion="0.23121387">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="1" column="153" selection-start="311" selection-end="311" vertical-scroll-proportion="0.023916293">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="76" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.39884394">
+          <folding />
         </state>
       </provider>
     </entry>
