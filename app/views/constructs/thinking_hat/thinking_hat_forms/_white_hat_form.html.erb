@@ -1,7 +1,0 @@
-<%= form_tag({:controller => "constructs",:action => "record_white_hat_thought"}, :remote => true, :style => "margin: 0px;") do %>
-    <div id=""><%= text_area(nil,:flash, :class=> "span12", :rows => "2", :placeholder => "The White Hat calls for information known or needed.", :onkeyup => "CheckMaxlength(this);", :maxlength => 133, :required => true ) %></div>
-    <div id="tooltip-show" style="text-align: center;"><%= submit_tag "Record Thought", :title => "The White Hat calls for information known or needed.",class: "span9 btn-primary"%></div>
-    <%#= select_tag :brainwave_affinity, options_for_select(["1","2","3","4","5"]), :class=>"span2" %>
-    <%= hidden_field_tag :construct_id, @construct.id%>
-<% end %>
-
