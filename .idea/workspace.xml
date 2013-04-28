@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/construct.rb" afterPath="$PROJECT_DIR$/app/models/construct.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/constructs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/constructs/show.html.erb" afterPath="$PROJECT_DIR$/app/views/constructs/show.html.erb" />
     </list>
     <ignored path="mental-constructs.iws" />
@@ -11,7 +9,7 @@
     <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367081633555" ignored="false" />
     <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367081975131" ignored="false" />
     <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367086620724" ignored="false" />
-    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367110199694" ignored="false" />
+    <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367110478463" ignored="false" />
     <file path="/content_helper.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365970405132" ignored="false" />
     <file path="/20130414195739_devise_create_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971089274" ignored="false" />
     <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366927705910" ignored="false" />
@@ -155,7 +153,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/constructs/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="47" selection-start="3843" selection-end="3843" vertical-scroll-proportion="2.1965318">
+            <state line="52" column="10" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.37572256">
               <folding>
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
@@ -248,8 +246,8 @@
         <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/constructs/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/construct.rb" />
+        <option value="$PROJECT_DIR$/app/views/constructs/show.html.erb" />
       </list>
     </option>
   </component>
@@ -1360,7 +1358,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/constructs/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="47" selection-start="3843" selection-end="3843" vertical-scroll-proportion="2.1965318">
+        <state line="52" column="10" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.37572256">
           <folding>
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />

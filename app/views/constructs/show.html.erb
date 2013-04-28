@@ -36,13 +36,21 @@
     <br>
     <div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
       <div class="text-info" style="text-align: center;"><h5 style="font-size: 21px;"><%= brain_storm.session_title %></h5><br>
-        <button class="btn btn-success btn-large" id="show-flow-chart-bs-toggle">View BrainStorm Flow Chart</button>
+        <div class="row-fluid">
+          <div class="span3"></div>
+          <div class="span6">
+            <button class="btn btn-success btn-block btn-large" id="show-flow-chart-bs-toggle">View BrainStorm Flow Chart</button>
+          </div>
+          <div class="span3"></div>
+        </div>
+
       </div>
     </div>
-    <br>
+    <!--<br>-->
 
     <!--<div class="opaqify-container">-->
     <div id="show-flow-chart-bs">
+      <br>
     <div class="row-fluid">
       <div class="span4"></div>
       <div class="span4">
@@ -98,10 +106,11 @@
     </div>
 
     </div>
+    <br>
 <% end %>
 
-
-<br>
+<% if brain_storm.nil?%>
+<br><% end %>
 <div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
   <div class="text-info" style="font-size: 19px"><small><em><strong>Foot Notes : </strong></em></small></div>
   <br>
