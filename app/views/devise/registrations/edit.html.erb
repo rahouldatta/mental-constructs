@@ -11,7 +11,6 @@
           <%= f.label :first_name %><%= f.text_field :first_name, :placeholder => "Change First Name" %> <p></p>
           <%= f.label :last_name %><%= f.text_field :last_name, :placeholder => "Change Last Name" %> <p></p>
           <%= f.label :Seems_like_you_have_something_to_hide %><%= f.select :age, ('18'..'99').to_a %> <p></p>
-          <%= f.label :we_hope_your_gender_does_not_change_very_often %><%= f.text_field :gender, :placeholder => "Change First Name" %> <p></p>
           <%= f.label :Enter_current_password_to_confirm_changes %>
           <%= f.password_field :current_password, :placeholder => "Current Password to Confirm Changes", :required => true %><p></p>
           <%= f.submit 'Update', :class => 'btn btn-primary btn-large' %>

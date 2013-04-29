@@ -36,13 +36,21 @@ class Thinker < ActiveRecord::Base
     self.alias = self.alias.parameterize
   end
 
-  def get_order_sequencing_type(seq)
-    if seq.eql? "Shared Concepts"
-      return "share"
-    elsif seq.eql? "StandAlone Concepts"
-      return "dossier_id"
+  def get_ordered_constructs(seq)
+    if seq.eql? "Shared Constructs"
+      return self.constructs.where(:share => true)
+    elsif seq.eql? "StandAlone Constructs"
+      return self.constructs.where(:dossier_id => nil)
+    elsif seq.eql? "Constructs with mapped BrainStorm"
+      a = []
+      self.constructs.each {|c| a << c unless c.brain_storm_session.nil?}
+      return a
+    elsif seq.eql? "Constructs without mapped BrainStorm"
+      a = []
+      self.constructs.each {|c| a << c if c.brain_storm_session.nil?}
+      return a
     else
-      return seq.downcase.gsub(" ","_")
+      return self.constructs.order("#{seq.downcase.gsub(" ","_")} DESC")
     end
   end
 

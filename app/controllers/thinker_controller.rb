@@ -114,8 +114,7 @@ class ThinkerController < ApplicationController
 
   def decide_constructs_display_order
     unless params[:sequencing_type].blank?
-      order_seq = current_thinker.get_order_sequencing_type(params[:sequencing_type])
-      @constructs = current_thinker.constructs.order("#{order_seq} DESC")
+      @constructs = current_thinker.get_ordered_constructs(params[:sequencing_type])
       session[:sequencing_type] = params[:sequencing_type]
     end
   end
@@ -212,6 +211,11 @@ class ThinkerController < ApplicationController
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = brain_storm
 
+  end
+
+  def notifier
+    @epiphanies = Epiphany.count
+    render :partial => "thinker/partials/notifier"
   end
 
 end

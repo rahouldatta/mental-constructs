@@ -2,28 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_construct_dossier_data_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_construct_dossier_data_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_new_brain_storm_session.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/show.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thinker.rb" afterPath="$PROJECT_DIR$/app/models/thinker.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367240616892" ignored="false" />
-    <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367081975131" ignored="false" />
-    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367086620724" ignored="false" />
+    <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367258561609" ignored="false" />
+    <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367258611446" ignored="false" />
     <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367110478463" ignored="false" />
     <file path="/content_helper.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365970405132" ignored="false" />
     <file path="/20130414195739_devise_create_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971089274" ignored="false" />
-    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366927705910" ignored="false" />
+    <file path="/thinker.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367255471559" ignored="false" />
     <file path="/20130414200047_add_columns_to_thinkers.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365971385968" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/models/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973091351" ignored="false" />
     <file path="/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973084004" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/assets/javascripts/application.js" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365974234132" ignored="false" />
     <file path="/_navigation.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367243261623" ignored="false" />
-    <file path="/thinker.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367106352243" ignored="false" />
+    <file path="/thinker.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367258523521" ignored="false" />
     <file path="/home.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365976161494" ignored="false" />
     <file path="/home.css.scss" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365976208307" ignored="false" />
     <file path="/thinker.css.scss" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366034098070" ignored="false" />
@@ -72,7 +74,7 @@
     <file path="/_concept_dossier_data_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366354565175" ignored="false" />
     <file path="/construct.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367110250051" ignored="false" />
     <file path="/constructs_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367110593576" ignored="false" />
-    <file path="/_list_constructs.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367103678370" ignored="false" />
+    <file path="/_list_constructs.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367255442756" ignored="false" />
     <file path="/decide_constructs_display_order.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366400219440" ignored="false" />
     <file path="/_organize_construct_dossiers.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366401764123" ignored="false" />
     <file path="/delete_construct.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366385960978" ignored="false" />
@@ -108,6 +110,7 @@
     <file path="/provocation.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367082639463" ignored="false" />
     <file path="/_epiphany_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367105523047" ignored="false" />
     <file path="/_provocative_word_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367243085709" ignored="false" />
+    <file path="/_notifier.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367257852910" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,63 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_provocative_word_display.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="352" selection-end="352" vertical-scroll-proportion="-4.48">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_navigation.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="14" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.3348281">
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_stand_alone_display.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="60" selection-start="743" selection-end="743" vertical-scroll-proportion="-5.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_list_constructs.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="2102" selection-end="2454" vertical-scroll-proportion="-15.24">
+            <state line="6" column="239" selection-start="620" selection-end="656" vertical-scroll-proportion="-3.84">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_construct_dossier_data_display.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_construct_dossier_data_display.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="28" selection-start="2535" selection-end="2535" vertical-scroll-proportion="-14.72">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -206,7 +157,29 @@
       <file leaf-file-name="thinker_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="88" selection-start="7374" selection-end="7374" vertical-scroll-proportion="0.0">
+            <state line="217" column="49" selection-start="8694" selection-end="8694" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thinker.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.3236994">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thinker.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="5" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -230,13 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_factoid_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_list_brain_storm_sessions.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/construct.rb" />
-        <option value="$PROJECT_DIR$/app/views/constructs/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/constructs_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/constructs/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/map_brainstorm_to_construct.js.erb" />
@@ -245,7 +211,14 @@
         <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_search_results.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/thinker.rb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_notifier.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
       </list>
     </option>
   </component>
@@ -1143,13 +1116,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1383" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34733683" sideWeight="0.6709347" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34733683" sideWeight="0.6709347" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1221,27 +1194,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/constructs/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="98" selection-start="2190" selection-end="2242" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/brain_storm_session_partials/_display_ongoing_brain_storm_session_data.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/construct.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="42" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
@@ -1259,13 +1211,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/constructs_dossier_partials/_stand_alone_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="60" selection-start="743" selection-end="743" vertical-scroll-proportion="-5.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="2102" selection-end="2454" vertical-scroll-proportion="-15.24">
           <folding />
         </state>
       </provider>
@@ -1289,27 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="352" selection-end="352" vertical-scroll-proportion="-4.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1317,25 +1241,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="82" selection-start="167" selection-end="167" vertical-scroll-proportion="-0.39766082">
+        <state line="13" column="10" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.3109118">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_provocative_word_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="88" selection-start="7374" selection-end="7374" vertical-scroll-proportion="0.0">
+        <state line="7" column="4" selection-start="352" selection-end="352" vertical-scroll-proportion="0.16422288">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="14" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.3348281">
+        <state line="26" column="43" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.593423">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/thinker.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="5" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="239" selection-start="620" selection-end="656" vertical-scroll-proportion="-3.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="514" selection-end="514" vertical-scroll-proportion="0.46027398">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="49" selection-start="8694" selection-end="8694" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.3236994">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
