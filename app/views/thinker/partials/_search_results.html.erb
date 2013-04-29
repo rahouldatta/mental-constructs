@@ -1,6 +1,7 @@
 <% if @search_results.nil?%>
 
 <% else %>
+
     <div class="pull-right" xmlns="http://www.w3.org/1999/html"><%= link_to "X", search_thinker_data_thinker_index_path , :class => "btn-link", :remote => true, :method => 'post'%></div>
     <center><p class="text-info" style="text-align:  center;"><strong>Search Results</strong></p></center>
 
@@ -12,7 +13,6 @@
         <% if @search_results[:constructs].blank? %>
             Your search yielded no Constructs ...
         <% else %>
-
               <ul><center><p class="text-info" style="text-align:  center;"><strong>Constructs</strong></p></center>
 
                 <% @search_results[:constructs].each do |c| %>
@@ -98,6 +98,7 @@
     </div>
     </div>
 <% end %>
+<br>
 <script>
     $('#tooltip_show').tooltip('show')
 </script>

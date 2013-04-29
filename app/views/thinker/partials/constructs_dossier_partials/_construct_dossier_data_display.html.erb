@@ -38,13 +38,21 @@
                               <i class="icon-trash icon-white"></i>
                           <% end %>
                         </div>
-                        <br><br>
+                        <br>
+                        <div class="pull-right">
+                        <% bs = construct.brain_storm_session %>
+                        <% unless bs.nil? %>
+                            <p class="muted" style="text-align: center">BrainStorm - <div class="blanker-box" style="padding:7px;color: white;text-align: center"><%=  bs.session_title.titleize  %></div> </p>
+                        <% end %>
+                      </div>
+
                         <p class="" style="text-align: center"><small>    <%= construct.created_at.utc.localtime.to_s(:short)%></small></p>
                         <!--</div>-->
                       </div>
                       <div class="span8">
                         <p class=""><strong><%= construct.title.titleize %></strong>   </p>
                         <div class="muted"><%=raw "#{construct.construct.titleize[0..233]}..." %></div>
+
                       </div>
 
 
