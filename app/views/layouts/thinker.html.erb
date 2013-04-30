@@ -24,6 +24,44 @@
     <div class="span9">
       <div class="row-fluid">
         <div class="span8">
+          <div class="blanker-box" style="padding: 5px;">
+            <div class="text-info" style="text-align: center;font-size: 13px;padding-bottom: 5px"><strong>Out of Sight, Out of Mind!</strong>
+             <span class="pull-right"><button class="btn btn-mini" id="notifier-toggle"><i class="icon-adjust"></i></button></span></div>
+            <% first = @notifiers.delete(@notifiers.sample)%>
+            <% second = @notifiers.delete(@notifiers.sample)%>
+            <div class="opaqify-container" style="background-color:rgba(255,255,255,0.08);padding: 7px;" id="exhibit-last-info-display">
+              Display Exhibit Information
+            </div>
+            <div class="row-fluid" id="personal-data-notifier">
+              <div class="span6">
+                <div class="opaqify-container" style="background-color:rgba(255,255,255,0.08);padding: 7px">
+                  <% if first.class.eql? Remembrall%>
+                      <div class="text-info" style="text-align: center"><em><strong><%= "To Do Task" %></strong></em></div>
+                    <div style="color: white"><%= first.task.capitalize %></div>
+                      <div class="muted"><small>Recorded At - <%= first.created_at.utc.localtime.to_s(:short) rescue nil%></small></div>
+                  <% else %>
+                      <div class="text-info"><em><strong><%= "#{first.class.to_s}" %></strong></em></div>
+                      <div style="color: white"><%= first.cognition.capitalize %></div>
+                  <% end %>
+                </div>
+              </div>
+              <div class="span6">
+                <div class="opaqify-container" style="background-color:rgba(255,255,255,0.08);padding: 7px">
+                  <% if second.class.eql? Remembrall%>
+                      <div class="text-info" style="text-align: center"><em><strong><%= "To Do Task" %></strong></em></div>
+                      <div style="color: white"><%= second.task.capitalize %></div>
+                      <div class="muted"><small>Recorded At - <%= second.created_at.utc.localtime.to_s(:short) rescue nil%></small></div>
+                  <% else %>
+                      <div class="text-info"><em><strong><%= "#{second.class.to_s}" %></strong></em></div>
+                      <div style="color: white"><%= second.cognition.capitalize %></div>
+                  <% end %>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
         <div class="span4">
           <div class="blank-box">
@@ -86,4 +124,13 @@
 //        affixWidth();
 //
 //    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('#exhibit-last-info-display').hide();//Form shows on button click
+        $('#notifier-toggle').click(function() {
+            $('#personal-data-notifier').toggle();//Form shows on button click
+            $('#exhibit-last-info-display').toggle();//Form shows on button click
+        });
+    });
 </script>

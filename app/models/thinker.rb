@@ -114,4 +114,14 @@ class Thinker < ActiveRecord::Base
     found
   end
 
+  #============== Notifier Method =============
+  def get_notifiers(epiphanies,tasks,brainwaves,factoids)
+    arr = []
+    arr.concat(epiphanies).uniq
+    arr.concat(tasks).uniq
+    arr.concat(brainwaves).uniq
+    arr.concat(factoids).uniq
+    arr
+  end
+
 end

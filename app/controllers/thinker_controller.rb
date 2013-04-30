@@ -22,6 +22,7 @@ class ThinkerController < ApplicationController
     @stand_alone_constructs= current_thinker.constructs.find_all_by_dossier_id(nil) rescue nil
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = BrainStormSession.find(current_thinker.last_brain_storm_session_id) rescue @brain_storm_sessions.first
+    @notifiers = current_thinker.get_notifiers(@epiphanies,@incomplete_tasks,@brainwaves,@factoids)
   end
 
   def provocation
@@ -211,11 +212,6 @@ class ThinkerController < ApplicationController
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = brain_storm
 
-  end
-
-  def notifier
-    @epiphanies = Epiphany.count
-    render :partial => "thinker/partials/notifier"
   end
 
 end

@@ -19,7 +19,6 @@ MentalConstructs::Application.routes.draw do
       get 'delete_subpoint'
       get 'delete_brain_storm'
       get 'provocation'
-      get 'notifier'
     end
     collection do
       post 'search_thinker_data'

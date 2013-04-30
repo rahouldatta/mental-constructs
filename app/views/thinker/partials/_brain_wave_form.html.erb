@@ -2,5 +2,5 @@
 <%= form_tag({:controller => "thinker",:action => "record_brainwaves"}, :remote => true, :style => "margin: 0px;") do %>
     <%= text_area(nil,:cognition, :class=> "span10", :rows => "3", :placeholder => "BrainWave (173 characters), Also select you affinity level.", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
     <%= select_tag :affinity_level, options_for_select(["1","2","3","4","5"]), :class=>"span2" %>
-    <div id="tooltip-show"><%= submit_tag "Record BrainWave", :title => "Record your BrainWave and later convert it into an idea. Find it in Cognitions Tab",class: "span5 btn btn-primary"%></div>
+    <div id="tooltip-show"><%= submit_tag "Record BrainWave", :title => "Record your BrainWave and later convert it into an idea. Find it in Cognitions Tab",class: "span6 btn btn-primary"%></div>
 <% end %>
