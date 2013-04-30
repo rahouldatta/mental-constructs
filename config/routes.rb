@@ -1,6 +1,8 @@
 MentalConstructs::Application.routes.draw do
 
 
+  get "howl/index"
+
   resources :constructs
 
 

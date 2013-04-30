@@ -1,0 +1,45 @@
+// Place all the styles related to the howl controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "bootstrap-responsive";
+@import "bootstrap";
+
+#page {
+  width: 1000px;
+  margin: 0px auto 20px auto;
+  padding: 0px;
+}
+
+//#fire{width:150px;height:100px;}
+
+body {
+  margin: 0px;
+  padding-top: 53px;
+  background: url(<%= asset_path "fire-bg.jpg"%>) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #72809F;
+}
+
+.opaqify{
+    background-color:rgba(255,255,255,0.15);
+    padding: 13px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 9px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 9px 0 rgba(0,0,0,.1);
+    box-shadow: 0 9px 0 rgba(0,0,0,.1);
+}
+
+.fixify{
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    overflow-y:auto;
+    border: 1px solid green;
+}

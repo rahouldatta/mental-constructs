@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422201932) do
+ActiveRecord::Schema.define(:version => 20130430214504) do
 
   create_table "brain_storm_sessions", :force => true do |t|
     t.integer  "construct_id"
@@ -57,6 +57,12 @@ ActiveRecord::Schema.define(:version => 20130422201932) do
     t.text     "sub_points"
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
+  end
+
+  create_table "howls", :force => true do |t|
+    t.text     "howl"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "link_hoards", :force => true do |t|
