@@ -1,4 +1,4 @@
-<%= render 'layouts/partials/navigation' %>
+
 <div class="row-fluid">
   <div class="span1"></div>
   <div class="span5">
@@ -7,7 +7,7 @@
           <%= f.label :email %><%= f.text_field :email, :required => true %> <p></p>
           <%= f.label :Change_Password %><%= f.text_field :password, :autocomplete => "off", :placeholder => "Enter New Password", :required => false %>
           <%= f.text_field :password_confirmation, :placeholder => "Confirm Password", :required => false %><p></p>
-          <%= f.label :is_your_alias_really_that_cool? %><%= f.text_field :alias, :placeholder => "Change Alias" %> <p></p>
+          <%= f.label :is_your_alias_really_that_cool? %><%= f.text_field :alias, :placeholder => "Change Alias", :onkeyup => "CheckMaxlength(this);", :maxlength => 19 %> <p></p>
           <%= f.label :first_name %><%= f.text_field :first_name, :placeholder => "Change First Name" %> <p></p>
           <%= f.label :last_name %><%= f.text_field :last_name, :placeholder => "Change Last Name" %> <p></p>
           <%= f.label :Seems_like_you_have_something_to_hide %><%= f.select :age, ('18'..'99').to_a %> <p></p>
@@ -15,7 +15,7 @@
           <%= f.password_field :current_password, :placeholder => "Current Password to Confirm Changes", :required => true %><p></p>
           <%= f.submit 'Update', :class => 'btn btn-primary btn-large' %>
       <%end%>
-      <%= link_to "I am happy with what I chose.", thinker_path(current_thinker), class: "btn btn-primary btn-warning" %>
+      <%= link_to "I am happy with current settings.", thinker_path(current_thinker), class: "btn btn-primary btn-warning" %>
       <hr >
       <h3 class="muted">No longer have any thoughts?</h3>
 
@@ -26,9 +26,11 @@
   </div>
   <div class="span6">
     <p class="lead text-info"  style="padding-left:9px; padding-top:3px;"><em><%= current_thinker.alias.titleize %></em>
-    <p class="muted"  style="padding-left:9px;"><small>Constructs - <%= current_thinker.brain_wave.size-1 %>&nbsp;|&nbsp;
-      Factoids - <%= current_thinker.factoids.size %>&nbsp;|&nbsp;
-      Epiphanies - <%= current_thinker.epiphanies.size %></small>
+    <p class="muted"  style="padding-left:9px;"><small>Constructs - <%= current_thinker.constructs.count %>&nbsp;<br>
+      Factoids - <%= current_thinker.factoids.count %>&nbsp;<br>
+      Epiphanies - <%= current_thinker.epiphanies.count %>&nbsp;<br>
+      BrainWaves - <%= current_thinker.brain_wave.count %>&nbsp;<br>
+      BrainStorm Sessions - <%= current_thinker.brain_storm_sessions.count %></small>
     </p></p>
   </div>
 </div>

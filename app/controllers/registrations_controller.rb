@@ -22,6 +22,9 @@ class RegistrationsController < Devise::RegistrationsController
     end
   end
 
+  def edit
+    puts "params"
+  end
 
   protected
 

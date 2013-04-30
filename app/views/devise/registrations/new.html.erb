@@ -15,12 +15,14 @@
             <%= devise_error_messages! %>
 
             <div>Email &nbsp; : &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <%= f.email_field :email, :autofocus => true, :placeholder => "Email" %></div>
+              <%= f.email_field :email, :autofocus => true, :placeholder => "Email", :required => true %></div>
+            <div>Alias &nbsp; : &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <%= f.text_field :alias, :placeholder => "Your alias or pen-name...", :required => true,  :onkeyup => "CheckMaxlength(this);", :maxlength => 19%></div>
 
         <div>
-          Password &nbsp; : &nbsp;&nbsp;&nbsp;<%= f.password_field :password , :placeholder => "Password"%></div>
+          Password &nbsp; : &nbsp;&nbsp;&nbsp;<%= f.password_field :password , :placeholder => "Password", :required => true%></div>
         <div>
-          Confirm &nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.password_field :password_confirmation , :placeholder => "Confirm Password"%></div>
+          Confirm &nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.password_field :password_confirmation , :placeholder => "Confirm Password", :required => true%></div>
 
             <% if devise_mapping.rememberable? -%>
                 <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
