@@ -1,15 +1,15 @@
 <div style="max-height: 393px;overflow: auto">
   <% @howls.each do |howl| %>
       <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span2">
-            Tortured Soul >>>>>
+        <div class="row-fluid" style="font-family: Papyrus">
+          <div class="span2 muted">
+            <%= HOWLER_TYPES.sample %>&nbsp;>>>>>
           </div>
           <div class="span10">
-            <%= howl.howl.capitalize %><br>
+            <%= howl.howl.capitalize %>
           </div>
         </div>
       </div>
-
+      <!--<br>-->
   <%end%>
 </div>
