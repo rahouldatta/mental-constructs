@@ -2,6 +2,8 @@ MentalConstructs::Application.routes.draw do
 
 
   get "howl/index"
+  get 'howl/update_howl_display'
+  post 'howl/record_howl'
 
   resources :constructs
 
