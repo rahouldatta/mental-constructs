@@ -1,0 +1,4 @@
+<%= form_tag({:controller => "exhibits",:action => "search_exhibits"}, :remote => true, :style => "margin: 0px; padding :3px 1px 3px 2px;", :class => "form-search") do %>
+    <div id="tooltip-show">  <%= text_field(nil,:search_parameter, :class=> "span4 input-medium search-query", :placeholder => "Search for exhibits ...", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true, :id=>"" ) %>
+      <%= submit_tag "Search", :title => "Search for any exhibits matching your interest", class: "btn btn-success", :disable_with => "Searching ...", :onClick => "goToTop();" %></div>
+<% end %>

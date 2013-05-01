@@ -1,0 +1,3 @@
+<% @exhibits.each do |exhibit| %>
+$("#endless_paginate").append("<div class='page'><%= escape_javascript(render(:partial => "exhibits/partials/exhibit_description_display", :locals => {:exhibit => exhibit} )) %></div>");
+<% end %>

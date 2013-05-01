@@ -1,0 +1,38 @@
+<div class="opaqify-container" style="background-color:rgba(255,255,255,0.125);">
+  <div class="container-fluid">
+    <div class="row-fluid">
+
+      <div class="span2">
+        <div class="blanker-box" style="padding: 13px;">
+          <img alt="TheThinker" height="53" width="43" src="/assets/TheThinker.jpg" title="Anyone and Everyone will always respect a Thinker.    Photo: The Thinker by Auguste Rodin" class="thumbnail"/>
+          <br>
+          <div class="muted" style="font-size: 13px"><small>By :-<br> <%= exhibit.thinker.alias.gsub("-"," ").titleize rescue "Anonymous" %>
+            <br>On :- <%= exhibit.created_at.utc.localtime.to_s(:short) %>
+          </small></div>
+        </div>
+      </div>
+      <div class="span10">
+        <div class="blanker-box" style="padding: 13px;">
+          <div class="lead text-info"><em><%= exhibit.title.titleize %></em>
+            <div class="muted" style="font-size: 9px"><a href="#">Read More</a>&nbsp;|&nbsp;
+              <a href="#">Comments</a>
+            </div></div>
+          <div style="color:white;font-size: 13px">
+            <%= raw "#{exhibit.construct[0..933]} ..." %></div>
+          <% unless exhibit.brain_storm.nil?%>
+              Has BrainStorm FlowChart - <%= exhibit.brain_storm%>
+          <% end %>
+          <div class="pull-right">
+            <a href="/exhibits/<%= exhibit.id%>"  class="btn btn-small"><i class="icon-align-justify"></i>&nbsp;Read More</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="exhibits/<%= exhibit.id %>#comments" class="btn btn-small" ><i class="icon-comment"></i>&nbsp;Comments</a>
+          </div>
+          <br>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<br>

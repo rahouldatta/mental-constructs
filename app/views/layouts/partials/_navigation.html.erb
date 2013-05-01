@@ -19,8 +19,9 @@
         <!--<li class="divider-vertical"></li>-->
         <li class=""><%= link_to exhibits_path do %><i class="icon-globe icon-white"></i> Exhibits<% end %></li>
         <li class=""><%= link_to howl_index_path do %><i class="icon-fire icon-white"></i> HOWL<% end %></li>
+
         <% if thinker_signed_in?%>
-            <% unless request.fullpath == "/howl/index" or request.fullpath=="/thinkers/edit" or request.fullpath=="/exhibits" or request.fullpath=="/exhibits/show"  %>
+            <% unless request.fullpath == "/howl/index" or request.fullpath=="/thinkers/edit" or request.fullpath=="/exhibits" or request.fullpath=="/exhibits/:id/show"  %>
         <%# if request.fullpath == thinker_path(current_thinker)%>
             <li class="divider-vertical"></li>
             <li class="">
@@ -36,6 +37,16 @@
             </div>
             </li>
         <%end%>
+
+
+
+            <% if request.fullpath == "/exhibits"%>
+                <li class="divider-vertical"></li>
+                <li class="">
+                  <div class="form-search">
+                    <%= render 'exhibits/partials/search_form' %></div></li>
+
+            <%end%>
         <%end%>
       </ul>
     </div>

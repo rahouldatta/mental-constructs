@@ -17,6 +17,7 @@ class Thinker < ActiveRecord::Base
   has_many :dossiers
   has_many :treatment_construct_dossiers
   has_many :brain_storm_sessions
+  has_many :exhibits
 
 
   def to_param
@@ -30,7 +31,7 @@ class Thinker < ActiveRecord::Base
   end
 
   #======================= CALLBACKS ========================
-  before_create :parameterize_alias
+  before_save :parameterize_alias
 
   def parameterize_alias
     self.alias = self.alias.parameterize

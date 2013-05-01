@@ -1,4 +1,4 @@
-<div class="text-info"><h5>A Sudden Neural Activity, an Idea?</h5></div>
+<div class="" style="color: dodgerblue"><h5>A Sudden Neural Activity, an Idea?</h5></div>
 <%= form_tag({:controller => "thinker",:action => "record_brainwaves"}, :remote => true, :style => "margin: 0px;") do %>
     <%= text_area(nil,:cognition, :class=> "span10", :rows => "3", :placeholder => "BrainWave (173 characters), Also select you affinity level.", :onkeyup => "CheckMaxlength(this);", :maxlength => 173, :required => true ) %>
     <%= select_tag :affinity_level, options_for_select(["1","2","3","4","5"]), :class=>"span2" %>

@@ -9,7 +9,7 @@ gem 'mysql2'
 
 #functionality supporting gems
 gem 'devise'
-
+gem 'will_paginate', '~> 3.0'
 
 #ui gems
 gem 'bootstrap-sass'

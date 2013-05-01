@@ -1,2 +1,38 @@
-<h1>Exhibits#index</h1>
-<p>Find me in app/views/exhibits/index.html.erb</p>
+<div id="endless_paginate">
+<% @exhibits.each do |exhibit|%>
+    <%= render 'exhibits/partials/exhibit_description_display', :exhibit => exhibit %>
+<!--<div class="blanker-box" style="padding: 13px">-->
+<% end %>
+</div>
+
+<script type="text/javascript">
+    (function() {
+        var page = 1,
+                loading = false;
+
+        function nearBottomOfPage() {
+            return $(window).scrollTop() > $(document).height() - $(window).height() - 20;
+        }
+
+        $(window).scroll(function(){
+            if (loading) {
+                return;
+            }
+
+            if(nearBottomOfPage()) {
+                loading=true;
+                page++;
+                $.ajax({
+                    url: '/exhibits?page=' + page,
+                    type: 'get',
+                    dataType: 'script',
+                    success: function() {
+                        loading=false;
+                    }
+                });
+            }
+        });
+
+        $(window).sausage();
+    }());
+</script>
