@@ -17,10 +17,10 @@
             <li class="active" style="font-family: Papyrus;"><%= (link_to "Mental Constructs", root_path, :class => "brand ")%></li>
         <% end %>
         <!--<li class="divider-vertical"></li>-->
-        <li class=""><%= link_to "#" do %><i class="icon-globe icon-white"></i> Exhibits<% end %></li>
+        <li class=""><%= link_to exhibits_path do %><i class="icon-globe icon-white"></i> Exhibits<% end %></li>
         <li class=""><%= link_to howl_index_path do %><i class="icon-fire icon-white"></i> HOWL<% end %></li>
         <% if thinker_signed_in?%>
-            <% unless request.fullpath == "/howl/index" or request.fullpath=="/thinkers/edit"%>
+            <% unless request.fullpath == "/howl/index" or request.fullpath=="/thinkers/edit" or request.fullpath=="/exhibits/index" or request.fullpath=="/exhibits/show"  %>
         <%# if request.fullpath == thinker_path(current_thinker)%>
             <li class="divider-vertical"></li>
             <li class="">

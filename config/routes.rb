@@ -1,6 +1,12 @@
 MentalConstructs::Application.routes.draw do
 
 
+  #get "exhibits/index"
+
+  #get "exhibits/show"
+
+  resources :exhibits
+
   get "howl/index"
   get 'howl/update_howl_display'
   post 'howl/record_howl'
