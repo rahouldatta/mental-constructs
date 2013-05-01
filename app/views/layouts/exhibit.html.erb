@@ -10,9 +10,46 @@
 
 <%= render 'layouts/partials/navigation' %>
 
-<%= yield %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span9">
+      <%= yield %>
+    </div>
+      <aside class="span3">
+        <div id="widget-bar" data-spy="affix" style="padding-right: 11px;">
+
+          <div  class="blank-box">
+            <%= render 'thinker/partials/research_forms' %>
+          </div>
+          <br>
+          <hr>
+          <div class="opaqify-container" style="background-color:rgba(255,255,255,0.1);">
+            <%= render 'thinker/partials/epiphany_form' %>
+          </div>
+          <br>
+          <div class="opaqify-container" style="background-color:rgba(255,255,255,0.1);">
+            <%= render 'thinker/partials/brain_wave_form' %>
+          </div>
+          <br>
+          <div class="boxed-template form-inline" >
+            <%= render 'thinker/partials/factoid_form' %>
+          </div>
+
+        </div>
+      </aside>
+  </div>
+</div>
 
 <%#= render 'layouts/partials/footer' %>
 
+
+
 </body>
 </html>
+
+<script>
+    $(function(){
+        var sideBarNavWidth=$('#leftcolumn').width() - parseInt($('#widget-bar').css('paddingLeft')) - parseInt($('#widget-bar').css('paddingRight'));
+        $('#sidebarnav').css('width', sideBarNavWidth);
+    });
+</script>

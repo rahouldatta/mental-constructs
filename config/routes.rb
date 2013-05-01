@@ -1,10 +1,6 @@
 MentalConstructs::Application.routes.draw do
 
 
-  #get "exhibits/index"
-
-  #get "exhibits/show"
-
   resources :exhibits
 
   get "howl/index"
