@@ -6,8 +6,8 @@
         <div class="blanker-box" style="padding: 13px;">
           <img alt="TheThinker" height="53" width="43" src="/assets/TheThinker.jpg" title="Anyone and Everyone will always respect a Thinker.    Photo: The Thinker by Auguste Rodin" class="thumbnail"/>
           <br>
-          <div class="muted" style="font-size: 13px"><small>By :-<br> <%= exhibit.thinker.alias.gsub("-"," ").titleize rescue "Anonymous" %>
-            <br>On :- <%= exhibit.created_at.utc.localtime.to_s(:short) %>
+          <div class="muted" style="font-size: 13px"><small><%=link_to  "#{exhibit.thinker.alias.gsub("-"," ").titleize}","#" rescue "Anonymous" %>
+            <br><%= exhibit.created_at.utc.localtime.to_s(:short) %>
           </small></div>
         </div>
       </div>

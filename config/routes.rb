@@ -11,7 +11,11 @@ MentalConstructs::Application.routes.draw do
   get 'howl/update_howl_display'
   post 'howl/record_howl'
 
-  resources :constructs
+  resources :constructs do
+    member do
+      get 'share_construct'
+    end
+  end
 
 
   resources :thinker do

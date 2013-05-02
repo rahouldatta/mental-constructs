@@ -1,0 +1,10 @@
+<% if construct.share %>
+       <div class="text-info">Exhibited.</div>
+<% else %>
+    <div class="pull-right"><strong>Exhibit This Construct : </strong>
+    <%= link_to share_construct_construct_path(construct), :class => "btn btn-small btn-warning", :remote => true, :confirm => "Are you sure you want to exhibit your personal construct?" do %>
+        <i class="icon-share"></i>&nbsp;Exhibit
+    <% end %>
+    </div>
+<% end%>
+<br><br>

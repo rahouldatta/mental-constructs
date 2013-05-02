@@ -76,4 +76,10 @@ class ConstructsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def share_construct
+    @construct = Construct.find(params[:id])
+    #@construct.exhibit_construct
+    @construct.update_attributes(:share => true)
+  end
 end
