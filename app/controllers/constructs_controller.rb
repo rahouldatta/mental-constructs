@@ -79,7 +79,7 @@ class ConstructsController < ApplicationController
 
   def share_construct
     @construct = Construct.find(params[:id])
-    #@construct.exhibit_construct
+    @construct.exhibit_construct
     @construct.update_attributes(:share => true)
   end
 end
