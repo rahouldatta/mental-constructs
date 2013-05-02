@@ -1,4 +1,4 @@
-<div class="opaqify-container" style="background-color:rgba(255,255,255,0.125);">
+<div class="opaqify-container" style="background-color:rgba(255,255,255,0.08);">
   <div class="container-fluid">
     <div class="row-fluid">
 
@@ -18,9 +18,9 @@
               <a href="#">Comments</a>
             </div></div>
           <div style="color:white;font-size: 13px">
-            <%= raw "#{exhibit.construct[0..933]} ..." %></div>
-          <% unless exhibit.brain_storm.nil?%>
-              Has BrainStorm FlowChart - <%= exhibit.brain_storm%>
+            <%= raw "#{exhibit.construct[0..833]} ..." %></div>
+          <% unless exhibit.brain_storm.blank?%>
+              <div class="muted">Has BrainStorm FlowChart - <%= exhibit.brain_storm.first.capitalize %></div>
           <% end %>
           <div class="pull-right">
             <a href="/exhibits/<%= exhibit.id%>"  class="btn btn-small"><i class="icon-align-justify"></i>&nbsp;Read More</a>
