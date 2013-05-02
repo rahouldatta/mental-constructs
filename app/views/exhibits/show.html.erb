@@ -1,3 +1,135 @@
-<h1>Exhibits#show</h1>
-<p>Find me in app/views/exhibits/show.html.erb</p>
-<%= @exhibit.inspect %>
+<div class="opaqify-container">
+
+  <div class="lead text-info" ><strong><%= @exhibit.title.titleize %></strong></div>
+  <small>There have been <%= @exhibit.popularity_quotient %> thinkers who have admired <strong><%= @exhibit.title %>.</strong></small>
+
+  <% unless current_thinker.nil? %>
+      <div class="pull-right">
+        <span id="popularity_quotient_update"><%#= render 'exhibits/partials/popularity_quotient', :exhibit => @exhibit %></span> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <span id="bookmark_update" ><%#= render 'exhibits/partials/bookmarking', :exhibit => @exhibit %></span></div>
+  <% end %>
+  <div class="muted">By :- <strong><%= link_to "#{@exhibit.thinker.titleize}","#" ,:class=>"permalink", :target => "_blank" rescue "Anonymous" %></strong>
+
+    <div class="muted"><small><strong><%= "Exhibited on - #{@exhibit.created_at.to_s(:long)}" %></strong></small></div>
+
+  </div>
+
+</div>
+<!--</div>-->
+<br>
+
+<div class="opaqify-container">
+  <div style="color: white;font-size: 13px"><%= raw @exhibit.construct%></div>
+</div>
+<!--<br>-->
+
+<% unless @exhibit.brain_storm.nil?%>
+    <br>
+    <div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
+      <div class="text-info" style="text-align: center;"><h5 style="font-size: 21px;"><%= @exhibit.brain_storm.first.capitalize %></h5><br>
+        <div class="row-fluid">
+          <div class="span3"></div>
+          <div class="span6">
+            <button class="btn btn-success btn-block btn-large" id="show-flow-chart-bs-toggle">View BrainStorm Flow Chart</button>
+          </div>
+          <div class="span3"></div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="show-flow-chart-bs">
+      <br>
+      <div class="row-fluid">
+        <div class="span4"></div>
+        <div class="span4">
+          <div class="opaqify-container" style="background-color:rgba(255,255,255,0.6);padding: 19px">
+            <div style="text-align: center;font-size: 27px;color: black">START</div>
+          </div>
+        </div>
+        <div class="span4"></div>
+      </div>
+
+      <div style="text-align: center;color: white">|</div>
+      <% @exhibit.brain_storm.last.each do |heading,flash| %>
+          <div class="row-fluid">
+            <div class="span3"></div>
+            <div class="span6 blanker-box" style="padding: 13px;">
+              <div class="opaqify-container" style="background-color:rgba(255,255,255,0.15);" >
+                <div style="text-align: center;font-size: 19px;color: white"><%= heading.capitalize %></div></div>
+              <div class="">
+                <br>
+                <div class="blanker-box" style="padding: 11px">
+                  <% flash.each do |point|%>
+                      <div class="row-fluid">
+                        <div class="span10" style="color: white">
+                          &nbsp;&bull;&nbsp;&nbsp;&nbsp;<%= point.capitalize %>
+                        </div>
+                        <div class="span2">&nbsp;
+                        </div>
+                      </div>
+                  <% end %>
+
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="span3"></div>
+          </div>
+          <!--</div>-->
+
+          <!--</div>-->
+          <div style="text-align: center;color: white">|</div>
+          <!--<hr>-->
+      <% end %>
+      <div class="row-fluid">
+        <div class="span4"></div>
+        <div class="span4">
+          <div class="opaqify-container" style="background-color:rgba(255,255,255,0.6);padding: 19px">
+            <div style="text-align: center;font-size: 27px;color: black">END</div>
+          </div>
+        </div>
+        <div class="span4"></div>
+      </div>
+
+
+    </div>
+<% end %>
+<br>
+<div class="opaqify-container">
+  <br>
+  <div class="muted"><strong>Foot Notes :</strong></div>
+  <p style="color:white">
+    <%= @exhibit.foot_notes %></p>
+</div>
+
+<br> <br>
+
+<div class="opaqify-container">
+  <%= link_to exhibits_path, class: "btn btn-small btn-inverse" do%><i class="icon-arrow-left icon-white"></i><% end %>
+</div>
+
+<br>
+
+<div class="" id="comments">
+  <h5>Comments -</h5>
+  <!--<button class="btn btn-large" id="view-comments-toggle"> Toggle Comments</button>-->
+
+  <div id="comment_pivot_tag"> <br><%#= render "exhibits/partials/comment_pivot" %></div>
+</div>
+
+
+          <script>
+              $(document).ready(function() {
+                  $('#show-flow-chart-bs').hide(); //Initially form wil be hidden.
+                  $('#show-flow-chart-bs-toggle').click(function() {
+                      $('#show-flow-chart-bs').toggle();//Form shows on button click
+                  });
+              });
+          </script>
+
+
+

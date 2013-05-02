@@ -9,6 +9,8 @@ class ExhibitsController < ApplicationController
 
   def show
     @exhibit = Exhibit.find(params[:id])
+    @exhibit.brain_storm
+    puts "======================"
   end
 
   def search_exhibits

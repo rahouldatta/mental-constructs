@@ -14,12 +14,11 @@ class Construct < ActiveRecord::Base
   end
 
   def exhibit_construct
-    Exhibit.create(:thinker_id => self.thinker_id,
+    Exhibit.create(:thinker => self.thinker.alias,
                    :title => self.title,
                    :construct => self.construct,
                    :foot_notes => self.foot_notes,
-                   :brain_storm => treatment_brain_storm(self)
-    )
+                   :brain_storm => treatment_brain_storm(self))
   end
 
   def treatment_brain_storm(construct)
@@ -33,8 +32,6 @@ class Construct < ActiveRecord::Base
         f["#{flash.flash}"] = flash.sub_points
       end
       a << f
-      puts a
-      puts "==============================="
       return a
     end
   end

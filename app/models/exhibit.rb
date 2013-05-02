@@ -1,13 +1,12 @@
 class Exhibit < ActiveRecord::Base
-  attr_accessible :brain_storm, :construct, :foot_notes, :popularity_quotient, :thinker_id, :title
+  attr_accessible :brain_storm, :construct, :foot_notes, :popularity_quotient, :thinker, :title
 
-  serialize :brain_storm
+  serialize :brain_storm, Array
 
-  belongs_to :thinker
+  before_create :treatment_exhibit
 
-  after_create :set_brain_storm_if_present
-
-  def set_brain_storm_if_present
-
+  def treatment_exhibit
+    self.popularity_quotient = 0
   end
+
 end
