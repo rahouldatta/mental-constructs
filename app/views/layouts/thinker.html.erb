@@ -23,7 +23,7 @@
     <!--======================================= Main area =======================================-->
     <div class="span9">
       <div class="row-fluid">
-        <div class="span7">
+        <div class="span8">
           <!--<div class="text-info" style="text-align: center;font-size: 13px;padding-bottom: 5px"><strong>Latest Exhibits</strong></div>-->
           <div class="opaqify-container" style="padding: 5px;">
             <div class="row-fluid">
@@ -33,7 +33,8 @@
                 </div>
               </div>
               <div class="span1">
-                <% if params[:controller] == "thinker"%>
+                <%# if params[:controller] == "thinker"%>
+                <% if true%>
                     <br>
                     <%= link_to get_next_exhibit_thinker_path, :class=>"btn btn-small btn-warning", :remote => true do %>
                         <i class="icon-magnet"></i>
@@ -45,7 +46,7 @@
             <!--</div>-->
           </div>
         </div>
-        <div class="span5">
+        <div class="span4">
           <div class="blank-box">
             <%= render 'thinker/partials/remembrall_form' %>
           </div>

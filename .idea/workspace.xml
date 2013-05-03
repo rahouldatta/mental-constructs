@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/get_next_exhibit.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mental-constructs.iml" afterPath="$PROJECT_DIR$/.idea/mental-constructs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exhibits/show.html.erb" afterPath="$PROJECT_DIR$/app/views/exhibits/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thinker.rb" afterPath="$PROJECT_DIR$/app/models/thinker.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +19,8 @@
     <file path="$PROJECT_DIR$/../inkuisitive/app/models/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973091351" ignored="false" />
     <file path="/brain_wave.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365973084004" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/assets/javascripts/application.js" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365974234132" ignored="false" />
-    <file path="/_navigation.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367436273417" ignored="false" />
-    <file path="/thinker.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367618542657" ignored="false" />
+    <file path="/_navigation.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367619430238" ignored="false" />
+    <file path="/thinker.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367619356964" ignored="false" />
     <file path="/home.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365976161494" ignored="false" />
     <file path="/home.css.scss" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1365976208307" ignored="false" />
     <file path="/thinker.css.scss" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366034098070" ignored="false" />
@@ -174,8 +164,9 @@
       <file leaf-file-name="thinker.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="58" selection-start="810" selection-end="810" vertical-scroll-proportion="-17.28">
+            <state line="36" column="27" selection-start="1162" selection-end="1162" vertical-scroll-proportion="-18.72">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -184,10 +175,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_exhibit_notifier.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_navigation.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="88" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.5317919">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_exhibit_notifier.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="109" selection-start="240" selection-end="248" vertical-scroll-proportion="0.09248555">
+            <state line="8" column="19" selection-start="481" selection-end="481" vertical-scroll-proportion="-5.12">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -224,7 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/construct.rb" />
         <option value="$PROJECT_DIR$/app/controllers/exhibits_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/exhibit.rb" />
         <option value="$PROJECT_DIR$/app/views/exhibits/partials/_exhibit_description_display.html.erb" />
@@ -238,8 +237,9 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/get_next_exhibit.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/thinker.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
       </list>
     </option>
   </component>
@@ -1289,13 +1289,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/exhibits.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="64" selection-start="457" selection-end="457" vertical-scroll-proportion="0.16741405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/img-bg-sea.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1385,10 +1378,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="481" selection-end="481" vertical-scroll-proportion="-5.12">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="58" selection-start="810" selection-end="810" vertical-scroll-proportion="-17.28">
+        <state line="36" column="27" selection-start="1162" selection-end="1162" vertical-scroll-proportion="-18.72">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1396,14 +1401,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="109" selection-start="240" selection-end="248" vertical-scroll-proportion="0.09248555">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="24" column="88" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.5317919">
+          <folding />
         </state>
       </provider>
     </entry>
