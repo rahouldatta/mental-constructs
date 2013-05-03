@@ -30,18 +30,6 @@ ActiveRecord::Schema.define(:version => 20130502094943) do
     t.integer  "affinity_level"
   end
 
-  create_table "concepts", :force => true do |t|
-    t.integer  "thinker_id"
-    t.integer  "dossier_id"
-    t.string   "title"
-    t.text     "concept"
-    t.integer  "affinity_level"
-    t.text     "foot_notes"
-    t.boolean  "share"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "constructs", :force => true do |t|
     t.integer  "thinker_id"
     t.integer  "dossier_id"

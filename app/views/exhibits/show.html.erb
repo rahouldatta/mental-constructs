@@ -23,7 +23,7 @@
 </div>
 <!--<br>-->
 
-<% unless @exhibit.brain_storm.nil?%>
+<% unless @exhibit.brain_storm.blank?%>
     <br>
     <div class="opaqify-container" style="background-color:rgba(255,255,255,0.09);">
       <div class="text-info" style="text-align: center;"><h5 style="font-size: 21px;"><%= @exhibit.brain_storm.first.capitalize %></h5><br>

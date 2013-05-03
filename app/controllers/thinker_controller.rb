@@ -211,7 +211,11 @@ class ThinkerController < ApplicationController
     brain_storm.update_attributes(:construct_id => c.id)
     @brain_storm_sessions = current_thinker.brain_storm_sessions.order("updated_at DESC")
     @current_brain_storm_session = brain_storm
+  end
 
+  def get_next_exhibit
+    puts params
+    puts "=========="
   end
 
 end

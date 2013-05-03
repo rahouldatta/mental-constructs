@@ -33,6 +33,7 @@ MentalConstructs::Application.routes.draw do
       get 'delete_subpoint'
       get 'delete_brain_storm'
       get 'provocation'
+      get 'get_next_exhibit'
     end
     collection do
       post 'search_thinker_data'

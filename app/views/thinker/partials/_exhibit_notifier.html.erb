@@ -1,0 +1,19 @@
+<% exhibit = Exhibit.first(:order => "RAND()") rescue nil%>
+
+<div class="row-fluid">
+  <div class="span3 blanker-box" style="padding:5px">
+    <div class="text-info"><%= link_to  "#{exhibit.title.titleize}", exhibit_path(exhibit), :class=>"btn-link", :target => "_blank" rescue ""%></div>
+    <div><small>By - <%= exhibit.thinker.titleize %></small></div>
+    <div class="muted"><small><%= "Admired by - #{exhibit.popularity_quotient}" %></small></div>
+  </div>
+  <div class="span9 blanker-box" style="padding:5px">
+    <div style="color: white">
+      <%=raw "#{exhibit.construct[0..93]} ... " %>
+    </div>
+
+  </div>
+</div>
+
+
+
+

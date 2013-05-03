@@ -38,8 +38,10 @@ class Thinker < ActiveRecord::Base
   end
 
   def get_ordered_constructs(seq)
-    if seq.eql? "Shared Constructs"
+    if seq.eql? "Exhibited Constructs"
       return self.constructs.where(:share => true)
+    elsif seq.eql? "Non Exhibited Constructs"
+      return self.constructs.where(:share => false)
     elsif seq.eql? "StandAlone Constructs"
       return self.constructs.where(:dossier_id => nil)
     elsif seq.eql? "Constructs with mapped BrainStorm"

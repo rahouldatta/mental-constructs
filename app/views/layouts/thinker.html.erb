@@ -23,13 +23,29 @@
     <!--======================================= Main area =======================================-->
     <div class="span9">
       <div class="row-fluid">
-        <div class="span8">
-          <div class="blanker-box" style="padding: 5px;">
-            <div class="text-info" style="text-align: center;font-size: 13px;padding-bottom: 5px"><strong>Out of Sight, Out of Mind!</strong>
-             <span class="pull-right"><button class="btn btn-mini" id="notifier-toggle"><i class="icon-adjust"></i></button></span></div>
+        <div class="span7">
+          <!--<div class="text-info" style="text-align: center;font-size: 13px;padding-bottom: 5px"><strong>Latest Exhibits</strong></div>-->
+          <div class="opaqify-container" style="padding: 5px;">
+            <div class="row-fluid">
+              <div class="span11">
+                <div id="exhibit-notifier">
+                  <%= render 'thinker/partials/exhibit_notifier' %>
+                </div>
+              </div>
+              <div class="span1">
+                <% if params[:controller] == "thinker"%>
+                    <br>
+                    <%= link_to get_next_exhibit_thinker_path, :class=>"btn btn-small btn-warning", :remote => true do %>
+                        <i class="icon-magnet"></i>
+                    <% end%>
+                <% end%>
+              </div>
+            </div>
+             <!--<span class="pull-right"><button class="btn btn-mini" id="notifier-toggle"><i class="icon-adjust"></i></button></span>-->
+            <!--</div>-->
           </div>
         </div>
-        <div class="span4">
+        <div class="span5">
           <div class="blank-box">
             <%= render 'thinker/partials/remembrall_form' %>
           </div>
