@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/exhibits/partials/comment_display.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb" afterPath="$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exhibits/partials/_exhibit_description_display.html.erb" afterPath="$PROJECT_DIR$/app/views/exhibits/partials/_exhibit_description_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/exhibits_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/exhibits_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exhibits/index.html.erb" afterPath="$PROJECT_DIR$/app/views/exhibits/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exhibits/show.html.erb" afterPath="$PROJECT_DIR$/app/views/exhibits/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -130,7 +124,7 @@
     <file path="/_share_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367481543086" ignored="false" />
     <file path="/share_construct.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367481740330" ignored="false" />
     <file path="/get_next_exhibit.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367617956544" ignored="false" />
-    <file path="/_exhibit_notifier.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367699025466" ignored="false" />
+    <file path="/_exhibit_notifier.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367711023795" ignored="false" />
     <file path="/bookmark.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367703497882" ignored="false" />
     <file path="/_bookmarking.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367704641256" ignored="false" />
     <file path="/unbookmark_and_disregard.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367704554184" ignored="false" />
@@ -196,14 +190,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_comment_display.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_comment_display.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="75" selection-start="634" selection-end="634" vertical-scroll-proportion="0.26307923">
+            <state line="6" column="105" selection-start="290" selection-end="364" vertical-scroll-proportion="-3.84">
               <folding>
                 <element signature="e#104#124#0" expanded="true" />
                 <element signature="e#574#594#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thinker.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_exhibit_notifier.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="137" selection-start="426" selection-end="426" vertical-scroll-proportion="0.11958147">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -255,7 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/exhibits/bookmark_and_admire.js.erb" />
         <option value="$PROJECT_DIR$/app/views/exhibits/partials/_bookmarking.html.erb" />
         <option value="$PROJECT_DIR$/app/models/exhibit.rb" />
         <option value="$PROJECT_DIR$/app/views/exhibits/partials/comment_display.js.erb" />
@@ -271,6 +282,7 @@
         <option value="$PROJECT_DIR$/app/controllers/exhibits_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/exhibits/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
       </list>
     </option>
   </component>
@@ -1320,22 +1332,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/exhibits/partials/_bookmarking.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="786" selection-end="786" vertical-scroll-proportion="0.19133034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_list_constructs.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="35" selection-start="2335" selection-end="2335" vertical-scroll-proportion="0.5317919">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/exhibit.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="2" selection-start="132" selection-end="132" vertical-scroll-proportion="0.11527377">
@@ -1435,11 +1431,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="75" selection-start="634" selection-end="634" vertical-scroll-proportion="0.26307923">
+        <state line="6" column="105" selection-start="290" selection-end="364" vertical-scroll-proportion="-3.84">
           <folding>
             <element signature="e#104#124#0" expanded="true" />
             <element signature="e#574#594#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="137" selection-start="426" selection-end="426" vertical-scroll-proportion="0.11958147">
+          <folding />
         </state>
       </provider>
     </entry>
