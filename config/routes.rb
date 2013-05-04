@@ -8,6 +8,7 @@ MentalConstructs::Application.routes.draw do
     end
     collection do
       post 'search_exhibits'
+      post 'record_comment'
     end
   end
 

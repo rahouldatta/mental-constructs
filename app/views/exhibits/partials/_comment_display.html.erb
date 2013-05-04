@@ -1,0 +1,18 @@
+<% @comments.each do |comment|%>
+    <!--<div class="container-fluid">-->
+    <div  class="blanker-box" style="padding: 9px">
+      <div class="row-fluid">
+
+        <div class="span2">
+          <i class="icon-comment icon-white"></i>&nbsp;by&nbsp;<%=link_to "#{comment.thinker.titleize}", "#" , :target => "_blank" %><br>
+          <small> <span class="muted">&nbsp;on&nbsp;<%= comment.created_at.utc.localtime.to_s(:long)  %></span></small>
+        </div>
+
+        <div class="span10">
+          <%= comment.comment.capitalize %>
+        </div>
+
+      </div>
+    </div>
+    <br>
+<% end %>

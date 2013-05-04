@@ -1,0 +1,6 @@
+  <h5>Post Comment - </h5>
+  <%= form_tag({:controller => "exhibits",:action => "record_comment"}, :remote => true, :style => "margin: 0px;") do %>
+      <%= text_area(nil,:comment, :class=> "span12", :rows => "2", :placeholder => "Your thoughts and comments on this construct.", :onkeyup => "CheckMaxlength(this);", :maxlength => 933, :required => true ) %>
+      <%= hidden_field_tag :exhibit_id, @exhibit.id %>
+      <div style="text-align: center" id="tooltip-show"><%= submit_tag "Comment", :title => "Your thoughts on this construct.",class: "span3 btn btn-primary"%></div>
+  <% end %>

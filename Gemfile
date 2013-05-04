@@ -10,6 +10,7 @@ gem 'mysql2'
 #functionality supporting gems
 gem 'devise'
 gem 'will_paginate', '~> 3.0'
+gem 'acts_as_commentable', '3.0.1'
 
 #ui gems
 gem 'bootstrap-sass'

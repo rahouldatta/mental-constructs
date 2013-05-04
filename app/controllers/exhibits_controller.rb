@@ -30,6 +30,7 @@ end
 
   def show
     @exhibit = Exhibit.find(params[:id])
+    @comments = @exhibit.comments
   end
 
   def search_exhibits
@@ -58,6 +59,15 @@ end
     @exhibit = Exhibit.find(params[:id])
     current_thinker.bookmarks.find_by_exhibit_id(params[:id]).destroy
     @exhibit.update_attributes(:popularity_quotient => @exhibit.popularity_quotient-1)
+  end
+
+  #======================= Comments =====================
+  def record_comment
+    puts params
+    puts "============="
+    @exhibit = Exhibit.find(params[:exhibit_id])
+    @exhibit.comments.create(:comment => params[:comment], :thinker => current_thinker.alias)
+    @comments = @exhibit.comments
   end
 
 end

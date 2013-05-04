@@ -1,4 +1,11 @@
-<div class="opaqify-container" style="background-color:rgba(255,255,255,0.08);">
+<% ctb = current_thinker.bookmarks.find_by_exhibit_id(exhibit.id)%>
+
+<% if ctb.nil?%>
+    <div class="opaqify-container" style="background-color:rgba(255,255,255,0.08);">
+<% else %>
+    <div class="opaqify-container" style="background-color:rgba(0,255,0,0.07);">
+<% end %>
+
   <div class="container-fluid">
     <div class="row-fluid">
 
@@ -13,9 +20,12 @@
       </div>
       <div class="span10">
         <div class="blanker-box" style="padding: 13px;">
+          <% unless ctb.nil?%>
+            <div class="pull-right">Already Viewed and BookMarked</div>
+          <% end %>
           <div class="lead text-info"><em><%= exhibit.title.titleize %></em>
             <div class="muted" style="font-size: 13px">Has been Admired by <strong style="color: white"><%= exhibit.popularity_quotient %></strong> Thinkers&nbsp;|&nbsp;
-              <a href="#">Comments</a>
+              <a href="/exhibits/<%= exhibit.id%>#comments">Comments <%= "(#{exhibit.comments.count})"%></a>
             </div></div>
           <div style="color:white;font-size: 13px">
             <%= raw "#{exhibit.construct[0..833]} ..." %></div>
@@ -37,6 +47,10 @@
       </div>
     </div>
   </div>
+<% if ctb.nil?%>
+    </div>
+<% else%>
+    </div>
+<% end%>
 
-</div>
 <br>

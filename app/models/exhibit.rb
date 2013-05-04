@@ -2,6 +2,8 @@ require File.join(Rails.root, 'lib/engines/searcher.rb')
 include Searcher
 
 class Exhibit < ActiveRecord::Base
+  acts_as_commentable
+
   attr_accessible :brain_storm, :construct, :foot_notes, :popularity_quotient, :thinker, :title
 
   serialize :brain_storm, Array
