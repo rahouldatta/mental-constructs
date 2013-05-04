@@ -30,8 +30,6 @@ end
 
   def show
     @exhibit = Exhibit.find(params[:id])
-    @exhibit.brain_storm
-    puts "======================"
   end
 
   def search_exhibits
@@ -39,6 +37,27 @@ end
     session[:search_parameter] = params[:search_parameter]
     search_results.blank? ? session[:exhibit_search_results] = "Nothing Found" : session[:exhibit_search_results] = search_results
     redirect_to exhibits_path
+  end
+
+  #====================== BookMarking ===================
+  def bookmark_and_admire
+    @exhibit = Exhibit.find(params[:id])
+    current_thinker.bookmarks.create(:exhibit_id => @exhibit.id,:exhibit_title => @exhibit.title, :exhibit_thinker => @exhibit.thinker, :brain_storm_title => update_brain_storm_title(@exhibit))
+    @exhibit.update_attributes(:popularity_quotient => @exhibit.popularity_quotient+1)
+  end
+
+  def update_brain_storm_title(e)
+    if e.brain_storm.blank?
+      return nil
+    else
+      return e.brain_storm.first
+    end
+  end
+
+  def unbookmark_and_disregard
+    @exhibit = Exhibit.find(params[:id])
+    current_thinker.bookmarks.find_by_exhibit_id(params[:id]).destroy
+    @exhibit.update_attributes(:popularity_quotient => @exhibit.popularity_quotient-1)
   end
 
 end

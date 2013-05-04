@@ -1,0 +1,13 @@
+<% unless current_thinker.nil?%>
+    <!--&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <% if current_thinker.bookmarks.find_by_exhibit_id(exhibit.id).nil? %>
+        <%= link_to bookmark_and_admire_exhibit_path(exhibit), :class => "btn btn-success btn-small" ,:title => "Admire and Bookmark this Exhibit. It will show up in Tagged Exhibits Tab in Thinker Panel.", :id => "tooltip_show", :remote => true do %>
+            <i class="icon-bookmark"></i> Admire
+        <% end %>
+    <% else %>
+        <%= link_to unbookmark_and_disregard_exhibit_path(exhibit), :class => "btn btn-danger btn-mini" ,:title => "Disregard and UnBookmark this Exhibit. Will be removed from Thinker Panel.", :id => "tooltip_show", :remote => true do %>
+            <i class="icon-bookmark"></i> Disregard
+        <% end %>
+
+    <% end %>
+<% end %>

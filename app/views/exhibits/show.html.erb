@@ -5,8 +5,7 @@
 
   <% unless current_thinker.nil? %>
       <div class="pull-right">
-        <span id="popularity_quotient_update"><%#= render 'exhibits/partials/popularity_quotient', :exhibit => @exhibit %></span> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <span id="bookmark_update" ><%#= render 'exhibits/partials/bookmarking', :exhibit => @exhibit %></span></div>
+        <span id="bookmark_update" ><%= render 'exhibits/partials/bookmarking', :exhibit => @exhibit %></span></div>
   <% end %>
   <div class="muted">By :- <strong><%= link_to "#{@exhibit.thinker.titleize}","#" ,:class=>"permalink", :target => "_blank" rescue "Anonymous" %></strong>
 

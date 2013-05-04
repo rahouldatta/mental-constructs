@@ -18,6 +18,7 @@ class Thinker < ActiveRecord::Base
   has_many :treatment_construct_dossiers
   has_many :brain_storm_sessions
   has_many :exhibits
+  has_many :bookmarks
 
 
   def to_param

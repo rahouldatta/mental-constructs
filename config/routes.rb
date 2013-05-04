@@ -2,6 +2,10 @@ MentalConstructs::Application.routes.draw do
 
 
   resources :exhibits do
+    member do
+      get 'bookmark_and_admire'
+      get 'unbookmark_and_disregard'
+    end
     collection do
       post 'search_exhibits'
     end

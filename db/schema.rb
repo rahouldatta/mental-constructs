@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130502094943) do
+ActiveRecord::Schema.define(:version => 20130504213745) do
+
+  create_table "bookmarks", :force => true do |t|
+    t.integer  "thinker_id"
+    t.integer  "exhibit_id"
+    t.string   "exhibit_title"
+    t.string   "exhibit_thinker"
+    t.string   "brain_storm_title"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
 
   create_table "brain_storm_sessions", :force => true do |t|
     t.integer  "construct_id"

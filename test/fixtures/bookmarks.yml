@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  thinker_id: 1
+  exhibit_id: 1
+  exhibit_title: MyString
+  exhibit_thinker: MyString
+  brain_storm_title: MyString
+
+two:
+  thinker_id: 1
+  exhibit_id: 1
+  exhibit_title: MyString
+  exhibit_thinker: MyString
+  brain_storm_title: MyString
