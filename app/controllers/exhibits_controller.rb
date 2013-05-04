@@ -12,7 +12,7 @@ class ExhibitsController < ApplicationController
     search_preparation
   else
     @exhibits = Exhibit.where(:thinker => session[:specific_thinker]).order("created_at desc").paginate(:page=>params[:page], :per_page=>13)
-    @thinker = session[:specific_thinker]
+    @specific_thinker = session[:specific_thinker]
     session[:specific_thinker] = nil
   end
 end
@@ -61,13 +61,20 @@ end
     @exhibit.update_attributes(:popularity_quotient => @exhibit.popularity_quotient-1)
   end
 
-  #======================= Comments =====================
+  #======================= Misc =====================
   def record_comment
-    puts params
-    puts "============="
     @exhibit = Exhibit.find(params[:exhibit_id])
     @exhibit.comments.create(:comment => params[:comment], :thinker => current_thinker.alias)
     @comments = @exhibit.comments
+  end
+
+  def view_specific_thinkers_exhibits
+    if params[:format].nil?
+      session[:specific_thinker] = Exhibit.find(params[:id]).thinker
+    else
+      session[:specific_thinker] = params[:format]
+    end
+    redirect_to exhibits_path
   end
 
 end

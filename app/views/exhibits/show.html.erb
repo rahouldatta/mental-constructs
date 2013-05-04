@@ -7,7 +7,7 @@
       <div class="pull-right">
         <span id="bookmark_update" ><%= render 'exhibits/partials/bookmarking', :exhibit => @exhibit %></span></div>
   <% end %>
-  <div class="muted">By :- <strong><%= link_to "#{@exhibit.thinker.titleize}","#" ,:class=>"permalink", :target => "_blank" rescue "Anonymous" %></strong>
+  <div class="muted">By :- <strong><%= link_to "#{@exhibit.thinker.titleize}",view_specific_thinkers_exhibits_exhibit_path(@exhibit) ,:class=>"permalink", :target => "_blank" rescue "Anonymous" %></strong>
 
     <div class="muted"><small><strong><%= "Exhibited on - #{@exhibit.created_at.to_s(:long)}" %></strong></small></div>
 

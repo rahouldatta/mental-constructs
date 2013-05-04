@@ -6,6 +6,14 @@
       <br>
   <% end %>
 
+  <% unless @specific_thinker.nil?%>
+      <div class="opaqify-container">
+        <p class="lead" style="text-align: center"><%= "#{@specific_thinker.to_s.titleize}'s Exhibits" %></p>
+      </div>
+      <br>
+  <% end %>
+
+
   <% @exhibits.each do |exhibit|%>
     <%= render 'exhibits/partials/exhibit_description_display', :exhibit => exhibit %>
 <!--<div class="blanker-box" style="padding: 13px">-->

@@ -13,7 +13,7 @@
         <div class="blanker-box" style="padding: 13px;">
           <img alt="TheThinker" height="53" width="43" src="/assets/TheThinker.jpg" title="Anyone and Everyone will always respect a Thinker.    Photo: The Thinker by Auguste Rodin" class="thumbnail"/>
           <br>
-          <div class="muted" style="font-size: 13px"><small><%=link_to  "#{exhibit.thinker.gsub("-"," ").titleize}","#" rescue "Anonymous" %>
+          <div class="muted" style="font-size: 13px"><small><%=link_to  "#{exhibit.thinker.gsub("-"," ").titleize}",view_specific_thinkers_exhibits_exhibit_path(exhibit) rescue "Anonymous" %>
             <br><%= exhibit.created_at.utc.localtime.to_s(:short) %>
           </small></div>
         </div>
@@ -21,7 +21,7 @@
       <div class="span10">
         <div class="blanker-box" style="padding: 13px;">
           <% unless ctb.nil?%>
-            <div class="pull-right">Already Viewed and BookMarked</div>
+            <div class="pull-right">Already Viewed and Admired</div>
           <% end %>
           <div class="lead text-info"><em><%= exhibit.title.titleize %></em>
             <div class="muted" style="font-size: 13px">Has been Admired by <strong style="color: white"><%= exhibit.popularity_quotient %></strong> Thinkers&nbsp;|&nbsp;

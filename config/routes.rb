@@ -5,6 +5,7 @@ MentalConstructs::Application.routes.draw do
     member do
       get 'bookmark_and_admire'
       get 'unbookmark_and_disregard'
+      get 'view_specific_thinkers_exhibits'
     end
     collection do
       post 'search_exhibits'
