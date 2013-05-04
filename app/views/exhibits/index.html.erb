@@ -1,5 +1,12 @@
 <div id="endless_paginate">
-<% @exhibits.each do |exhibit|%>
+  <% unless @search_result.nil?%>
+      <div class="opaqify-container">
+        <div class="lead" style="text-align: center;color: white"><%= "#{@search_result} - Exhibits for search \"#{session[:search_parameter]}\" were Found." %></div>
+      </div>
+      <br>
+  <% end %>
+
+  <% @exhibits.each do |exhibit|%>
     <%= render 'exhibits/partials/exhibit_description_display', :exhibit => exhibit %>
 <!--<div class="blanker-box" style="padding: 13px">-->
 <% end %>

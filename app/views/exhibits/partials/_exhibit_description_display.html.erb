@@ -14,23 +14,27 @@
       <div class="span10">
         <div class="blanker-box" style="padding: 13px;">
           <div class="lead text-info"><em><%= exhibit.title.titleize %></em>
-            <div class="muted" style="font-size: 9px"><a href="#">Read More</a>&nbsp;|&nbsp;
+            <div class="muted" style="font-size: 13px">Has been Admired by <strong style="color: white"><%= exhibit.popularity_quotient %></strong> Thinkers&nbsp;|&nbsp;
               <a href="#">Comments</a>
             </div></div>
           <div style="color:white;font-size: 13px">
             <%= raw "#{exhibit.construct[0..833]} ..." %></div>
+          <div class="pull-left">
           <% unless exhibit.brain_storm.blank?%>
-              <div class="muted">Has BrainStorm FlowChart - <%= exhibit.brain_storm.first.capitalize %></div>
+              <div class="blanker-box" style="padding: 9px;">
+              <div class="" style="color: white"><strong>BrainStorm - </strong><%= exhibit.brain_storm.first.capitalize %></div>
+              </div>
           <% end %>
+          </div>
           <div class="pull-right">
             <a href="/exhibits/<%= exhibit.id%>"  class="btn btn-small"><i class="icon-align-justify"></i>&nbsp;Read More</a>
             &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="exhibits/<%= exhibit.id %>#comments" class="btn btn-small" ><i class="icon-comment"></i>&nbsp;Comments</a>
           </div>
           <br>
+          <br>
         </div>
       </div>
-
     </div>
   </div>
 
