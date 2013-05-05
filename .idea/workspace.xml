@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/apropos/about.html.erb" afterPath="$PROJECT_DIR$/app/views/apropos/about.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/apropos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/apropos_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/apropos.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/apropos.html.erb" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,11 +139,12 @@
     <file path="/_bookmark_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367714228870" ignored="false" />
     <file path="/unbookmark.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367713890671" ignored="false" />
     <file path="/apropos_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367758940747" ignored="false" />
-    <file path="/apropos.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754902410" ignored="false" />
+    <file path="/apropos.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367760755476" ignored="false" />
     <file path="/how_to_use.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754749302" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/views/how_to_use/index.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754334840" ignored="false" />
     <file path="/apropos.css.scss.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754716319" ignored="false" />
-    <file path="/about.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367759001384" ignored="false" />
+    <file path="/about.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367760745908" ignored="false" />
+    <file path="/_footer.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367760793355" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,18 +201,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/apropos/about.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="12" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.6936416">
+            <state line="94" column="0" selection-start="7453" selection-end="7453" vertical-scroll-proportion="-25.12">
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#div#2;n#div#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apropos.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/apropos.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="4" selection-start="389" selection-end="389" vertical-scroll-proportion="-10.88">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="16" selection-start="355" selection-end="355" vertical-scroll-proportion="0.13872832">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thinker.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="6" selection-start="2002" selection-end="2069" vertical-scroll-proportion="-13.44">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -245,7 +276,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
         <option value="$PROJECT_DIR$/app/models/exhibit.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
@@ -256,11 +286,12 @@
         <option value="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/apropos.css.scss.erb" />
         <option value="$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/apropos.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/apropos/record_feedback.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/apropos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/apropos/about.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/apropos.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" />
       </list>
     </option>
   </component>
@@ -1332,11 +1363,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="35" selection-start="6082" selection-end="6091" vertical-scroll-proportion="-12.16" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/thinker_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="218" column="32" selection-start="8884" selection-end="8884" vertical-scroll-proportion="0.0" />
@@ -1393,13 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/apropos.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="178" selection-end="178" vertical-scroll-proportion="0.11347517">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="97" selection-start="420" selection-end="517" vertical-scroll-proportion="0.06936416">
@@ -1428,18 +1447,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="6" selection-start="2002" selection-end="2069" vertical-scroll-proportion="-13.44">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/apropos/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="12" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.6936416">
+        <state line="94" column="0" selection-start="7453" selection-end="7453" vertical-scroll-proportion="-25.12">
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#div#2;n#div#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/apropos.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="389" selection-end="389" vertical-scroll-proportion="-10.88">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="355" selection-end="355" vertical-scroll-proportion="0.13872832">
+          <folding />
         </state>
       </provider>
     </entry>
