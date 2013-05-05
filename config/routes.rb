@@ -40,6 +40,7 @@ MentalConstructs::Application.routes.draw do
       get 'delete_brain_storm'
       get 'provocation'
       get 'get_next_exhibit'
+      get 'unbookmark'
     end
     collection do
       post 'search_thinker_data'

@@ -1,0 +1,30 @@
+<div class="blanker-box" style="padding: 13px">
+<% if @bookmarks.blank?%>
+  <div style="color: white">No Exhibits have been Admired Till Date.</div>
+<% else %>
+    <% @bookmarks.each do |bookmark|%>
+          <div class="row-fluid">
+
+            <div class="span10">
+
+              <%= link_to  "#{bookmark.exhibit_title.titleize}", exhibit_path(bookmark.exhibit_id), :class=>"btn-link", :target => "_blank" %>
+              <% unless bookmark.brain_storm_title.nil?%>
+                &nbsp;&nbsp;|&nbsp;&nbsp;<span class="muted">BrainStorm - <%= bookmark.brain_storm_title %></span>
+              <%end%>
+              <small>&nbsp;&nbsp;By - <%= link_to "#{bookmark.exhibit_thinker.titleize}", view_specific_thinkers_exhibits_exhibit_path(bookmark.exhibit_id), :target => "_blank" %></small>
+            </div>
+
+            <div class="span2">
+              <%= link_to unbookmark_thinker_path(bookmark.exhibit_id), :class=>"btn btn-mini btn-danger", :confirm => "Are you sure you want to Disregard this? This Exhibit will no longer be stored in your Tagged Exhibits Category" ,:remote => true do %>
+                  <i class="icon-bookmark"></i> Disregard
+              <% end %>
+
+            </div>
+
+          </div>
+          <br>
+          <hr>
+
+    <% end %>
+<% end %>
+</div>
