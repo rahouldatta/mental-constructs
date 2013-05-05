@@ -17,7 +17,7 @@ class Exhibit < ActiveRecord::Base
   def search_for_exhibits(search_string)
     found = []
     Exhibit.all.each do |exhibit|
-      found << exhibit.id if exists_somewhere?(exhibit.construct,search_string) or exists_somewhere?(exhibit.title,search_string) or exists_somewhere?(exhibit.thinker,search_string)
+      found << exhibit.id if exists_somewhere?(exhibit.construct,search_string) or exists_somewhere?(exhibit.title,search_string) or exists_somewhere?(exhibit.thinker,search_string)or exists_somewhere?(exhibit.brain_storm.to_s,search_string)
     end
     found
   end
