@@ -4,7 +4,7 @@
     <div class="blanker-box" style="padding: 13px">
 <ul class="nav nav-pills nav-stacked" id="how_to_useTabs">
   <li class=""><a href="#constructs"><i class="icon-book icon-white"></i> Constructs</a></li>
-  <li><a href="#ideas" data-toggle="tab"><i class="icon-cog icon-white"></i> Cognitions</a></li>
+  <li><a href="#cognitions" data-toggle="tab"><i class="icon-cog icon-white"></i> Cognitions</a></li>
   <li><a href="#epiphanies" data-toggle="tab" class=""><i class="icon-th icon-white"></i> Epiphanies</a></li>
   <li><a href="#brain_waves" data-toggle="tab"><i class="icon-eye-open icon-white"></i> BrainWaves</a></li>
   <li><a href="#factoids" data-toggle="tab"><i class="icon-qrcode icon-white"></i> Factoids</a></li>
@@ -60,23 +60,91 @@
       </div>
 
       <div class="tab-pane fade" id="cognitions">
-        Cognitions
+        <div class="lead text-info">Cognitions</div>
+        <p>
+          Cognition is the mental action or process of acquiring knowledge and understanding through thought, experience, and deliberation. Cognitions are acquired through perception, sensation or intuition. These realizations generally result in the most innovative, intriguing and fascinating thoughts.
+          Cognition is any form of cognitive activity. MentalConstructs has narrowed down "Cognitions" into 3 major subcategories. Epiphanies, BrainWaves and Factoids.<br>
+          &nbsp;&bull;&nbsp;Epiphanies - are a sudden manifestation of the essence or meaning of something or a comprehension or perception of reality by means of a sudden intuitive realization. Philosophical thoughts defining your own individual being.<br>
+          &nbsp;&bull;&nbsp;BrainWaves - are sudden ideas which may or may not be of monetary value but are inherent to your nature and you would like to build upon them.<br>
+          &nbsp;&bull;&nbsp;Factoids - are solid facts pertaining to any subject in general.<br><br>
+          Under Cognitions Tab in the Thinker panel you will find -<br>
+          <strong class="text-info">Median - Cogntions -</strong> It is a simple explanation of Cognitions and what it entails. Also it contains
+          a few subcategory cognitions which display the most recent or most prized cognition<br>
+          <strong class="text-info">Epiphanies -</strong> Contains all your recorded epiphanies in descending order of created at time.<br>
+          <strong class="text-info">BrainWaves -</strong> Contains all your recorded brainwaves in descending order of affinity for the brain wave.<br>
+          <strong class="text-info">Factoids -</strong> Contains all your recorded factoids in descending order of created at time.<br>
+        </p>
       </div>
 
       <div class="tab-pane fade" id="epiphanies">
-        Epiphanies
-      </div>
-
-      <div class="tab-pane fade" id="ideas">
-        Ideas
+        <div class="lead text-info">Epiphanies</div>
+        <p>
+          Epiphanies are a sudden manifestation of the essence or meaning of something or a comprehension or perception of reality by means of a sudden intuitive realization. Philosophical thoughts defining your own individual being.<br>
+          <br>
+          You can record epiphanies from a form which is visible in the right fixed panel which is generally available on most relevant pages.<br>
+        </p>
+          <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span7">
+              <p>
+              <strong class="text-info">Epiphanies</strong> - All recorded epiphanies are stored in Epiphanies under Cognitions Tab in thinker panel.
+              </p>
+            </div>
+            <div class="span5 opaqify-container">
+              <% unless current_thinker.nil?%>
+                <%= render 'thinker/partials/epiphany_form' %>
+              <% end%>
+            </div>
+          </div>
+          </div>
       </div>
 
       <div class="tab-pane fade" id="brain_waves">
-        Brainwaves
+        <div class="lead text-info">BrainWaves</div>
+        <p>
+          BrainWaves are sudden ideas which may or may not be of monetary value but are inherent to your nature and you would like to build upon them.<br>
+          <br>
+          You can record brainwaves from a form which is visible in the right fixed panel which is generally available on most relevant pages.<br>
+        </p>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span7">
+              <p>
+                <strong class="text-info">BrainWaves</strong> - All recorded brainwaves are stored in Factoids under Cognitions Tab in thinker panel.
+              </p>
+            </div>
+            <div class="span5 opaqify-container">
+              <% unless current_thinker.nil?%>
+                  <%= render 'thinker/partials/brain_wave_form' %>
+              <% end%>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="tab-pane fade" id="factoids">
-        Factoids
+        <div class="lead text-info">Factoids</div>
+        <p>
+          Factoids are solid facts pertaining to any subject in general.<br>
+          <br>
+          You can record factoids from a form which is visible in the right fixed panel which is generally available on most relevant pages.<br>
+        </p>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span7">
+              <p>
+                <strong class="text-info">Factoids</strong> - All recorded factoids are stored in BrainWaves under Cognitions Tab in thinker panel.
+              </p>
+            </div>
+            <div class="span5 boxed-template">
+              <% unless current_thinker.nil?%>
+                  <%= render 'thinker/partials/factoid_form' %>
+              <% end%>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="tab-pane fade" id="brain_storm">
