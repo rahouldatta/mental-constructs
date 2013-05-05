@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb" afterPath="$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +55,7 @@
     <file path="/concepts_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366309596615" ignored="false" />
     <file path="/_form.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366503210265" ignored="false" />
     <file path="/concept.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366383189988" ignored="false" />
-    <file path="/index.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367710806249" ignored="false" />
+    <file path="/index.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793303330" ignored="false" />
     <file path="/home_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366308579342" ignored="false" />
     <file path="/_list_concepts.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366319854267" ignored="false" />
     <file path="/destroy.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366310120093" ignored="false" />
@@ -77,7 +80,7 @@
     <file path="/add_construct_to_dossier.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366400953807" ignored="false" />
     <file path="/_construct_dossier_list.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366414139647" ignored="false" />
     <file path="/_cognition_sample_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366749255014" ignored="false" />
-    <file path="/new.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367344936187" ignored="false" />
+    <file path="/new.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793834868" ignored="false" />
     <file path="/thinking_hat.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366476749568" ignored="false" />
     <file path="/_main.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366473146476" ignored="false" />
     <file path="/_main_thinking_hat.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366501160722" ignored="false" />
@@ -142,7 +145,9 @@
     <file path="$PROJECT_DIR$/../inkuisitive/app/views/how_to_use/index.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754334840" ignored="false" />
     <file path="/apropos.css.scss.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754716319" ignored="false" />
     <file path="/about.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367785582318" ignored="false" />
-    <file path="/_footer.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367760793355" ignored="false" />
+    <file path="/_footer.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793430782" ignored="false" />
+    <file path="/reset_password_instructions.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793526916" ignored="false" />
+    <file path="/a.dummy" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793585169" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,71 +165,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/exhibits/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="8" selection-start="108" selection-end="108" vertical-scroll-proportion="-1.92">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_navigation.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="77" selection-start="3509" selection-end="3509" vertical-scroll-proportion="-29.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apropos_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/apropos_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="82" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="how_to_use.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="12" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.406577">
+            <state line="48" column="32" selection-start="2944" selection-end="2944" vertical-scroll-proportion="-14.52">
               <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/apropos/about.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="105" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comment_display.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="158" selection-start="343" selection-end="343" vertical-scroll-proportion="-3.84">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apropos.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/apropos.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="389" selection-end="389" vertical-scroll-proportion="-10.88">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -232,28 +179,19 @@
       <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="355" selection-end="355" vertical-scroll-proportion="-3.84">
+            <state line="7" column="2" selection-start="341" selection-end="341" vertical-scroll-proportion="-4.48">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thinker.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="6" selection-start="2002" selection-end="2069" vertical-scroll-proportion="-13.44">
+            <state line="15" column="12" selection-start="566" selection-end="566" vertical-scroll-proportion="0.50955415">
               <folding>
-                <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apropos.css.scss.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/apropos.css.scss.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="561" selection-end="561" vertical-scroll-proportion="-9.96">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -276,9 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/exhibit.rb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/unbookmark.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/thinker/partials/_bookmark_display.html.erb" />
         <option value="$PROJECT_DIR$/app/views/exhibits/index.html.erb" />
@@ -287,11 +222,14 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/apropos/record_feedback.js.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/apropos.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/apropos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb" />
         <option value="$PROJECT_DIR$/app/views/apropos/about.html.erb" />
         <option value="$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
       </list>
     </option>
   </component>
@@ -736,6 +674,32 @@
               <option name="myItemId" value="devise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unlocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -786,6 +750,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="registrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="passwords" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1289,6 +1305,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.264066" sideWeight="0.6709347" order="0" side_tool="false" content_ui="combo" />
@@ -1300,7 +1317,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1363,48 +1379,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/exhibits/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="108" selection-end="108" vertical-scroll-proportion="-1.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/exhibits.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="180" selection-end="3359" vertical-scroll-proportion="-69.12">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/exhibit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/apropos.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="561" selection-end="561" vertical-scroll-proportion="-9.96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="97" selection-start="420" selection-end="517" vertical-scroll-proportion="0.06936416">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="102" selection-end="102" vertical-scroll-proportion="0.08219178">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/record_brainwaves.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="44" selection-start="26" selection-end="70" vertical-scroll-proportion="0.022695035">
@@ -1414,7 +1388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="6" selection-start="2002" selection-end="2069" vertical-scroll-proportion="-13.44">
+        <state line="61" column="6" selection-start="2002" selection-end="2069" vertical-scroll-proportion="0.46993008">
           <folding>
             <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1423,14 +1397,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/apropos.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="389" selection-end="389" vertical-scroll-proportion="-10.88">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="355" selection-end="355" vertical-scroll-proportion="-3.84">
+        <state line="17" column="4" selection-start="389" selection-end="389" vertical-scroll-proportion="0.37362638">
           <folding />
         </state>
       </provider>
@@ -1458,7 +1425,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="158" selection-start="343" selection-end="343" vertical-scroll-proportion="-3.84">
+        <state line="6" column="158" selection-start="343" selection-end="343" vertical-scroll-proportion="0.13426574">
           <folding />
         </state>
       </provider>
@@ -1474,12 +1441,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.406577">
+        <state line="25" column="12" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.39306358">
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="32" selection-start="2944" selection-end="2944" vertical-scroll-proportion="-14.52">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="341" selection-end="341" vertical-scroll-proportion="-4.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="566" selection-end="566" vertical-scroll-proportion="0.50955415">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
