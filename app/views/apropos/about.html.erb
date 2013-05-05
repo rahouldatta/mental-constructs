@@ -7,7 +7,8 @@
 
     <div class="span7">
       <div class="blanker-box" style="padding: 13px">
-        <div class="text-info" style="font-size: 13px">Seeds that gave birth to Mental-Constructs -</div>
+        <div class="blanker-box" style="padding: 13px">
+          <div class="text-info" style="font-size: 15px">Seeds that gave birth to Mental-Constructs -</div>
         <p>
           Every man has an influx of deep rooted, philosophical thoughts which intuition and subconscious together, cause it to rise to the surface.
           These thoughts of the inner mind are generally always lost because they are fleeting. Losing these thoughts are like losing integral parts
@@ -19,8 +20,11 @@
           epiphany is just the beginning. It has no worth if further deliberation and thought is not put into it. These thoughts must be
           "constructed" (hence the word Constructs) to a level where full clarity of the concept is achieved.
         </p>
-        <!--<br>-->
-        <div class="text-info" style="font-size: 13px">Capability of Mental-Constructs in aiding your collection of information -</div>
+          </div>
+        <br>
+
+        <div class="blanker-box" style="padding: 13px">
+          <div class="text-info" style="font-size: 15px">Capability of Mental-Constructs in aiding your collection of information -</div>
         <p>
           Mental Construct is a multi faceted tool. It allows you to quickly record thoughts and ideas. It Expects you to categorize at the
           level where the cognition is conceptualized.<br>
@@ -41,7 +45,11 @@
           to revisit them later(LinkCache) or a list of To Do items(Remembrall)<br>
           Used properly Mental Constructs, will help you organize and clear your thoughts to an unbelievable extent.
         </p>
-        <div class="text-info" style="font-size: 13px">Capability of Mental-Constructs in aiding your collection of information -</div>
+        </div>
+        <br>
+
+        <div class="blanker-box" style="padding: 13px">
+          <div class="text-info" style="font-size: 15px">Capability of Mental-Constructs in aiding your collection of information -</div>
         <p>
           We feel that Mental Constructs still has very few tools. There are many more tools which have been conceptualized and isolated by us which
           need to be included to mental constructs to create a very powerful stand alone Thought Provoking and Organizing FrameWork.<br>
@@ -58,6 +66,7 @@
           Please feel free to provide feedback on any new features you feel that would allow
         </p>
       </div>
+      </div>
     </div>
 
     <aside class="span5">
@@ -69,6 +78,7 @@
           we may be able to match your requirements and upgrades so as to improve your productivity.
         </p>
         <div class="blanker-box" style="padding: 13px">
+          <% if thinker_signed_in?%>
           <div class="text-info"><h5>Provide Feedback - </h5></div>
         <%= form_tag({:controller => "apropos",:action => "record_feedback"}, :style => "margin: 0px;") do %>
             <%= select_tag :type_of_feedback, options_for_select(["Select Feedback Type","New Features","Upgrades in Existing Application","Bestow Accolades" ,"Point of Dissatisfaction","Just General"]), :class=>"span9" %>
@@ -81,6 +91,9 @@
                 You have provided <strong style="color: white"><%= @feedback_count.count %></strong>  Feedback's. We are evaluating them and will notify you shorty.<br>
                 Thank you for your inputs.
               </div>
+          <% end %>
+          <% else %>
+          <p>Please <a href="/thinkers/sign_in">Sign IN</a> or <a href="/thinkers/sign_up">Sign UP </a> To Provide FeedBack</p>
           <% end %>
         </div>
         <br>

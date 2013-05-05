@@ -1,5 +1,5 @@
 class AproposController < ApplicationController
-  before_filter :authenticate_thinker!
+  #before_filter :authenticate_thinker!
 
   layout 'apropos'
 
@@ -8,7 +8,7 @@ class AproposController < ApplicationController
   end
 
   def about
-    @feedback_count = Feedback.where(:thinker_id => current_thinker.id)
+    @feedback_count = Feedback.where(:thinker_id => current_thinker.id) rescue nil
   end
 
   def record_feedback
