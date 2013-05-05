@@ -4,7 +4,7 @@
       <div class="row-fluid">
 
         <div class="span2">
-          <i class="icon-comment icon-white"></i>&nbsp;by&nbsp;<%=link_to "#{comment.thinker.titleize}", view_specific_thinkers_exhibits_exhibit_path(Exhibit.last,comment.thinker) , :target => "_blank" %><br>
+          <i class="icon-comment icon-white"></i>&nbsp;by&nbsp;<%=link_to "#{comment.thinker.titleize}", view_specific_thinkers_exhibits_exhibit_path(@exhibit,comment.thinker) , :target => "_blank" %><br>
           <small> <span class="muted">&nbsp;on&nbsp;<%= comment.created_at.utc.localtime.to_s(:long)  %></span></small>
         </div>
 
