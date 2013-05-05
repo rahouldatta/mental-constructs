@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130504225136) do
+ActiveRecord::Schema.define(:version => 20130505120522) do
 
   create_table "bookmarks", :force => true do |t|
     t.integer  "thinker_id"
@@ -86,6 +86,14 @@ ActiveRecord::Schema.define(:version => 20130504225136) do
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
     t.string   "thinker"
+  end
+
+  create_table "feedbacks", :force => true do |t|
+    t.text     "feedback"
+    t.integer  "thinker_id"
+    t.string   "type_of_feedback"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "flashes", :force => true do |t|

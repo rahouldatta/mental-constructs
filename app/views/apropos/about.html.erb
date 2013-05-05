@@ -1,0 +1,53 @@
+<p style="text-align: center;font-size: 27px;font-family: papyrus"><strong>Mental Constructs</strong></p>
+<!--<br>-->
+<hr>
+
+<!--<div class="blanker-box" style="padding: 13px">-->
+  <div class="row-fluid">
+
+    <div class="span7">
+      <div class="blanker-box" style="padding: 13px">
+        <div class="text-info" style="font-size: 13px">Seeds that gave birth to Mental-Constructs -</div>
+        <p>
+          Every man has an influx of deep rooted, philosophical thoughts which intuition and subconscious together, cause it to rise to the surface.
+          These thoughts of the inner mind are generally always lost because they are fleeting. Losing these thoughts are like losing integral parts
+          of yourself.<br>
+          Hence Mental Constructs was conceptualized. Further on, we had an "epiphany" that just random thoughts recorded are worth just as much
+          as no thoughts at all. Categorization is the essence of excellence in this age when information has become power. Thus levels of categorization
+          had to be included into Mental Constructs.<br>
+          Every thought that we are capable of conjuring, should not be left at a premature, under developed level. Coming up with a brain wave or
+          epiphany is just the beginning. It has no worth if further deliberation and thought is not put into it. These thoughts must be
+          "constructed" (Hence Constructs) to a level where full clarity of the concept is achieved.
+        </p>
+        <!--<br>-->
+        <div class="text-info" style="font-size: 13px">Capability of Mental-Constructs in aiding your collection of information -</div>
+        <p>
+
+        </p>
+      </div>
+    </div>
+
+    <div class="span5">
+      <div class="blanker-box" style="padding: 13px">
+        <p>
+          Mental Constructs has been built to aid a thinker in his quest for gathering information. It is of utmost importance that the tool he uses
+          be of optimum quality. We Thank you for choosing www.mental-construct.com and request you to please leave your valuable feedback so that
+          we may be able to match your requirements and upgrades so as to improve your productivity.
+        </p>
+        <div class="blanker-box" style="padding: 13px">
+          <div class="text-info"><h5>Provide Feedback - </h5></div>
+        <%= form_tag({:controller => "apropos",:action => "record_feedback"}, :remote => true, :style => "margin: 0px;") do %>
+            <%= select_tag :type_of_feedback, options_for_select(["New Features","Upgrades in Existing Application","Bestow Accolades" ,"Point of Dissatisfaction","Just General"]), :class=>"span9" %>
+            <%= text_area(nil,:feedback, :class=> "span12", :rows => "3", :placeholder => "Feed Back and upgrades, if any.", :onkeyup => "CheckMaxlength(this);", :maxlength => 533, :required => true ) %>
+            <div id="tooltip-show"><%= submit_tag "Give Feedback", :title => "Provide FeedBack and select type of feedback.",class: "span4 btn btn-primary"%></div>
+        <% end %>
+        </div>
+        <br>
+        <p>
+          If you would like to reach me personally, you could contact me at - rahouldatta@gmail.com
+        </p>
+      </div>
+    </div>
+
+  </div>
+<!--</div>-->
