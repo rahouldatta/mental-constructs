@@ -3,7 +3,7 @@ MentalConstructs::Application.routes.draw do
 
   get "apropos/how_to_use"
   get "apropos/about"
-  get 'apropos/record_feedback'
+  post 'apropos/record_feedback'
 
   resources :exhibits do
     member do

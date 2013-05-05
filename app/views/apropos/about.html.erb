@@ -36,11 +36,18 @@
         </p>
         <div class="blanker-box" style="padding: 13px">
           <div class="text-info"><h5>Provide Feedback - </h5></div>
-        <%= form_tag({:controller => "apropos",:action => "record_feedback"}, :remote => true, :style => "margin: 0px;") do %>
-            <%= select_tag :type_of_feedback, options_for_select(["New Features","Upgrades in Existing Application","Bestow Accolades" ,"Point of Dissatisfaction","Just General"]), :class=>"span9" %>
+        <%= form_tag({:controller => "apropos",:action => "record_feedback"}, :style => "margin: 0px;") do %>
+            <%= select_tag :type_of_feedback, options_for_select(["Select Feedback Type","New Features","Upgrades in Existing Application","Bestow Accolades" ,"Point of Dissatisfaction","Just General"]), :class=>"span9" %>
             <%= text_area(nil,:feedback, :class=> "span12", :rows => "3", :placeholder => "Feed Back and upgrades, if any.", :onkeyup => "CheckMaxlength(this);", :maxlength => 533, :required => true ) %>
             <div id="tooltip-show"><%= submit_tag "Give Feedback", :title => "Provide FeedBack and select type of feedback.",class: "span4 btn btn-primary"%></div>
         <% end %>
+          <% unless @feedback_count.blank? %>
+              <br>
+              <div class="muted">
+                You have provided <strong style="color: white"><%= @feedback_count.count %></strong>  Feedback's. We are evaluating them and will notify you shorty.<br>
+                Thank you for your inputs.
+              </div>
+          <% end %>
         </div>
         <br>
         <p>

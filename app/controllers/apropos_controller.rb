@@ -8,7 +8,12 @@ class AproposController < ApplicationController
   end
 
   def about
+    @feedback_count = Feedback.where(:thinker_id => current_thinker.id)
+  end
 
+  def record_feedback
+    Feedback.create(:thinker_id => current_thinker.id, :feedback => params[:feedback], :type_of_feedback => params[:type_of_feedback])
+    redirect_to :back
   end
 
 end
