@@ -14,6 +14,7 @@
   <li><a href="#bookmarks" data-toggle="tab"><i class="icon-bookmark icon-white"></i> Tagged Exhibits</a></li>
   <li class="divider"></li>
   <li><a href="#exhibits" data-toggle="tab"><i class="icon-globe icon-white"></i> Exhibits</a></li>
+  <li><a href="#howl" data-toggle="tab"><i class="icon-fire icon-white"></i> Howl</a></li>
 </ul>
   </div>
   </div>
@@ -22,6 +23,9 @@
 
     <div class="tab-content">
       <div class="tab-pane fade in active" id="">
+        <br>
+        <p style="text-align: center;font-size: 27px;font-family: papyrus"><strong>Mental Constructs</strong></p>
+        <hr>
         <p>Mental Constructs is a Tool which allows you to record thoughts, ideas , facts , links. You can Upgrade them to Constructs and then Exhibit them.
           You can start BrainStorm sessions and map them to constructs. These wide variety of features should be understood well before they are actually used.
           This tutorial will allow you to understand each feature. <br>
@@ -175,7 +179,7 @@
           and provide description for the link you want to store. In this way you will have access to that link and its description through MentalConstructs
           on any machine under the sun.<br><br>
           LinkCache Tab in Thinker Panel-<br>
-          LinkCache has 3 components -
+          LinkCache has 3 components -          <br>
           <strong class="text-info">LinkCache Form</strong> - This is a form that allows you to give a description, link and select an existing category or
           create a new category for your link. To select categories click "Category Options" button which would toggle new Category or existing category option.<br>
           <strong class="text-info">Category Display</strong> - This holds links to all your categories for links. Clicking on them would display all the links held in the category below.<br>
@@ -185,17 +189,69 @@
       </div>
 
       <div class="tab-pane fade" id="to_do_list">
-        Remembrall
+        <div class="lead text-info">Remembrall</div>
+        <p>
+          Remembrall is a tool for recording goals, tasks or levels that need to be achieved. It is not a scheduler or meeting organizer kind of tool.
+          It just lists your personally set tasks or goals to achieve (however minute they may be.). You can record a ToDO from a form in the header top panel of thinker page<br><br>
+
+        </p>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span7">
+              <p>
+                <strong class="text-info">Remembrall</strong> - All recorded ToDos are stored in Remembrall in thinker panel. In there you have a option of either deleteing
+                a recorded ToDo or marking them as complete. Marking them as complete would store the tasks under Completed Tasks.
+              </p>
+            </div>
+            <div class="span5 blanker-box">
+              <% unless current_thinker.nil?%>
+                  <%= render 'thinker/partials/remembrall_form' %>
+              <% end%>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="tab-pane fade" id="bookmarks">
-        Bookmarks
+        <div class="lead text-info">Tagged Exhibits</div>
+        <p>
+          Tagged Exhibits will hold a list of all the Exhibits you have admired. On admiring a particular Exhibit, would store a connection to it. You can revisit the
+          Exhibit later for more detailed reading and analysis. You can also directly, by clicking on the thinker's name, view all exhibits by that thinker.<br><br>
+          Tagged Exhibits Tab in Thinker Panel-<br>
+          <strong class="text-info">Tagged Exhibits</strong> - A list of all Exhibits Admired by you. It gives the link to that exhibit, exhibits by the thinker, brain storm if present
+          and an option to disregard it and remove it from you collection of Exhibits.
+        </p>
       </div>
 
       <div class="tab-pane fade" id="exhibits">
-        Exhibits
+        <div class="lead text-info">Exhibits</div>
+        <p>
+          Exhibits are Constructs which have been shared by other Thinkers with every other Thinker on Mental Constructs.
+          <br>
+          <span class="muted">You can access it by clicking on Exhibits link on the top navigation bar.<br></span><br>
+          &nbsp;&bull;&nbsp;This will lead you to an Exhibits page which lists all the Exhibits on MentalConstructs in an endless scroll.<br>
+          &nbsp;&bull;&nbsp;You can search for exhibits using the search form on the navigation bar itself. <br>
+          &nbsp;&bull;&nbsp;You can view all exhibits by a thinker by clicking on his name.<br>
+          &nbsp;&bull;&nbsp;All Cognition recording tools will be available to you on the right fixed panel.<br>
+          &nbsp;&bull;&nbsp;Clicking on "Admire" would increase the popularity quotient of the Exhibit by 1 and would save a link to that Exhibit in your Thinker Panel under Tagged Exhibits.
+          Also "Admired" Exhibits would be under a green background to indicate that the particular Exhibit has already been viewed and Admired by you.<br>
+        </p>
       </div>
+      <div class="tab-pane fade" id="howl">
+        <div class="lead text-info">Howl</div>
+        <p>
+          Every Thinker is generally under a certain level of stress and frustration. If a man is not frustrated and stressed, then he cannot be a Thinker (unless he is enlightened). Howl is
+          a devilish device to rid yourself of that frustration and discontentment. <br>
+        </p>
+          <p class="muted">You can reach Howl page by clicking Howl on the navigation bar on top.</p>
+        <p>
+          On Howl page you have form at the bottom and a container which updates automatically. The Container displays the frustrations and fury of other thinkers. The form allows you to record your own Howls.<br>
+          Thus Howl out your frustrations, irritations, Anger against God, darkest desires and secrets, feel free to use profanities, because you would be anonymous.
+          MENTAL CONSTRUCT IN NO WAY RECORDS WHO HAS HOWLED WHAT. Total Anonymity is guaranteed. Rid yourself of blackness.
+        </p>
 
+      </div>
 
     </div>
   </div>
