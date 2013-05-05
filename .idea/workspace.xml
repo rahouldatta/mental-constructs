@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb" afterPath="$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,7 +138,7 @@
     <file path="/unbookmark.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367713890671" ignored="false" />
     <file path="/apropos_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367766033160" ignored="false" />
     <file path="/apropos.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367760755476" ignored="false" />
-    <file path="/how_to_use.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367789912827" ignored="false" />
+    <file path="/how_to_use.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367790418442" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/views/how_to_use/index.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754334840" ignored="false" />
     <file path="/apropos.css.scss.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367754716319" ignored="false" />
     <file path="/about.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367785582318" ignored="false" />
@@ -190,7 +189,7 @@
       <file leaf-file-name="how_to_use.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="59" selection-start="10637" selection-end="10637" vertical-scroll-proportion="0.76878613">
+            <state line="200" column="59" selection-start="13199" selection-end="13199" vertical-scroll-proportion="0.9537572">
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1467,7 +1466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="59" selection-start="10637" selection-end="10637" vertical-scroll-proportion="0.76878613">
+        <state line="200" column="59" selection-start="13199" selection-end="13199" vertical-scroll-proportion="0.9537572">
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
