@@ -2,11 +2,392 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/a11yhelp-cccb2dd9c3c046160344509174434427.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/a11yhelp-cccb2dd9c3c046160344509174434427.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/about/dialogs/about-8c97aede6bd7b77e73b1cb9211be4a13.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/about/dialogs/about-8c97aede6bd7b77e73b1cb9211be4a13.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/about/dialogs/about.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/about/dialogs/about.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/af-b73ef1b8c54d700d1d637716f42aeb12.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/af-b73ef1b8c54d700d1d637716f42aeb12.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/af.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/af.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/anchor-5f9e576c7d50ab961e5f8e90f21537e0.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/anchor-5f9e576c7d50ab961e5f8e90f21537e0.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/anchor.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/anchor.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-46d56f88186b4b5aa7a8555defd1a334.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-46d56f88186b4b5aa7a8555defd1a334.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-6d9cd3501d0292ca0e6914f291c35cf0.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-6d9cd3501d0292ca0e6914f291c35cf0.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ar-1114a7aa9b00ad38b6fb6df031c6ecd6.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ar-1114a7aa9b00ad38b6fb6df031c6ecd6.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ar-798274c47514b9782cf4f6d72615e0a2.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ar-798274c47514b9782cf4f6d72615e0a2.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ar.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ar.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/basepath-b4c4979700828acb2a7608363036fdf9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/basepath-b4c4979700828acb2a7608363036fdf9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/basepath.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/basepath.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/bg-35a520f9278f799c53d9c76ac2da830f.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/bg-35a520f9278f799c53d9c76ac2da830f.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/bg-aa1d206f566d4623e30afada196fb0cc.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/bg-aa1d206f566d4623e30afada196fb0cc.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/bg.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/bg.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/bn-e933dc2ce289a3a1944845b59d12ace1.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/bn-e933dc2ce289a3a1944845b59d12ace1.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/bn.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/bn.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/bs-6c0ae736f556fa234c509621af19483d.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/bs-6c0ae736f556fa234c509621af19483d.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/bs.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/bs.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/build-config-812fc0383e78aea4964dd6eca987f225.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/build-config-812fc0383e78aea4964dd6eca987f225.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/build-config.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/build-config.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/button-115d303c7051d6c241211c365cbbf250.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/button-115d303c7051d6c241211c365cbbf250.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/button.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/button.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ca-33030159c5c05bd4cedc76b4548192ab.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ca-33030159c5c05bd4cedc76b4548192ab.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ca-3e5b80608a3f191e408d9dc3e228997f.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ca-3e5b80608a3f191e408d9dc3e228997f.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ca-74ef4385b809b2414b33f95e6e33458c.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ca-74ef4385b809b2414b33f95e6e33458c.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ca.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ca.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ca.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ca.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/checkbox-40f04246f396eefeec108c3522f0b871.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/checkbox-40f04246f396eefeec108c3522f0b871.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/checkbox.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/checkbox.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/ckeditor-10704bac1154824930174843eac58eb3.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/ckeditor-10704bac1154824930174843eac58eb3.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/ckeditor.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/ckeditor.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/colordialog/dialogs/colordialog-6ed2760ab6a74335b736b983b12be934.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/colordialog/dialogs/colordialog-6ed2760ab6a74335b736b983b12be934.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/colordialog/dialogs/colordialog.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/colordialog/dialogs/colordialog.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/config-9b722e87eaef54902ba1728f3ca82c9f.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/config-9b722e87eaef54902ba1728f3ca82c9f.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/config.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/config.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/contents-5c46ddc147d1b974c753bc2eaa75dbd5.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/contents-5c46ddc147d1b974c753bc2eaa75dbd5.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/contents.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/contents.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cs-3498e7fd931544152a66e0f38c7bdc03.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cs-3498e7fd931544152a66e0f38c7bdc03.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/cs-3be798ea19a7236f42ea8a925acb0138.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/cs-3be798ea19a7236f42ea8a925acb0138.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cs-567486f7a843e999d5f4ac438a7e01b9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cs-567486f7a843e999d5f4ac438a7e01b9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/cs.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/cs.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cs.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cs.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cy-5f2317c4a4d106a1c369e489bfd1f2dc.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cy-5f2317c4a4d106a1c369e489bfd1f2dc.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/cy-8e45c330480360f436c1c5ea8fc7fec3.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/cy-8e45c330480360f436c1c5ea8fc7fec3.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cy-cef6c94fa2bef828da59b0e9fe3774b4.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cy-cef6c94fa2bef828da59b0e9fe3774b4.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/cy.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/cy.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cy.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/cy.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/da-1fbbdec78a5491c5204c99ae377b0d8d.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/da-1fbbdec78a5491c5204c99ae377b0d8d.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/da-44ba9a26cc0057fd9f34efdaa30ea4cc.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/da-44ba9a26cc0057fd9f34efdaa30ea4cc.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/da.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/da.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/da.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/da.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/de-77c28aa499ea68525d54fd5acd769b06.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/de-77c28aa499ea68525d54fd5acd769b06.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/de-a373238010e4ac565b39d0b3044268ef.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/de-a373238010e4ac565b39d0b3044268ef.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/de-a89f80355837bac470f42e498b8e1941.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/de-a89f80355837bac470f42e498b8e1941.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/de.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/de.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/de.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/de.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/de.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/de.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/templates/default-b6ccf8342c41304d04db35a6a68eba73.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/templates/default-b6ccf8342c41304d04db35a6a68eba73.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/pastefromword/filter/default-d3c17e74bae67277854d6b1bf39dade2.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/pastefromword/filter/default-d3c17e74bae67277854d6b1bf39dade2.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/pastefromword/filter/default.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/pastefromword/filter/default.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/templates/default.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/templates/default.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog-1acc6e4457d92fcc184cf886e8d38925.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog-1acc6e4457d92fcc184cf886e8d38925.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/dialog/dialogDefinition-75ce74974394863f130424fb34ee60ea.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/dialog/dialogDefinition-75ce74974394863f130424fb34ee60ea.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/dialog/dialogDefinition.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/dialog/dialogDefinition.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie-ef08e9b3cee2da5077f9f7dc2ab73645.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie-ef08e9b3cee2da5077f9f7dc2ab73645.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie7-65ef8fec429b790ca3b73578ab8bdbcc.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie7-65ef8fec429b790ca3b73578ab8bdbcc.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie7.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie7.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie8-bf1ed5d74a931d38809bbc88be3bd509.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie8-bf1ed5d74a931d38809bbc88be3bd509.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie8.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_ie8.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_iequirks-ef08e9b3cee2da5077f9f7dc2ab73645.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_iequirks-ef08e9b3cee2da5077f9f7dc2ab73645.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_iequirks.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_iequirks.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_opera-7c03371197e02260cd66644bea8c7cf7.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_opera-7c03371197e02260cd66644bea8c7cf7.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_opera.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/dialog_opera.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/div/dialogs/div-bf56e144200cf65a6b843b364a895e18.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/div/dialogs/div-bf56e144200cf65a6b843b364a895e18.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/div/dialogs/div.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/div/dialogs/div.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor-2fa5076072fcdb57aa1add8baf5ada7e.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor-2fa5076072fcdb57aa1add8baf5ada7e.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_gecko-63743509ca91889baf0caf8b02b2304a.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_gecko-63743509ca91889baf0caf8b02b2304a.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_gecko.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_gecko.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie-023ab530f2c7c8c571b6986d97b656de.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie-023ab530f2c7c8c571b6986d97b656de.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie7-502503bea73eba0f3f7111ab836ad4f5.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie7-502503bea73eba0f3f7111ab836ad4f5.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie7.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie7.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie8-6a6933811bcbd6cd56b22a837b082500.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie8-6a6933811bcbd6cd56b22a837b082500.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie8.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_ie8.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_iequirks-ae78a44a396ad9acc2ae2ed5efee77f4.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_iequirks-ae78a44a396ad9acc2ae2ed5efee77f4.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_iequirks.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/skins/moono/editor_iequirks.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/el-7575e08df008553eac6baeec020e3b12.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/el-7575e08df008553eac6baeec020e3b12.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/el-a85febe4c3a5fd95280d473e4eb06aea.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/el-a85febe4c3a5fd95280d473e4eb06aea.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/el-d05d803ab1886798a8df7a1d9fffd745.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/el-d05d803ab1886798a8df7a1d9fffd745.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/el.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/el.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/el.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/el.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/el.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/el.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-22bc869ad24f08e76bdfb10071ad76ca.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-22bc869ad24f08e76bdfb10071ad76ca.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/en-45a51bf1b04a8f3dfdab853003c05490.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/en-45a51bf1b04a8f3dfdab853003c05490.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-au-c127150787f2a894d9c099c35137ed56.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-au-c127150787f2a894d9c099c35137ed56.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-au.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-au.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-ca-926e15511c4dee6b8f18fbf7508e88db.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-ca-926e15511c4dee6b8f18fbf7508e88db.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-ca.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-ca.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/en-e4a69446ba548e90c07f1b839e45df9e.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/en-e4a69446ba548e90c07f1b839e45df9e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-gb-1531a5ee62d5a2ce6701869e4a9f1c1e.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-gb-1531a5ee62d5a2ce6701869e4a9f1c1e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-gb.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en-gb.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/en.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/en.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/en.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/en.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/en.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/en.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/eo-039bb01564a9ec4d603759b0ac9080fa.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/eo-039bb01564a9ec4d603759b0ac9080fa.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/eo-5a28404198b7169a0b6cdc3b4b974b4e.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/eo-5a28404198b7169a0b6cdc3b4b974b4e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/eo-626abe1eb042c448eecf769a2d17fb67.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/eo-626abe1eb042c448eecf769a2d17fb67.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/eo.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/eo.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/eo.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/eo.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/es-9dc1393df06ea7a300c1814d682aecd3.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/es-9dc1393df06ea7a300c1814d682aecd3.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/es-a96ca37df66bdaf170fdea060b4124d8.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/es-a96ca37df66bdaf170fdea060b4124d8.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/es.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/es.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/es.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/es.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/et-086770ef48954dd6200af58bbe939f45.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/et-086770ef48954dd6200af58bbe939f45.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/et-09feb0491099e7238fdbacaff7a1a8aa.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/et-09feb0491099e7238fdbacaff7a1a8aa.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/et-7c058667b318a86fc3bc4d78057ffe94.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/et-7c058667b318a86fc3bc4d78057ffe94.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/et.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/et.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/et.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/et.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/et.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/et.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/eu-76490ff94e1880e3586eefbd6246cc0d.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/eu-76490ff94e1880e3586eefbd6246cc0d.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/eu.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/eu.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fa-6b5254d0d5d0432bb612996b9923999c.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fa-6b5254d0d5d0432bb612996b9923999c.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fa-8cb682c2e4f298e1125d731969b951b2.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fa-8cb682c2e4f298e1125d731969b951b2.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fa-a0007b34fc2b9f8671a7075e5ea21a71.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fa-a0007b34fc2b9f8671a7075e5ea21a71.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fa.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fa.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fa.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fa.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fi-538b2dff6bf04652e0837202f29464e9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fi-538b2dff6bf04652e0837202f29464e9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fi-61edab2ed48cebd7e160034d8ef52bfc.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fi-61edab2ed48cebd7e160034d8ef52bfc.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fi-b0b7013fcd145e876141c60b5cd3b3c1.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fi-b0b7013fcd145e876141c60b5cd3b3c1.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fi.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fi.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fi.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fi.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/find/dialogs/find-3e7d66625e5ff35e620ded2e0654fe27.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/find/dialogs/find-3e7d66625e5ff35e620ded2e0654fe27.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/find/dialogs/find.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/find/dialogs/find.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/flash/dialogs/flash-7a9a517c9a7d7e2d90ad74876002917a.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/flash/dialogs/flash-7a9a517c9a7d7e2d90ad74876002917a.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/flash/dialogs/flash.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/flash/dialogs/flash.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fo-2325dd2bb1373934519085a647afccc5.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fo-2325dd2bb1373934519085a647afccc5.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fo.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fo.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/form-59471c28688ac879a7798a0801a58d93.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/form-59471c28688ac879a7798a0801a58d93.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/form.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/form.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fr-30594390d0023aca1da8f6b114f2937f.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fr-30594390d0023aca1da8f6b114f2937f.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr-37d9b61a55cf7bb8e165016ab76badc7.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr-37d9b61a55cf7bb8e165016ab76badc7.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fr-503c2731a8e3370c46abb3163f2b6aa0.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fr-503c2731a8e3370c46abb3163f2b6aa0.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr-ca-2dfd21738e142018a3cce1988e75a428.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr-ca-2dfd21738e142018a3cce1988e75a428.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr-ca.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr-ca.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/fr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/fr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/gl-fd70e268a24bfc9187807aa82553cdbd.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/gl-fd70e268a24bfc9187807aa82553cdbd.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/gl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/gl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/gu-46df5b6bee9375c34bbf1ba06e261214.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/gu-46df5b6bee9375c34bbf1ba06e261214.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/gu-920fe10e5776edbb6f011935a957c3fd.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/gu-920fe10e5776edbb6f011935a957c3fd.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/gu.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/gu.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/he-0dcb82497c4c5f018bc4a76a59b745a9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/he-0dcb82497c4c5f018bc4a76a59b745a9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/he-52e0d6936b310fbb439052800cedc529.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/he-52e0d6936b310fbb439052800cedc529.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/he-a5a8e7fe38f853a248ffb3476f24f408.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/he-a5a8e7fe38f853a248ffb3476f24f408.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/he.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/he.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/he.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/he.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/he.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/he.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/hi-1dc264c7d7e95f18899ef427649f4070.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/hi-1dc264c7d7e95f18899ef427649f4070.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hi-bb63c0c054c66746718382249003dd64.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hi-bb63c0c054c66746718382249003dd64.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/hi.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/hi.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/hiddenfield-93fc3c48effc33c8a2240e4e5409f0e6.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/hiddenfield-93fc3c48effc33c8a2240e4e5409f0e6.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/hiddenfield.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/hiddenfield.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/hr-1df36c0ce4af09ba1a5577b614be2ba8.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/hr-1df36c0ce4af09ba1a5577b614be2ba8.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/hr-389ea1b90b02501e815d30e03c2dce4e.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/hr-389ea1b90b02501e815d30e03c2dce4e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hr-e25b7f5239421fd4d65251bd84f07e4f.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hr-e25b7f5239421fd4d65251bd84f07e4f.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/hr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/hr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/hr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/hr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/hu-566cfc86f86ffd2e31d82ed808ba41f8.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/hu-566cfc86f86ffd2e31d82ed808ba41f8.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hu-6ef5654dc3bd8d01966d54ebfca033e4.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hu-6ef5654dc3bd8d01966d54ebfca033e4.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/hu.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/hu.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/iframe/dialogs/iframe-a0034412f6873d987b754c4ba3026a06.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/iframe/dialogs/iframe-a0034412f6873d987b754c4ba3026a06.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/iframe/dialogs/iframe.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/iframe/dialogs/iframe.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/image/dialogs/image-1dea44ce7165243091c888390f5f24fe.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/image/dialogs/image-1dea44ce7165243091c888390f5f24fe.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/image/dialogs/image.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/image/dialogs/image.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/is-594fcbcc0fef36715cd30aa77a1d8313.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/is-594fcbcc0fef36715cd30aa77a1d8313.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/is.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/is.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/it-00b505d48c139d3fe7a22fd49f8f771e.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/it-00b505d48c139d3fe7a22fd49f8f771e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/it-3e17dca8590427c1b94a3241cf52ace7.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/it-3e17dca8590427c1b94a3241cf52ace7.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/it-3f0e15c3f3f7e726fa26a9220c435049.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/it-3f0e15c3f3f7e726fa26a9220c435049.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/it.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/it.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/it.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/it.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/it.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/it.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ja-566c732c3527e54bb469dbe7d1bfa207.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ja-566c732c3527e54bb469dbe7d1bfa207.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ja-c454ea0d9aefc3f89e051d7b52f5a301.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ja-c454ea0d9aefc3f89e051d7b52f5a301.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ja.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ja.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/jquery-81e7cb12be92f448dfc8269c85760cf2.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/jquery-81e7cb12be92f448dfc8269c85760cf2.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/jquery.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/jquery.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ka-7615283241ead3b69b862c2f2ce65ff7.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ka-7615283241ead3b69b862c2f2ce65ff7.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ka.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ka.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/km-2d5a23553a41dd340f36908df0cdc1d9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/km-2d5a23553a41dd340f36908df0cdc1d9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/km-cf9262eec7a9129e9c656854f4d24f86.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/km-cf9262eec7a9129e9c656854f4d24f86.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/km.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/km.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/km.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/km.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ko-8003aac7460eeb3888a4424f2ef11a50.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ko-8003aac7460eeb3888a4424f2ef11a50.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ko.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ko.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ku-0512e92f2fff3e296dca08dccc9ac6f9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ku-0512e92f2fff3e296dca08dccc9ac6f9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ku-22eed53db588708558224d70bfc4adef.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ku-22eed53db588708558224d70bfc4adef.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ku-9c9516ebae514b3cde63041fee0604e8.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ku-9c9516ebae514b3cde63041fee0604e8.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ku.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ku.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ku.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ku.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/link-21a4d0b63fd5796595ca7d2802977928.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/link-21a4d0b63fd5796595ca7d2802977928.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/link.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/link/dialogs/link.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/liststyle/dialogs/liststyle-9bb3aa0ec276ce5da44849402f2e4a85.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/liststyle/dialogs/liststyle-9bb3aa0ec276ce5da44849402f2e4a85.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/liststyle/dialogs/liststyle.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/liststyle/dialogs/liststyle.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/lt-956d762d578f3153b2553a361ebee18a.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/lt-956d762d578f3153b2553a361ebee18a.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lt-f92b96fb4934273e091d40d64336e216.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lt-f92b96fb4934273e091d40d64336e216.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/lt.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/lt.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/lv-047f62add382c05c1c48d6df93b20d89.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/lv-047f62add382c05c1c48d6df93b20d89.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/lv-4ba0ddec6a1007f3301b43edff2eab2c.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/lv-4ba0ddec6a1007f3301b43edff2eab2c.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lv-93a2b6ee366d2c4226ea2697185cabe1.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lv-93a2b6ee366d2c4226ea2697185cabe1.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/lv.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/lv.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/lv.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/lv.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mk-523e042b54ec137c18744dbf6f149c09.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mk-523e042b54ec137c18744dbf6f149c09.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/mk-816d8bab5e79b3a8c0dd0ad7524a0c62.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/mk-816d8bab5e79b3a8c0dd0ad7524a0c62.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/mk.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/mk.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mn-66cd4154b0741ff44b737232842b8ae6.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mn-66cd4154b0741ff44b737232842b8ae6.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/mn-6b509570456c91c2ed321ee58fbcd65b.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/mn-6b509570456c91c2ed321ee58fbcd65b.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/mn.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/mn.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ms-852632724523e64798a75905d952615c.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ms-852632724523e64798a75905d952615c.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ms.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ms.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nb-0c6adcf7aa0e10a27017f920d3cac4eb.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nb-0c6adcf7aa0e10a27017f920d3cac4eb.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/nb-365b579082eab6ed2b619b8bfb6837fa.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/nb-365b579082eab6ed2b619b8bfb6837fa.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nb-a6f953046cfcf4da7ca98554233f9f84.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nb-a6f953046cfcf4da7ca98554233f9f84.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/nb.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/nb.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nb.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nb.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/nl-09c0fec25898f39ef2e3ae094565c35f.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/nl-09c0fec25898f39ef2e3ae094565c35f.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nl-5306f2916e696c12fb25c1d343676b98.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nl-5306f2916e696c12fb25c1d343676b98.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nl-f26f9d3bdeb3bc93c75ffc5e5892ea4a.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nl-f26f9d3bdeb3bc93c75ffc5e5892ea4a.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/nl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/nl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/nl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/no-5a4f84612c88a079c90866eadb310389.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/no-5a4f84612c88a079c90866eadb310389.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/no-80f5a9824d681cdee088ea60fcfde506.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/no-80f5a9824d681cdee088ea60fcfde506.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/no-bc4fa55a58841d87a5e36ee49412e1f9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/no-bc4fa55a58841d87a5e36ee49412e1f9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/no.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/no.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/no.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/no.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/no.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/no.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/options-540222303011165d078ead8d31d7495c.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/options-540222303011165d078ead8d31d7495c.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/options.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/options.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/clipboard/dialogs/paste-f34ca3d1991e5df8ee29b083d287c58b.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/clipboard/dialogs/paste-f34ca3d1991e5df8ee29b083d287c58b.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/clipboard/dialogs/paste.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/clipboard/dialogs/paste.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pl-09a7ad2ea96052021764dd4c1c4f76ad.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pl-09a7ad2ea96052021764dd4c1c4f76ad.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pl-0d47a035b430674b0caa5ff73718f31d.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pl-0d47a035b430674b0caa5ff73718f31d.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/pl-43b791ec93751bf2649b2117c0dc9c2e.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/pl-43b791ec93751bf2649b2117c0dc9c2e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/pl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/pl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt-21d5ddd6493e8e509b3a387e85580971.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt-21d5ddd6493e8e509b3a387e85580971.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt-28d44d549a18b5885f70800cca23be98.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt-28d44d549a18b5885f70800cca23be98.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt-br-3309384f6068a35a2d6df934a1c8aefe.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt-br-3309384f6068a35a2d6df934a1c8aefe.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br-5aeaa5323ab4e1c8aed502b08de8b528.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br-5aeaa5323ab4e1c8aed502b08de8b528.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pt-br-e89b91a69967cc4a0e15ba698b586978.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pt-br-e89b91a69967cc4a0e15ba698b586978.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt-br.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt-br.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/pt.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/radio-2e9696a14950daba7967d6e3724d23b8.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/radio-2e9696a14950daba7967d6e3724d23b8.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/radio.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/radio.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ro-37466c277ac0c41a584979fcabc053d7.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ro-37466c277ac0c41a584979fcabc053d7.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ro-590bc9f2a704553bb7cc51f5b45794c5.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ro-590bc9f2a704553bb7cc51f5b45794c5.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ro.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ro.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ru-87fab988018c04486c873f3c4eac9620.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ru-87fab988018c04486c873f3c4eac9620.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ru-9604902573f2649ad464dc0b1ec1adf9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ru-9604902573f2649ad464dc0b1ec1adf9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ru.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ru.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/select-634c96e772eff481cf4ff39b0c5afc89.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/select-634c96e772eff481cf4ff39b0c5afc89.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/select.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/select.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sk-4b6b03ce08969ce2fef4772c9048bd49.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sk-4b6b03ce08969ce2fef4772c9048bd49.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sk-5d3251330caa830206ea28fe20f40495.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sk-5d3251330caa830206ea28fe20f40495.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sk-b47301115f190cf9e8631397a8b2d039.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sk-b47301115f190cf9e8631397a8b2d039.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sk.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sk.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sk.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sk.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sl-32a1a689bd6d1e88d7317858c4f89c3d.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sl-32a1a689bd6d1e88d7317858c4f89c3d.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sl-6764164301682a9b878be492760acfde.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sl-6764164301682a9b878be492760acfde.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/smiley/dialogs/smiley-7518220e9dd0e6f4eabcea52d1515d2b.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/smiley/dialogs/smiley-7518220e9dd0e6f4eabcea52d1515d2b.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/smiley/dialogs/smiley.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/smiley/dialogs/smiley.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/specialchar-8228a91bd1596bb865c4ee9a3016ae09.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/specialchar-8228a91bd1596bb865c4ee9a3016ae09.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/specialchar.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/specialchar.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr-e53e256a372b72d701982b2043253d78.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr-e53e256a372b72d701982b2043253d78.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr-latn-4adb1816d223001438f7435d47392fa7.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr-latn-4adb1816d223001438f7435d47392fa7.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr-latn.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr-latn.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/styles-329c9c441d1b88cc90efc10925337a77.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/styles-329c9c441d1b88cc90efc10925337a77.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/styles.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/styles.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sv-864349895d20449fe3c3c79b90b023b9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sv-864349895d20449fe3c3c79b90b023b9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sv-99240078c82fbff8196908549e9e2257.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sv-99240078c82fbff8196908549e9e2257.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sv-a394a29008b5906ba829500382a1290a.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sv-a394a29008b5906ba829500382a1290a.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/sv.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/sv.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sv.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/sv.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/table/dialogs/table-33c56d577282e2797143ffd3fe7956f6.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/table/dialogs/table-33c56d577282e2797143ffd3fe7956f6.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/table/dialogs/table.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/table/dialogs/table.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/tabletools/dialogs/tableCell-07caffdd1d8409bd904bc460a57e66ff.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/tabletools/dialogs/tableCell-07caffdd1d8409bd904bc460a57e66ff.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/tabletools/dialogs/tableCell.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/tabletools/dialogs/tableCell.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates-379ab685aa4f582b78c1f0719457dddc.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates-379ab685aa4f582b78c1f0719457dddc.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates-8080e97e82be980d02baacec508eaa0a.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates-8080e97e82be980d02baacec508eaa0a.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/templates/dialogs/templates.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textarea-603a0ddb8391df4a217b41bac04dee0b.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textarea-603a0ddb8391df4a217b41bac04dee0b.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textarea.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textarea.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textfield-a4944b836e83eb821d46d0d0deb11d46.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textfield-a4944b836e83eb821d46d0d0deb11d46.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textfield.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/forms/dialogs/textfield.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/th-1617bb11326d3a0f42d5b83038b165a9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/th-1617bb11326d3a0f42d5b83038b165a9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/th-7d0ed3b9eb6338a2c717a686c86ad5de.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/th-7d0ed3b9eb6338a2c717a686c86ad5de.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/th-ef4097def6d0d153e23afb4dca16059b.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/th-ef4097def6d0d153e23afb4dca16059b.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/th.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/th.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/th.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/th.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/th.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/th.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/toolbar-2c27386679e3fe443c714c1913fd192c.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/toolbar-2c27386679e3fe443c714c1913fd192c.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/toolbar.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/scayt/dialogs/toolbar.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/tr-508e80375a459aaf3605c11f02d4bd6b.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/tr-508e80375a459aaf3605c11f02d4bd6b.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/tr-5df6b25da8edcb3efb42abf5df958f04.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/tr-5df6b25da8edcb3efb42abf5df958f04.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/tr-93927fc0320e6dc0a18597d397a95811.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/tr-93927fc0320e6dc0a18597d397a95811.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/tr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/tr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/tr.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/tr.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ug-3a88dc73ef1f9151be7c5fe6ad2d9882.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ug-3a88dc73ef1f9151be7c5fe6ad2d9882.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ug-4885ce7b7c1386e1adce6cc5e793f98e.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ug-4885ce7b7c1386e1adce6cc5e793f98e.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ug-d0c302a67b3d86937e9bee53f8ebc30d.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ug-d0c302a67b3d86937e9bee53f8ebc30d.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/ug.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/ug.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ug.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/ug.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/uk-3672a7a28717dba599a034cd4ea3f9e9.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/uk-3672a7a28717dba599a034cd4ea3f9e9.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/uk-a7ef9f137fe49067006222aa8b0c3b22.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/uk-a7ef9f137fe49067006222aa8b0c3b22.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/uk.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/uk.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/vi-299fe23e65ceb40623af330fefc6098f.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/vi-299fe23e65ceb40623af330fefc6098f.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/vi-994c038d27037d9241484058a356a758.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/vi-994c038d27037d9241484058a356a758.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/vi.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/vi.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc-133cdef5a21fc17e3f783a70a47898c0.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc-133cdef5a21fc17e3f783a70a47898c0.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc-eb3827fcd7254e48830df913d0fff3dc.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc-eb3827fcd7254e48830df913d0fff3dc.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc.css.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/wsc/dialogs/wsc.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh-afd81b8f763f88190380c8d2506452ac.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh-afd81b8f763f88190380c8d2506452ac.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn-84b32dd16a113a4546731191f151c74c.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn-84b32dd16a113a4546731191f151c74c.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh-cn-d073e64681d2ff5ca82b360908b30e58.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh-cn-d073e64681d2ff5ca82b360908b30e58.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/zh-cn-fba084905e7ee474fb53da07f22079f0.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/zh-cn-fba084905e7ee474fb53da07f22079f0.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh-cn.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh-cn.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh.js.gz" afterPath="$PROJECT_DIR$/public/assets/ckeditor/lang/zh.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mental-constructs.iml" afterPath="$PROJECT_DIR$/.idea/mental-constructs.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367753704632" ignored="false" />
+    <file path="/Dummy.txt" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367846803597" ignored="false" />
     <file path="/routes.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367758581614" ignored="false" />
     <file path="/thinker_controller.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367714122626" ignored="false" />
     <file path="/show.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367712702323" ignored="false" />
@@ -124,7 +505,7 @@
     <file path="/_share_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367481543086" ignored="false" />
     <file path="/share_construct.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367481740330" ignored="false" />
     <file path="/get_next_exhibit.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367617956544" ignored="false" />
-    <file path="/_exhibit_notifier.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367711023795" ignored="false" />
+    <file path="/_exhibit_notifier.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367853807966" ignored="false" />
     <file path="/bookmark.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367703497882" ignored="false" />
     <file path="/_bookmarking.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367704641256" ignored="false" />
     <file path="/unbookmark_and_disregard.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367704554184" ignored="false" />
@@ -145,6 +526,7 @@
     <file path="/_footer.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793430782" ignored="false" />
     <file path="/reset_password_instructions.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793526916" ignored="false" />
     <file path="/a.dummy" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367793585169" ignored="false" />
+    <file path="/production.rb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367849380593" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,11 +546,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="32" selection-start="2944" selection-end="2944" vertical-scroll-proportion="-14.52">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="48" column="32" selection-start="2944" selection-end="2944" vertical-scroll-proportion="-0.625">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,19 +555,57 @@
       <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="2" selection-start="341" selection-end="341" vertical-scroll-proportion="-4.48">
+            <state line="7" column="2" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="8" selection-start="684" selection-end="684" vertical-scroll-proportion="0.6454353">
+            <state line="19" column="8" selection-start="684" selection-end="684" vertical-scroll-proportion="-11.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="115" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-11.774194">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thinker.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_exhibit_notifier.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="7" selection-start="791" selection-end="791" vertical-scroll-proportion="0.5107527">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#142#161#0" expanded="true" />
+                <element signature="e#607#668#0" expanded="true" />
+                <element signature="e#679#699#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="54" selection-start="1951" selection-end="1951" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,9 +628,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/thinker/partials/_bookmark_display.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/exhibits/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/apropos.css.scss.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -227,13 +641,17 @@
         <option value="$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1383" />
-    <option name="height" value="878" />
+    <option name="x" value="50" />
+    <option name="y" value="24" />
+    <option name="width" value="1316" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -261,7 +679,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -373,6 +791,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental-constructs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1008,18 +1444,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../inkuisitive" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1297,15 +1733,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1383" height="878" extended-state="6" />
+    <frame x="50" y="24" width="1316" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.264066" sideWeight="0.6709347" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2685624" sideWeight="0.6709347" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1314,6 +1749,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1376,128 +1812,102 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/thinker/record_brainwaves.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="44" selection-start="26" selection-end="70" vertical-scroll-proportion="0.022695035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="6" selection-start="2002" selection-end="2069" vertical-scroll-proportion="0.46993008">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/apropos.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="389" selection-end="389" vertical-scroll-proportion="0.37362638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/apropos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="82" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_navigation.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="77" selection-start="3509" selection-end="3509" vertical-scroll-proportion="-29.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exhibits/partials/_exhibit_description_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="62" selection-start="935" selection-end="935" vertical-scroll-proportion="0.43049327">
-          <folding />
-        </state>
+        <state line="18" column="62" selection-start="935" selection-end="935" vertical-scroll-proportion="0.43049327" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exhibits/partials/_comment_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="158" selection-start="343" selection-end="343" vertical-scroll-proportion="0.13426574">
-          <folding />
-        </state>
+        <state line="6" column="158" selection-start="343" selection-end="343" vertical-scroll-proportion="0.13426574" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/apropos/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="105" vertical-scroll-proportion="-0.0">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="105" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/apropos/how_to_use.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.39306358">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="25" column="12" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.39306358" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="32" selection-start="2944" selection-end="2944" vertical-scroll-proportion="-14.52">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="48" column="32" selection-start="2944" selection-end="2944" vertical-scroll-proportion="-0.625">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="341" selection-end="341" vertical-scroll-proportion="-4.48">
+        <state line="7" column="2" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="684" selection-end="684" vertical-scroll-proportion="0.6454353">
+        <state line="19" column="8" selection-start="684" selection-end="684" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="54" selection-start="1951" selection-end="1951" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="115" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-11.774194">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/thinker.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_exhibit_notifier.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="7" selection-start="791" selection-end="791" vertical-scroll-proportion="0.5107527">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#142#161#0" expanded="true" />
+            <element signature="e#607#668#0" expanded="true" />
+            <element signature="e#679#699#0" expanded="true" />
           </folding>
         </state>
       </provider>

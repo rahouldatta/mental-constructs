@@ -1,10 +1,10 @@
 <% exhibit = Exhibit.first(:order => "RAND()") rescue nil%>
-
+<% unless exhibit.nil?%>
 <div class="row-fluid">
   <div class="span4 blanker-box" style="padding:5px">
     <div class="text-info"><%= link_to  "#{exhibit.title.titleize}", exhibit_path(exhibit), :class=>"btn-link", :target => "_blank" rescue ""%></div>
     <div><small>By - <%= link_to "#{exhibit.thinker.titleize}", view_specific_thinkers_exhibits_exhibit_path(exhibit), :target => "_blank" %></small></div>
-    <div class="muted"><small><%= "Admired by - #{exhibit.popularity_quotient}" %></small></div>
+    <div class="muted"><small><%= "Admired by - #{exhibit.popularity_quotient}"%></small></div>
   </div>
   <div class="span8 blanker-box" style="padding-left: 9px;padding-right: 9px;padding-top: 5px">
     <div style="color: white">
@@ -17,3 +17,4 @@
 
 
 
+<% end%>

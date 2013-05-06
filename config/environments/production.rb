@@ -9,7 +9,7 @@ MentalConstructs::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -19,6 +19,7 @@ MentalConstructs::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
@@ -46,7 +47,8 @@ MentalConstructs::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w( home.css home.css.scss thinker.css thinker.css.scss.erb constructs.css .scss howl.css howl.css.scss.erb scaffolds.css scaffolds.css.scss
+                                apropos.css apropos.css.scss.erb application.css application.css.scss exhibits.css exhibits.css.scss.erb )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
