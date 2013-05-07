@@ -17,11 +17,12 @@
                 <div class="muted" title=""><small><%= epiphany.created_at.utc.localtime.to_s(:long)%></small>&nbsp;|
                   <%= link_to delete_epiphany_thinker_path(epiphany), class: "btn btn-mini btn-danger", confirm: "Are you sure this is a Worthless Epiphany?",:title => "Delete This Epiphany", :remote => true do %>
                       <i class="icon-trash icon-white"></i>
-                  <% end %>&nbsp;|
-                  <%#= link_to convert_epiphany_to_construct_thinker_path(epiphany), class: "btn btn-small btn-success", :title => "Convert this Epiphany into A CONSTRUCT" do %>
-                  <%= link_to "#", class: "btn btn-mini btn-success", :title => "Convert this Epiphany into a Concept" do %>
-                      <i class="icon-th icon-white"></i>
                   <% end %>
+                  &nbsp;|
+                  <%#= link_to convert_epiphany_to_construct_thinker_path(epiphany), class: "btn btn-small btn-success", :title => "Convert this Epiphany into A CONSTRUCT" do %>
+                  <%#= link_to "#", class: "btn btn-mini btn-success", :title => "Convert this Epiphany into a Concept" do %>
+                      <!--<i class="icon-th icon-white"></i>-->
+                  <%# end %>
                   <div id="openResearchTabs" class="pull-right">
                     <a href="http://www.google.com/search?q=<%= epiphany.cognition.gsub(" ","+") %>" target="_blank" class="btn btn-small" title="Search this on Google, Wikipedia, Yahoo"><i class="icon-eye-open"></i> Delve Deeper</a>
                   </div>
