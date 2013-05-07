@@ -8,6 +8,9 @@ class Construct < ActiveRecord::Base
 
   def treatment_construct
     self.construct = self.construct.strip
+    self.construct = self.construct.gsub("<div>","<p>")
+    self.construct = self.construct.gsub("</div>","</p>")
+    self.construct = self.construct.gsub("<d/iv>","")
     self.title = "Set Title" if self.title.nil? or self.title.blank?
     self.construct = "Build your Construct" if self.construct.nil? or self.construct.blank?
     self.exhibit_construct if self.share
