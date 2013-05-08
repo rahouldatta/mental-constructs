@@ -12,13 +12,13 @@
     <div style="padding-left: 17px;">
       <ul class="nav">
         <% if thinker_signed_in? %>
-            <li class="active" style="font-family: Papyrus;"><%= (link_to "#{current_thinker.alias.upcase.gsub("-"," ")}", thinker_path(current_thinker), :class => "brand")%></li>
+            <li class="active" style="font-family: Papyrus;"><%= (link_to "#{current_thinker.alias.upcase.gsub("-"," ")}", thinker_path(current_thinker), :class => "brand", :title => "Main Thinker Panel")%></li>
         <% else %>
             <li class="active" style="font-family: Papyrus;"><%= (link_to "Mental Constructs", root_path, :class => "brand ")%></li>
         <% end %>
         <!--<li class="divider-vertical"></li>-->
-        <li class=""><%= link_to exhibits_path do %><i class="icon-globe icon-white"></i> Exhibits<% end %></li>
-        <li class=""><%= link_to howl_index_path do %><i class="icon-fire icon-white"></i> HOWL<% end %></li>
+        <li class=""><%= link_to exhibits_path, :title => "View Thoughts exhibited by other Thinkers." do %><i class="icon-globe icon-white"></i> Exhibits<% end %></li>
+        <li class=""><%= link_to howl_index_path, :title => "Rid yourself of all Frustrations and Despondency." do %><i class="icon-fire icon-white"></i> HOWL<% end %></li>
 
         <% if thinker_signed_in?%>
             <%# unless request.fullpath == "/howl/index" or request.fullpath=="/thinkers/edit" or request.fullpath=="/exhibits" or request.fullpath=="/exhibits/:id/show"  %>
