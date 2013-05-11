@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9d6f942-955b-4123-b886-87efcc90c784" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/thinker/exhibit_cognition.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_display.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb" afterPath="$PROJECT_DIR$/app/views/thinker/partials/_epiphany_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thinker_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental-constructs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +38,7 @@
     <file path="/_epiphany_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1368305854512" ignored="false" />
     <file path="$PROJECT_DIR$/../inkuisitive/app/assets/stylesheets/thinker.css.scss" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366056649196" ignored="false" />
     <file path="/record_brainwaves.js.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366057367775" ignored="false" />
-    <file path="/_brain_wave_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1368305967129" ignored="false" />
+    <file path="/_brain_wave_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1368308188868" ignored="false" />
     <file path="/_factoid_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367954753593" ignored="false" />
     <file path="/edit.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1367355137288" ignored="false" />
     <file path="/_remembrall_display.html.erb" changelist="e9d6f942-955b-4123-b886-87efcc90c784" time="1366201471511" ignored="false" />
@@ -181,7 +174,7 @@
       <file leaf-file-name="_brain_wave_display.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_display.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="49" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.5549133">
+            <state line="23" column="33" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.5317919">
               <folding />
             </state>
           </provider>
@@ -1531,7 +1524,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/thinker/partials/_brain_wave_display.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="49" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.5549133">
+        <state line="23" column="33" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.5317919">
           <folding />
         </state>
       </provider>
