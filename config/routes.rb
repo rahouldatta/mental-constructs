@@ -45,6 +45,7 @@ MentalConstructs::Application.routes.draw do
       get 'provocation'
       get 'get_next_exhibit'
       get 'unbookmark'
+      get 'exhibit_cognition'
     end
     collection do
       post 'search_thinker_data'

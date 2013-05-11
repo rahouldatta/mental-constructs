@@ -71,6 +71,12 @@ class ThinkerController < ApplicationController
     current_thinker.remembralls.create(:task => params[:task], :status => false)
   end
 
+  def exhibit_cognition
+    c = Cognition.find(params[:id])
+    c.update_attributes(:share => true)
+    c.exhibit_cognition
+  end
+
   # =================== Search Methods =========================
 
   def search_thinker_data

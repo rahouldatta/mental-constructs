@@ -20,6 +20,13 @@
                 <%= link_to(delete_brainwave_thinker_path(brainwave), class: "btn btn-mini btn-danger", :title => "Permanently Delete This Brainwave.", confirm: "Are you sure?", :remote => true) do %>
                     <i class="icon-trash icon-white"></i>
                 <% end %>
+                <% unless brainwave.share%>
+                    &nbsp;|
+                    <%= link_to exhibit_cognition_thinker_path(brainwave), class: "btn btn-mini btn-success", :title => "Exhibit this BrainWave", :remote => true do %>
+                        <i class="icon-share"></i>
+                    <% end %>
+                <% end %>
+
                 <!--&nbsp;|&nbsp;-->
                 <%#= link_to("#", class: "btn btn-mini btn-success", :title => "Enhance the BrainWave. Convert it into a BrainChild") do %>
                     <!--<i class="icon-eye-open icon-white"></i>-->
