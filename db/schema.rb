@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130505120522) do
+ActiveRecord::Schema.define(:version => 20130511201634) do
 
   create_table "bookmarks", :force => true do |t|
     t.integer  "thinker_id"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20130505120522) do
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.integer  "affinity_level"
+    t.boolean  "share"
   end
 
   create_table "comments", :force => true do |t|
@@ -86,6 +87,8 @@ ActiveRecord::Schema.define(:version => 20130505120522) do
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
     t.string   "thinker"
+    t.string   "type_of_cognition"
+    t.text     "cognition"
   end
 
   create_table "feedbacks", :force => true do |t|

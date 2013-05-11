@@ -56,7 +56,7 @@ class ThinkerController < ApplicationController
   # =================== Cognition Record Methods =========================
 
   def record_epiphanies
-    current_thinker.epiphanies.create(:cognition => params[:cognition])
+    current_thinker.epiphanies.create(:cognition => params[:cognition], :share => params["share"] ? true : false)
   end
 
   def record_factoids
@@ -64,7 +64,7 @@ class ThinkerController < ApplicationController
   end
 
   def record_brainwaves
-    current_thinker.brain_wave.create(:cognition => params[:cognition],:affinity_level => params[:affinity_level])
+    current_thinker.brain_wave.create(:cognition => params[:cognition],:affinity_level => params[:affinity_level], :share => params["share"] ? true : false)
   end
 
   def record_remembrall

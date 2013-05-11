@@ -4,7 +4,7 @@ include Searcher
 class Exhibit < ActiveRecord::Base
   acts_as_commentable
 
-  attr_accessible :brain_storm, :construct, :foot_notes, :popularity_quotient, :thinker, :title
+  attr_accessible :brain_storm, :construct, :foot_notes, :popularity_quotient, :thinker, :title, :cognition, :type_of_cognition
 
   serialize :brain_storm, Array
 
